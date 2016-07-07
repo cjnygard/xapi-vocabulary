@@ -1,0 +1,672 @@
+{
+  "@context": "http://xapi.vocab.pub/vocabulary/context.jsonld",
+  "@id": "https://w3id.org/xapi/acrossx",
+  "@type": "ConceptScheme",
+  "prefLabel": {
+  	"en": "AcrossX Vocabulary"
+  },
+  "wasGeneratedBy": {
+    "name": {
+      "en": "xAPI Vocabulary Working Group"
+    }
+  },
+"activity-types": [
+    {
+      "@id": "http://adlnet.gov/expapi/activities/assessment",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/activities/interaction",
+      "skos:scopeNote": {
+        "@value": "Used in Across X for tracking quiz items.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/activities/question",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+   {
+      "@id": "https://w3id.org/xapi/acrossx/activities/message",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "Information that is communicated by or to or between individual actors or groups of actors.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "message",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "In Across X this is a personal message between actors, usually transmitted privately.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/100033319-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/collaboration",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "The activity involving multiple actors working together on an assignment, a project, a problem-solving challenge or a cause.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "collaboration",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used in Across X to identify the activity of cooperative problem-solving.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/101207646-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/e-book",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "A book in electronic form as a document, file, or interactive application with optional formatting and control features.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "book",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/106522968-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/face-to-face-discussion",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "An exchange or communication on a topic by two or more actors in-person taking place in a physical location.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "face-to-face-discussion",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/107155367-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/instant-response-system",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "An activity that allows instructors to create slides with embedded quizzes/polling questions to collect responses and get reporting instantly during class.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "instant-response-system",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/learning-plan",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "Used to plan and organize learning activities from different activity providers. It could be built by instructors, learning designers or learners.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "learning-plan",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/105736623-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/note",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "Refers to an object that was annotated as part of the activity.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "note",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/106775984-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/online-discussion",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "An exchange or communication on a topic by two or more actors in-person taking place online or virtually.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "online-discussion",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/107155367-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/page",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "The single representation of a specific page number and the content on that page in any digitally or physically written material.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "page",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "In Across X this refers to a page in an e-book.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/106269333-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/printed-assessment",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "A written examination or test provided in paper form, and intended to be completed using a pencil or pen.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "printed-assessment",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/107213988-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/printed-book",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "A written work or composition that has been physically printed on paper pages bound together.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "printed-book",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/106422547-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/printed-worksheet",
+      "@type": "xapi:ActivityType",
+      "skos:definition": {
+        "@value": "A page or group of pages containing problems, exercises, or instructions for learning activities.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "printed-worksheet",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/106427434-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/video",
+      "@type": "xapi:ActivityType",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/video"
+      },
+      "skos:definition": {
+        "@value": "A recording of audible and visual content intended to be shown on a video display.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "video",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "In AcrossX, a video has audio and visual components of content, and could be delivered online or offline.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/104541422-n"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/activities/webpage",
+      "@type": "xapi:ActivityType",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/page"
+      },
+      "skos:definition": {
+        "@value": "A web document (usually HTML-based) accessible by anyone connected to the internet and by using a web browser.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "webpage",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/106370307-n"
+      }
+    }    
+ ],
+"verbs": [
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/answered",
+      "skos:scopeNote": {
+        "@value": "Used to show the actor's answer in a quiz or practice test.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/asked",
+      "skos:scopeNote": {
+        "@value": "Used to ask a question in a forum or other web application.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/attempted",
+      "skos:scopeNote": {
+        "@value": "Used for an attempt on an assessment in AcrossX.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/commented",
+      "skos:scopeNote": {
+        "@value": "Used to add a comment in a forum or other web application.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/completed",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/interacted",
+      "skos:scopeNote": {
+        "@value": "Used to indicate a learner's action of interacting with elements in a quiz.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/shared",
+      "skos:scopeNote": {
+        "@value": "Indicates the actor's intent to openly provide access to an object of common interest to other actors or groups.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "http://id.tincanapi.com/verb/skipped",
+      "skos:scopeNote": {
+        "@value": "Used to indicate the actor skipped forward or backward while watching a video.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/designed",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates the actor carefully planned or created the object for a specific purpose.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "designed",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/201757273-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/disliked",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates that the actor does not approve of the object or activity.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "disliked",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/201780648-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/edited",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates the actor added or modified the content in a document or object.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "edited",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/200629787-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/evaluated",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates the actor formed an opinion or prepared to assess another actor or object.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "evaluated",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used to describe the act of a teacher or coach evaluating a learner's performance or product.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/200672179-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/liked",
+      "@type": "xapi:Verb",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/like"
+      },
+      "skos:definition": {
+        "@value": "Indicates that the actor approves of, recommends, or endorses the object or activity.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "liked",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used to indicate the actor approving a post or a response on a forum or social media application.",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/posted",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Used to describe the action of posting a discussion topic or message on a forum.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "posted",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/200993715-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/reported",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates the actor announced the result of an experience or activity.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "reported",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used to describe the action of self-reporting a learning experience by the actor.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/200968841-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/revealed",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates the actor exposed an object or content that's previously hidden.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "revealed",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used in AcrossX when the actor opened an information or quiz box to read or answer it.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/202147756-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/searched",
+      "@type": "xapi:Verb",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/search"
+      },
+      "skos:definition": {
+        "@value": "Indicates the actor looked for information in an object.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "searched",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used to convey a text string search of information within an application or interface in Across X.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/201318273-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/was-assigned",
+      "@type": "xapi:Verb",
+      "skos:definition": {
+        "@value": "Indicates the actor was given or required to access an object.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "was-assigned",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used to describe the action of learning material being assigned to a learner.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/202396945-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/acrossx/verbs/watched",
+      "@type": "xapi:Verb",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/watch"
+      },
+      "skos:definition": {
+        "@value": "Indicates the actor observed a visual obect.",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      },
+      "skos:prefLabel": {
+        "@value": "watched",
+        "@language": "en"
+      },
+      "skos:scopeNote": {
+        "@value": "Used to indicate that an actor absorbed a video visually.",
+        "@language": "en"
+      },
+      "xapi:closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/202396945-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adb/verbs/bookmarked",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adb/verbs/highlighted",
+      "skos:scopeNote": {
+        "@value": "Used to indicate a learner highlighting important areas in the content for the purpose of later review or note taking.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adb/verbs/noted",
+      "skos:scopeNote": {
+        "@value": "Used to indicate the actor making a written note inside the ebook or about the video content.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adb/verbs/read",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx/verbs"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adb/verbs/referenced",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adb/verbs/requested",
+      "skos:scopeNote": {
+        "@value": "Indicates the actor requested assistance or help from peers or coaches/teachers.",
+        "@language": "en"
+      },
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx/verbs"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/adl/verbs/logged-in",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/acrossx/verbs"
+      }
+    }
+  ]
+}

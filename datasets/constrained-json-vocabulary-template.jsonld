@@ -1,0 +1,95 @@
+{
+  "@context": "http://xapi.vocab.pub/vocabulary/context.jsonld",
+  "@id": "https://w3id.org/xapi/vocabularyname",
+  "@type": "ConceptScheme",
+  "prefLabel": {
+  	"en": "Vocabulary Name"
+  },
+  "wasGeneratedBy": {
+    "name": {
+      "en": "xAPI Vocabulary Working Group"
+    }
+  },
+"activity-types": [
+    {
+      "@id": "https://w3id.org/xapi/vocabularyName/activities/newTerm",
+      "@type": "ActivityType",
+      "prefLabel": {
+        "en": ""
+      },      
+      "definition": {
+        "en": ""
+      },
+      "scopeNote": {
+        "en": ""
+      },
+      "closelyRelatedNaturalLanguageTerm":""
+    },
+     {
+      "@id": "https://w3id.org/xapi/vocabularyName/activities/termFromBadIRI",
+      "@type": "ActivityType",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/termName"
+      },
+      "prefLabel": {
+        "en": ""
+      },      
+      "definition": {
+        "en": ""
+      },
+      "scopeNote": {
+        "en": ""
+      },
+      "closelyRelatedNaturalLanguageTerm":""
+      }
+    }    
+ ],
+     {
+      "@id": "https://w3id.org/xapi/vocabularyName/activities/referencedTerm",
+      "@type": "ActivityType",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/seriousgames"
+      }
+    },
+"verbs": [
+    {
+      "@id": "https://w3id.org/xapi/vocabularyName/verbs/newTerm",
+      "@type": "Verb",
+      "prefLabel": {
+        "en": ""
+      },      
+      "definition": {
+        "en": ""
+      },
+      "scopeNote": {
+        "en": ""
+      },
+      "closelyRelatedNaturalLanguageTerm":""
+    },
+     {
+      "@id": "https://w3id.org/xapi/vocabularyName/verbs/termFromBadIRI",
+      "@type": "Verb",
+      "skos:closeMatch": {
+        "@id": "http://activitystrea.ms/schema/1.0/termName"
+      },
+      "prefLabel": {
+        "en": ""
+      },      
+      "definition": {
+        "en": ""
+      },
+      "scopeNote": {
+        "en": ""
+      },
+      "closelyRelatedNaturalLanguageTerm":""
+      }
+    }    
+ ],
+     {
+      "@id": "https://w3id.org/xapi/vocabularyName/verbs/referencedTerm",
+      "@type": "Verb",
+      "xapi:referencedBy": {
+        "@id": "https://w3id.org/xapi/vocabularyName"
+      }
+    }
+}

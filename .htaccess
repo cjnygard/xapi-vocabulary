@@ -1,0 +1,22 @@
+
+Options +FollowSymLinks
+RewriteEngine On
+
+# Directive to allow Cross origin requests
+Header always set Access-Control-Allow-Origin "*"
+Header always set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Accept-Language"
+Header always set Access-Control-Allow-Methods "PUT, GET, POST, DELETE, OPTIONS"
+
+# Directive to ensure RDF files served as appropriate content type,
+# if not present in main apache config
+AddType  text/turtle   .ttl
+AddType application/ld+json .jsonld
+
+
+# Rewrite for faceted search
+RewriteRule ^$ http://xapi.vocab.pub:8890/fct [L]
+
+# Rewrite for SPARQL URI
+# ---------------------------
+RewriteRule ^sparql$ http://xapi.vocab.pub:8890/sparql [R=302]
+

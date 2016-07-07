@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - AcrossX Vocabulary - Traditional Chinese</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+  </head>
+  <body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="https://w3id.org/xapi/acrossx">AcrossX 限制詞</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Translations<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://xapi.vocab.pub/datasets/acrossx/zh-cn">Simplified Chinese</a></li>
+            <li><a href="http://xapi.vocab.pub/datasets/acrossx">English</a></li>
+          </ul>
+        </li>      
+       <li class="dropdown"><a href="#" class="dropdown-toggle active" data-toggle="dropdown">動詞(Verbs)<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#回答">回答</a></li>
+            <li><a href="#提問">提問</a></li>
+            <li><a href="#開始嘗試">開始嘗試</a></li>
+            <li><a href="#加書籤">加書籤</a></li>
+            <li><a href="#回應">回應</a></li>
+            <li><a href="#完成">完成</a></li>
+            <li><a href="#設計">設計</a></li>
+            <li><a href="#不贊同">不贊同</a></li>
+            <li><a href="#編輯">編輯</a></li>
+            <li><a href="#評分/評價">評分/評價</a></li>
+            <li><a href="#畫重點">畫重點</a></li>
+            <li><a href="#互動">互動</a></li>
+            <li><a href="#按讚">按讚</a></li>
+            <li><a href="#登入">登入</a></li>
+            <li><a href="#做筆記">做筆記</a></li>
+            <li><a href="#張貼">張貼</a></li>
+            <li><a href="#閱讀">閱讀</a></li>
+            <li><a href="#查詢參考">查詢參考</a></li>
+            <li><a href="#報告">報告</a></li>            
+            <li><a href="#求助">求助</a></li>            
+            <li><a href="#搜尋">搜尋</a></li>
+            <li><a href="#分享">分享</a></li>  
+            <li><a href="#跳過">跳過</a></li>
+            <li><a href="#揭示">揭示</a></li>  
+            <li><a href="#被指定">被指定</a></li>
+            <li><a href="#觀看">觀看</a></li>
+          </ul>
+        </li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">活動類型(Activity Types)<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#評量測驗">評量測驗</a></li>
+            <li><a href="#協作">協作</a></li>            
+            <li><a href="#電子書/簡報/課件">電子書/簡報/課件</a></li>
+            <li><a href="#當面討論">當面討論</a></li>
+            <li><a href="#CMI題目">CMI 題目</a></li>
+            <li><a href="#課堂即時互動系統">課堂即時互動系統</a></li>
+            <li><a href="#學習計畫">學習計畫</a></li>
+            <li><a href="#簡訊">簡訊</a></li>
+            <li><a href="#筆記">筆記</a></li>  
+			<li><a href="#線上討論">線上討論</a></li>
+            <li><a href="#頁">頁</a></li>  
+            <li><a href="#印刷書">印刷書</a></li>
+            <li><a href="#學習單">學習單</a></li>
+            <li><a href="#紙筆測驗">紙筆測驗</a></li>         
+            <li><a href="#問題">問題</a></li>
+            <li><a href="#影片">影片</a></li>
+            <li><a href="#網頁">網頁</a></li>
+            <li><a href="#手寫書">手寫書</a></li>   
+          </ul>
+        </li>            
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<br />
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#"> 
+<br />
+<br />
+<!-- Vocabulary / Concept Scheme --> 
+  <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/acrossx">
+    <div property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="AcrossX 動詞"><h2 class="page-header">AcrossX 動詞</h2></div>
+    <div property="skos:editorialNote" lang="zh-tw" xml:lang="zh-tw" content="此動詞表是 AcrossX 限制詞註冊表的一部份."><strong>註: </strong>此動詞表是 AcrossX 限制詞註冊表的一部份. 非由 AcrossX 所管理及引用其他限制詞註冊表的動詞, 該字列為 <span class="bg-warning"> <strong> 黃色底色 </strong></span>.</div>  
+    <div property="dcterms:created" datatype="xsd:date" content="2015-12-13">Date Created: 2015-12-13</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-01-16">Last Modified: 2016-01-16</div>
+  </div>
+  
+<!-- Begin Verbs --> 
+<h2 class="page-header">動詞 (Verbs)</h2>  
+  <div class="panel panel-default table-responsive" id="verbs"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="info">
+          <th>動詞</th>
+          <th>描述</th>          
+          <th>用法說明</th>
+          <th>ID (IRI)</th>
+          <th>Related Match</th>
+          <th>Closely Related Term</th>
+          <th>限制詞</th>
+        </tr>
+      </thead>
+            
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/answered" id="回答">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="回答">回答</td>
+          <td>指 actor 回答一個問題，其 object 通常用 activity 來表示該問題，回答的內容通常會列在 result 裡的 response 處。</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 回答某ㄧ考題或習題的答案。">指 actor 回答某ㄧ考題或習題的答案。</td>
+
+          <td><a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      	  
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/asked" id="提問">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="提問">提問</td>
+          <td>指 actor 提出詢問期望獲得回應或是問題的答案.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 在論壇或其他 web 應用程式提出一個問題.">指 actor 在論壇或其他 web 應用程式提出一個問題.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/asked">http://adlnet.gov/expapi/verbs/asked</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+  
+ 
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/attempted" id="開始嘗試">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="開始嘗試">開始嘗試</td>
+          <td>指 actor 努力取得或使用該 object。在某些情況下，一個開始嘗試的陳述 (statement) 如果沒有額外的 activity，可能會被視為未完成.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 開始嘗試一個評量.">指 actor 開始嘗試一個評量.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/attempted">http://adlnet.gov/expapi/verbs/attempted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+ 
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/bookmarked" id="加書籤">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="加書籤">加書籤</td>
+          <td>指讀者在其停止電子書 activity 或是認為重要的位置 (頁面) 做標記.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/bookmarked">https://w3id.org/xapi/adb/verbs/bookmarked</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>      
+   
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/commented" id="回應">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="回應">回應</td>
+          <td>指 actor 對某ㄧ object 提供數位或手寫注釋.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指在一個論壇或其他 web 應用程式中添加注釋.">指在一個論壇或其他 web 應用程式中添加注釋.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/commented">http://adlnet.gov/expapi/verbs/commented</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+          
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/completed" id="完成">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="完成">完成</td>
+          <td>指 actor 正常地完成或結束活動.</td>
+          <td> </td>
+          <td><a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/designed" id="設計">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="設計">設計</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 為特定目的仔細計畫或創建該 object.">指 actor 為特定目的仔細計畫或創建該 object.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指教師設計一套課程計劃/學習計劃/行動計畫.">指教師設計一套課程計劃/學習計劃/行動計畫.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/designed">https://w3id.org/xapi/acrossx/verbs/designed</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201757273-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201757273-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201757273-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/disliked" id="不贊同">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="不贊同">不贊同</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 不贊同該 object 或 activity.">指 actor 不贊同該 object 或 activity.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指在論壇或社交媒體對某貼文或回應表示否定.">指在論壇或社交媒體對某貼文或回應表示否定.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/disliked">https://w3id.org/xapi/acrossx/verbs/disliked</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201780648-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201780648-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201757273-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/edited" id="編輯">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="編輯">編輯</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 在檔案或 object 添加或修改內容.">指 actor 在檔案或 object 添加或修改內容.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指在試算表或論壇貼文中增加或修改內容.">指在試算表或論壇貼文中增加或修改內容.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/edited">https://w3id.org/xapi/acrossx/verbs/edited</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200629787-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200629787-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200629787-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/evaluated" id="評分/評價">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="評分/評價">評分/評價</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 形成意見或準備評量另一個 actor 或 object.">指 actor 形成意見或準備評量另一個 actor 或 object.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指一位老師/教練評價學習者的表現或作品.">指一位老師/教練評價學習者的表現或作品.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/evaluated">https://w3id.org/xapi/acrossx/verbs/evaluated</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200672179-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200672179-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200672179-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+                                                  
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/highlighted" id="畫重點">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="畫重點">畫重點</td>
+          <td>指為往後複習或做筆記之目的,在內容裡標示重點區域.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/highlighted">https://w3id.org/xapi/adb/verbs/highlighted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>      
+                                                  
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/interacted" id="互動">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="互動">互動</td>
+          <td>指 actor 與一個實體或虛擬的 object 互動.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指一個學習者與內容中的互動元素進行互動的行為.(例如測驗題的答案選項)">指一個學習者與內容中的互動元素進行互動的行為.(例如測驗題的答案選項)</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/interacted">http://adlnet.gov/expapi/verbs/interacted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+
+       <!-- Verb based on activity streams that adds meaning and uses skos:closeMatch -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/liked" id="按讚">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="按讚">按讚</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 在一個論壇或社群媒體應用程式贊同ㄧ篇貼文或是一個人.">指 actor 在一個論壇或社群媒體應用程式贊同ㄧ篇貼文或是一個人.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指在論壇或社群媒體對某貼文或回應表示贊同.">指在論壇或社群媒體對某貼文或回應表示贊同.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/liked">https://w3id.org/xapi/acrossx/verbs/liked</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/like"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/like" target="_blank">http://activitystrea.ms/schema/1.0/like</a></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>
+      
+                                                  
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adl/verbs/logged-in" id="登入">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="登入">登入</td>
+          <td>指 actor 經由識別和認證由 actor 所提供的憑證獲得存取到系統或服務的權限.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/verbs/adl/logged-in">https://w3id.org/xapi/adl/verbs/logged-in</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/noted" id="做筆記">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="做筆記">做筆記</td>
+          <td>指將注釋或筆記添加到電子書內所選本文.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/noted">https://w3id.org/xapi/adb/verbs/noted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/posted" id="張貼">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="張貼">張貼</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指在論壇或社群媒體張貼一個討論主題或訊息.">指在論壇或社群媒體張貼一個討論主題或訊息.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/posted">https://w3id.org/xapi/acrossx/verbs/posted</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200993715-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200993715-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200993715-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/read" id="閱讀">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="閱讀">閱讀</td>
+          <td>指 actor 讀取此 object. 通常僅適用於物件代表印刷或書寫的內容，如一本書、一條訊息或是一個評論.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/read">https://w3id.org/xapi/adb/verbs/read</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/referenced" id="查詢參考">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="查詢參考">查詢參考</td>
+          <td>指使用辭典或其他資源來查詢所選字彙. 一個學習者可以參考外部的資訊來支援某主題, 也可以參考其他閱讀材料給他/她的同事或導師.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 透過ㄧ個連結查詢某ㄧ個線上資源.">指 actor 透過ㄧ個連結查詢某ㄧ個線上資源.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/referenced">https://w3id.org/xapi/adb/verbs/referenced</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>
+      
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/reported" id="報告">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="報告">報告</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="用來描述 actor 自我報告ㄧ項學習經驗的行動, 但也可以用於報告其他人的行動.">用來描述 actor 自我報告ㄧ項學習經驗的行動, 但也可以用於報告其他人的行動.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 發布某項經驗或活動的結果.">指 actor 發布某項經驗或活動的結果.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/reported">https://w3id.org/xapi/acrossx/verbs/reported</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200968841-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200968841-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200968841-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/requested" id="求助">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="求助">求助</td>
+          <td>指 actor 需要或請求一個 object 或是另一位 actor.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 請求同儕或教練/教師的協助.">指 actor 請求同儕或教練/教師的協助.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/requested">https://w3id.org/xapi/adb/verbs/requested</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>
+
+
+       <!-- Verb based on activity streams that adds meaning and uses skos:closeMatch -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/searched" id="搜尋">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="搜尋">搜尋</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 在某 object 尋找資訊.">指 actor 在某 object 尋找資訊.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 以一串關鍵字在某應用程式或介面搜索資訊.">指 actor 以一串關鍵字在某應用程式或介面搜索資訊.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/searched">https://w3id.org/xapi/acrossx/verbs/searched</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/search"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/search" target="_blank">http://activitystrea.ms/schema/1.0/search</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201318273-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201318273-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201318273-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>
+      
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/shared" id="分享">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="分享">分享</td>
+          <td>指 actor 向其他 actors 或群體公開提供共同感興趣 object 的存取權限.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 分享內容或額外的參考材料到另一個應用程式或是使用者.">指 actor 分享內容或額外的參考材料到另一個應用程式或是使用者.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/shared">http://adlnet.gov/expapi/verbs/shared</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td> 
+        </tr>
+      </tbody> 
+        
+        
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://id.tincanapi.com/verb/skipped" id="跳過">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="跳過">跳過</td>
+          <td>指 actor 在時間軸或預設架構序列上非連續性的使用內容, 例如，影片、音訊檔或電子書.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 觀看影片時向前或向後略過.">指 actor 觀看影片時向前或向後略過.</td>
+          <td><a href="http://id.tincanapi.com/verb/skipped">http://id.tincanapi.com/verb/skipped</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://registry.tincanapi.com/#home/verbs" target="_blank">https://registry.experienceapi.com</a></td>
+        </tr>
+      </tbody>
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/revealed" id="揭示">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="揭示">揭示</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 公開原本被隱藏的內容或 object.">指 actor 公開原本被隱藏的內容或 object.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 開啟ㄧ個資訊或考題視窗來讀取或回答它.">指 actor 開啟ㄧ個資訊或考題視窗來讀取或回答它.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/revealed">https://w3id.org/xapi/acrossx/verbs/revealed</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>
+      
+          
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/was-assigned" id="被指定">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="被指定">被指定</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指 actor 被給予或要求存取ㄧ個 object 或是完成一項任務.">指 actor 被給予或要求存取ㄧ個 object 或是完成一項任務.</td>          
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指一個學習者被分配某學習材料的動作.">指一個學習者被分配某學習材料的動作.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/was-assigned">https://w3id.org/xapi/acrossx/verbs/was-assigned</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202396945-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202396945-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202396945-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+                                  
+       <!-- Verb based on activity streams that adds meaning and uses skos:closeMatch -->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/watched" id="觀看">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="觀看">觀看</td>
+          <td>指 actor 觀看一個視覺的 object.</td> 
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指 actor 觀看一段影片.">指 actor 觀看一段影片.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/watched">https://w3id.org/xapi/adb/verbs/watched</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>               
+    </table>
+    </div>
+<!-- End Verbs -->   
+
+<!-- Begin Activity Types -->   
+<h2 class="page-header">活動類型 (Activity Types)</h2>
+<div class="panel panel-default table-responsive">
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="danger">
+        <th>Acitivity Type</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Related Match</th>
+        <th>Closely Related Term</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/assessment" id="評量測驗">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="評量測驗">評量測驗</td>
+          <td>評量是一種 activity 型式, 用以確認學習者熟練某個學科領域. 評量通常包含一個或多個試題.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指以數位形式進行的評量測驗，用以區別紙張形式的評量測驗.">指以數位形式進行的評量測驗，用以區別紙張形式的評量測驗.</td>
+          <td><a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>        
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/collaboration" id="協作">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="協作">協作</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="一個 activity 有多位 actors 為一項作業、專案、問題問題的挑戰或目標而協同合作.">一個 activity 有多位 actors 為一項作業、專案、問題問題的挑戰或目標而協同合作.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指共同合作解決問題的 activity.">指共同合作解決問題的 activity.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/collaboration">https://w3id.org/xapi/acrossx/activities/collaboration</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/101207646-n"><a href="http://wordnet-rdf.princeton.edu/wn31/101207646-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/101207646-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+                   
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/e-book" id="電子書/簡報/課件">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="電子書/簡報/課件">電子書/簡報/課件</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="ㄧ本以電子形式呈現文件、檔案或是互動式應用程式的書, 具有可選擇格式設置和控制功能.">ㄧ本以電子形式呈現文件、檔案或是互動式應用程式的書, 具有可選擇格式設置和控制功能.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/e-book">https://w3id.org/xapi/acrossx/activities/e-book</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106522968-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106522968-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106522968-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+
+
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/face-to-face-discussion" id="當面討論">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="當面討論">當面討論</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="兩個或以上的 actors 在一真實地點親自面對面針對某主題交換意見或溝通.">兩個或以上的 actors 在一真實地點親自面對面針對某主題交換意見或溝通.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/face-to-face-discussion">https://w3id.org/xapi/acrossx/activities/face-to-face-discussion</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/107155367-n"><a href="http://wordnet-rdf.princeton.edu/wn31/107155367-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/107155367-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+
+
+    
+    <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/interaction" id="CMI題目">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="CMI 題目">CMI 題目</td>
+          <td>通常是一個大 activity (如評量、遊戲或模擬) 的一部分，並且具有讓學習者提供輸入的控制. 它可以是獨立的 asset 或 function.</td>
+          <td></td>
+          <td><a href="http://adlnet.gov/expapi/activities/interaction">http://adlnet.gov/expapi/activities/interaction</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>        
+ 
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/instant-response-system" id="課堂即時互動系統">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="課堂即時互動系統">課堂即時互動系統</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="一種 activity 可以讓教師創建內建測驗/投票問題的投影片, 用以收集學習者回應，並能在班級內立即產生報告.">一種 activity 可以讓教師創建內建測驗/投票問題的投影片, 用以收集學習者回應，並能在班級內立即產生報告.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/instant-response-system">https://w3id.org/xapi/acrossx/activities/instant-response-system</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+              
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/learning-plan" id="學習計畫">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="學習計畫">學習計畫</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="一個學習計畫是用來計畫或組織不同來源的學習活動，它可以由老師、學習設計師或學習者本身建立.">一個學習計畫是用來計畫或組織不同來源的學習活動，它可以由老師、學習設計師或學習者本身建立.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/lesson-plan">https://w3id.org/xapi/acrossx/activities/learning-plan</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/105736623-n"><a href="http://wordnet-rdf.princeton.edu/wn31/105736623-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/105736623-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+ 
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/message" id="簡訊">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="簡訊">簡訊</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="個別或群體 actors 之間傳達的資訊.">個別或群體 actors 之間傳達的資訊.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="Actors 之間的個人訊息, 通常是非公開的傳遞.">Actors 之間的個人訊息, 通常是非公開的傳遞.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/message">https://w3id.org/xapi/acrossx/activities/message</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/100033319-n"><a href="http://wordnet-rdf.princeton.edu/wn31/100033319-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/100033319-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/note" id="筆記">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="筆記">筆記</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="學習者在任何學習內容或活動中所做的注釋或筆記.">學習者在任何學習內容或活動中所做的注釋或筆記.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/note">https://w3id.org/xapi/acrossx/activities/note</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106775984-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106775984-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106775984-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+      
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/online-discussion" id="線上討論">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="線上討論">線上討論</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="二個或以上之 actors 在線上針對某主題進行意見交流或溝通.">二個或以上之 actors 在線上針對某主題進行意見交流或溝通.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/online-discussion">https://w3id.org/xapi/acrossx/activities/online-discussion</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/107155367-n"><a href="http://wordnet-rdf.princeton.edu/wn31/107155367-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/107155367-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+       
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/page" id="頁">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="頁">頁</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="指一本電子或實體書面材料的頁碼.">指一本電子或實體書面材料的頁碼.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="指一本電子書或印刷書籍的頁碼.">指一本電子書或印刷書籍的頁碼.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/page" target="_blank">https://w3id.org/xapi/acrossx/activities/page</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106269333-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106269333-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106269333-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/printed-book" id="印刷書">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="印刷書">印刷書</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="書面的著作或作品被實際列印到紙張上並裝訂在一起.">書面的著作或作品被實際列印到紙張上並裝訂在一起.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/printed-book" target="_blank">https://w3id.org/xapi/acrossx/activities/printed-book</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106422547-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106422547-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106422547-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/printed-worksheet" id="學習單">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="學習單">學習單</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="ㄧ頁或數頁面包含問題、練習或學習活動指示.">ㄧ頁或數頁面包含問題、練習或學習活動指示.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/printed-worksheet" target="_blank">https://w3id.org/xapi/acrossx/activities/printed-worksheet</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106427434-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106427434-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106427434-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/printed-assessment" id="紙筆測驗">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="紙筆測驗">紙筆測驗</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="書面的考試或測試，以紙張形式提供並用筆填寫.">書面的考試或測試，以紙張形式提供並用筆填寫.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/printed-assessment" target="_blank">https://w3id.org/xapi/acrossx/activities/printed-assessment</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/107213988-n"><a href="http://wordnet-rdf.princeton.edu/wn31/107213988-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/107213988-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+    <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/question" id="問題">
+        <tr class="warning">
+          <td property="xapi:thirdPartyLabel" lang="zh-tw" xml:lang="zh-tw" content="問題">問題</td>
+          <td>問題通常是評量的一部分，需要從學習者獲得回應然後評估其正確性.</td>
+          <td></td>
+          <td><a href="http://adlnet.gov/expapi/activities/question">http://adlnet.gov/expapi/activities/question</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>       
+                  
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/video" id="影片">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="影片">影片</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="一段具有聲音和視覺的錄製內容，並可在影片播放器上顯示.">一段具有聲音和視覺的錄製內容，並可在影片播放器上顯示.</td> 
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="影片是具有音訊和視覺元件的內容，可以提供連線或離線觀看.">影片是具有音訊和視覺元件的內容，可以提供連線或離線觀看.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/video">https://w3id.org/xapi/acrossx/activities/video</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/video"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/video" target="_blank">http://activitystrea.ms/schema/1.0/video</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/104541422-n"><a href="http://wordnet-rdf.princeton.edu/wn31/104541422-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/104541422-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody> 
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/webpage" id="網頁">
+        <tr>
+          <td property="skos:prefLabel" lang="zh-tw" xml:lang="zh-tw" content="網頁">網頁</td>
+          <td property="skos:definition" lang="zh-tw" xml:lang="zh-tw" content="網路頁面檔案 (通常是 HTML 格式)，任何人都可透過連接到互聯網和使用網路瀏覽器來存取.">網路頁面檔案 (通常是 HTML 格式)，任何人都可透過連接到互聯網和使用網路瀏覽器來存取.</td>
+          <td property="skos:scopeNote" lang="zh-tw" xml:lang="zh-tw" content="任何具有 IRL 或 URL 的網頁.">任何具有 IRL 或 URL 的網頁.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/webpage">https://w3id.org/xapi/acrossx/activities/webpage</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/page"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/page" target="_blank">http://activitystrea.ms/schema/1.0/page</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106370307-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106370307-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106370307-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>     
+  </table>
+<!-- End Activity Types -->      
+  </div>
+</div>  
+
+
+<!-- Bootstrap core JavaScript ================================================== -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

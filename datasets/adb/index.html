@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - IEEE ADB Vocabulary</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://w3id.org/xapi/adb">IEEE ADB Vocabulary</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#annotated">annotated</a></li>
+            <li><a href="#answered">answered</a></li>
+            <li><a href="#arrived">arrived</a></li>
+            <li><a href="#bookmarked">bookmarked</a></li>
+            <li><a href="#coached">coached</a></li>
+            <li><a href="#commented">commented</a></li>
+            <li><a href="#completed">completed</a></li>
+            <li><a href="#described">described</a></li>
+            <li><a href="#highlighted">highlighted</a></li>
+            <li><a href="#initiated">initiated</a></li>
+            <li><a href="#initialized">initialized</a></li>
+            <li><a href="#interacted">interacted</a></li>
+            <li><a href="#noted">noted</a></li>
+            <li><a href="#read">read</a></li>
+            <li><a href="#referenced">referenced</a></li>
+            <li><a href="#registered">registered</a></li>
+            <li><a href="#requested">requested </a></li>
+            <li><a href="#responded">responded</a></li>
+            <li><a href="#selected">selected</a></li>
+            <li><a href="#scored">scored</a></li>
+            <li><a href="#searched">searched</a></li>
+            <li><a href="#shared">shared</a></li>
+            <li><a href="#watched">watched</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<br />
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#">
+    
+  <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/adb">
+    <div property="skos:prefLabel" lang="en" xml:lang="en" content="IEEE ADB Vocabulary"><h2 class="page-header">IEEE ADB Vocabulary</h2></div>
+    <div property="skos:editorialNote" lang="en" xml:lang="en" content="This list of verbs is part of IEEE's Actionable Databook (ADB) vocabulary."><strong>Note: </strong>This list of verbs is part of IEEE's Actionable Databook (ADB) vocabulary. Verbs that are not managed by the IEE ADB and referenced from other controlled vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
+  </div>
+  
+  <div typeof="prov:Activity" about="http://ieee-adb.org">
+    <div property="foaf:name" lang="en" xml:lang="en" content="IEEE Actionable Databook Project"><strong>Published by:</strong> <a href="http://ieee-adb.org">IEEE Actionable Databook Project</a></div>
+</div>
+
+  <div typeof="prov:Entity" about="https://w3id.org/xapi/adb">
+    <div rel="prov:wasGeneratedBy" resource="http://ieee-adb.org"></div>
+    <div property="dcterms:created" datatype="xsd:date" content="2015-04-27">Date Created: 2015-04-27</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2015-10-02">Last Modified: 2015-10-02</div>
+  </div>
+  
+<br />
+<div class="panel panel-default table-responsive"> 
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="info">
+        <th>Label</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Relationships</th>
+        <th>Closely Related Term</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/annotated" id="annotated">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="annotated">annotated</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Provide notes or symbols for further explanation or thoughts while reading.">Provide notes or symbols for further explanation or thoughts while reading.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/annotated">https://w3id.org/xapi/adb/verbs/annotated</a></td>
+        <td rel="skos:narrower" resource="https://w3id.org/xapi/adb/verbs/highlighted"><strong rel="skos:narrower" resource="https://w3id.org/xapi/adb/verbs/noted">narrower: </strong><a href="https://w3id.org/xapi/adb/verbs/highlighted">highlighted</a>, <a href="https://w3id.org/xapi/adb/verbs/noted">noted</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200963361-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200963361-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200963361-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody typeof="xapi:Verb" resource="http://adlnet.gov/expapi/verbs/answered" id="answered">
+      <tr class="warning">
+        <td>answered</td>
+        <td></td>
+        <td property="skos:scopeNote" lang="en" xml:lang="en" content="Answer an interactive question within the eBook or an assessment. More desciptive level of interaction.">Answer an interactive question within the eBook or an assessment. More desciptive level of interaction.</td>
+        <td><a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/arrived" id="arrived">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="arrived">arrived</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="To arrive a specific scene within a story or book experience.">To arrive a specific scene within a story or book experience.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/arrived">https://w3id.org/xapi/adb/verbs/arrived</a></td>
+        <td rel="skos:broadMatch" resource="http://adlnet.gov/expapi/verbs/progressed"><strong>broadMatch: </strong><a href="http://adlnet.gov/expapi/verbs/progressed" target="_blank">http://adlnet.gov/expapi/verbs/progressed</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202009962-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202009962-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202009962-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/bookmarked" id="bookmarked">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="bookmarked">bookmarked</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Persisting the current location (page) where the reader stopped the ebook activity.">Persisting the current location (page) where the reader stopped the ebook activity. </td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/bookmarked">https://w3id.org/xapi/adb/verbs/bookmarked</a></td>
+        <td rel="skos:related" resource="https://w3id.org/xapi/adb/verbs/annotated"><strong>related:</strong> <a href="https://w3id.org/xapi/adb/verbs/annoatated" target="_blank">https://w3id.org/xapi/adb/verbs/annoatated</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200923709-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200923709-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200923709-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/coached" id="coached">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="coached">coached</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="To teach or lead another person through an activity. Coached is a direct response to the Requested verb. The receiver of a Requested statement will periodically respond by sending a Coached statement that clears out the coach's queue.">To teach or lead another person through an activity. Coached is a direct response to the Requested verb. The receiver of a Requested statement will periodically respond by sending a Coached statement that clears out the coach's queue.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/coached">https://w3id.org/xapi/adb/verbs/coached</a></td>
+        <td rel="skos:related" resource="https://w3id.org/xapi/adb/verbs/requested"><strong>related:</strong> <a href="https://w3id.org/xapi/adb/verbs/requested" target="_blank">https://w3id.org/xapi/adb/verbs/requested</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200835381-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200835381-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200835381-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/commented" id="commented">
+      <tr class="warning">
+        <td>commented</td>
+        <td></td>
+        <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to add comments or reviews on internal or external resources.These are personal notes, comments shared with colleagues, comments on the content, and requests for edit. This might include comments of the Coach , Supervisor or others to all of the staff members that may be acted upon by a member.">Used to add comments or reviews on internal or external resources.These are personal notes, comments shared with colleagues, comments on the content, and requests for edit. This might include comments of the Coach , Supervisor or others to all of the staff members that may be acted upon by a member.</td>
+        <td><a href="http://adlnet.gov/expapi/verbs/commented">http://adlnet.gov/expapi/verbs/commented</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb/verbs"><a href="https://w3id.org/xapi/adl/verbs" target="_blank">https://w3id.org/xapi/adl/verbs</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/completed" id="completed">
+      <tr class="warning">
+        <td>completed</td>
+        <td></td>
+        <td property="skos:scopeNote" lang="en" xml:lang="en" content="Completion of a page, chapter, section, or an entire book experience.">Completion of a page, chapter, section, or an entire book experience. </td>
+        <td><a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/described" id="described">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="described">described</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Detailed answer as a result of an interaction in an ebook activity or assessment.">Detailed answer as a result of an interaction in an ebook activity or assessment.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/described">https://w3id.org/xapi/adb/verbs/described</a></td>
+        <td></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200989103-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200989103-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200989103-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/highlighted" id="highlighted">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="highlighted">highlighted</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Highlight important areas in an eBook for the purpose of later review or note taking.">Highlight important areas in an eBook for the purpose of later review or note taking.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/highlighted">https://w3id.org/xapi/adb/verbs/highlighted</a></td>
+        <td rel="skos:broader" resource="https://w3id.org/xapi/adb/verbs/annotated"><strong>broader: </strong><a href="https://w3id.org/xapi/adb/verbs/annotated" target="_blank">https://w3id.org/xapi/adb/verbs/annotated</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200515150-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200515150-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200515150-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/initiated" id="initiated">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="initiated">initiated</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Used to initiate text code, user preferences or accessibility preferences to a teacher.">Used to initiate text code, user preferences or accessibility preferences to a teacher.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/initiated">https://w3id.org/xapi/adb/verbs/initiated</a></td>
+        <td></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201631641-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201631641-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201631641-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/initialized" id="initialized">
+      <tr class="warning">
+        <td>initialized</td>
+        <td></td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/initialized">http://adlnet.gov/expapi/verbs/initialized</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/interacted" id="interacted">
+      <tr class="warning">
+        <td>interacted</td>
+        <td></td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/interacted">http://adlnet.gov/expapi/verbs/interacted</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/noted" id="noted">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="noted">noted</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Add annotation or notes to selected text within an ebook or highlight.">Add annotation or notes to selected text within an ebook or highlight.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/noted">https://w3id.org/xapi/adb/verbs/noted</a></td>
+        <td rel="skos:broader" resource="https://w3id.org/xapi/adb/verbs/annotated"><strong>broader: </strong><a href="https://w3id.org/xapi/adb/verbs/annotated" target="_blank">https://w3id.org/xapi/adb/verbs/annotated</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201022943-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201022943-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201022943-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- Verb based on activity streams that requires more meaning and uses skos:closeMatch -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/read" id="read">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="read">read</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor read the object. This is typically only applicable for objects representing printed or written content, such as a book, a message or a comment.">Indicates that the actor read the object. This is typically only applicable for objects representing printed or written content, such as a book, a message or a comment.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/read">https://w3id.org/xapi/adb/verbs/read</a></td>
+        <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/read"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/read" target="_blank">http://activitystrea.ms/schema/1.0/read</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200626756-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200626756-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200626756-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/referenced" id="referenced">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="referenced">referenced</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Use dictionary or other resource to look up a selected word. A learner might reference outside information in support of the topic and could reference additional reading for his/her colleagues or mentor.">Using dictionary or other resource to look up a selected word. A learner might reference outside information in support of the topic and could reference additional reading for his/her colleagues or mentor.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/referenced">https://w3id.org/xapi/adb/verbs/referenced</a></td>
+        <td></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201709116-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201709116-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201709116-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/registered" id="registered">
+      <tr class="warning">
+        <td>registered</td>
+        <td></td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/registered">http://adlnet.gov/expapi/verbs/registered</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- Verb based on activity streams that requires more meaning and uses skos:closeMatch -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/requested" id="requested">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="requested">requested</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor needed or demanded an object or another actor.">Indicates the actor needed or demanded an object or another actor.</td>
+        <td property="skos:scopeNote" lang="en" xml:lang="en" content="Requested indicates a comment that is shared with peers as a group or Coach as a trainer. The request for coaching or help prompts users to respond giving them coaching credit.">Requested indicates a comment that is shared with peers as a group or Coach as a trainer. The request for coaching or help prompts users to respond giving them coaching credit.</td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/requested">https://w3id.org/xapi/adb/verbs/requested</a></td>
+        <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/request"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/request" target="_blank">http://activitystrea.ms/schema/1.0/request</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200754770-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200754770-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200754770-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/resumed" id="resumed">
+      <tr class="warning">
+        <td>resumed</td>
+        <td></td>
+        <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to resume reading location from previous state.">Used to resume reading location from previous state.</td>
+        <td><a href="http://adlnet.gov/expapi/verbs/resumed">http://adlnet.gov/expapi/verbs/resumed</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/responded" id="responded">
+      <tr class="warning">
+        <td>responded</td>
+        <td></td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/responded">http://adlnet.gov/expapi/verbs/responded</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/scored" id="scored">
+      <tr class="warning">
+        <td>scored</td>
+        <td></td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/scored">http://adlnet.gov/expapi/verbs/scored</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- Verb based on activity streams that requires more meaning and uses skos:closeMatch -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/searched" id="searched">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="searched">searched</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="A digital content search within a document or application.">A digital content search within a document or application.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/searched">https://w3id.org/xapi/adb/verbs/searched</a></td>
+        <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/search"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/search" target="_blank">http://activitystrea.ms/schema/1.0/search</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200649877-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200649877-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200649877-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Verb -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/selected" id="selected">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="selected">selected</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the selected choices, section of text, favored options or settings of an actor in relation to an object or activity.">Indicates the selected choices, section of text, favored options or settings of an actor in relation to an object or activity.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/selected">https://w3id.org/xapi/adb/verbs/selected</a></td>
+        <td></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200676526-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200676526-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200676526-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/shared" id="shared">
+      <tr class="warning">
+        <td>shared</td>
+        <td></td>
+        <td property="skos:scopeNote" lang="en" xml:lang="en" content="Sharing content with another application or user or additional reference material. If sharing comments with peers or a mentor/trainer, then it may become a request for feedback or a request for coaching.">Sharing content with another application or user or additional reference material. If sharing comments with peers or a mentor/trainer, then it may become a request for feedback or a request for coaching.</td>
+        <td><a href="http://adlnet.gov/expapi/verbs/shared">http://adlnet.gov/expapi/verbs/shared</a></td>
+        <td></td>
+        <td></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- Verb based on activity streams that requires more meaning and uses skos:closeMatch -->
+    <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/adb/verbs/watched" id="watched">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="watched">watched</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor has watched the object. This verb is typically applicable only when the object represents dynamic, visible content such as a movie, a television show or a public performance.">Indicates that the actor has watched the object. This verb is typically applicable only when the object represents dynamic, visible content such as a movie, a television show or a public performance.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adb/verbs/watched">https://w3id.org/xapi/adb/verbs/watched</a></td>
+        <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/watch"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/watch" target="_blank">http://activitystrea.ms/schema/1.0/watch</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202155378-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202155378-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202155378-v</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/adb"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== --> <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+</body>
+</html>

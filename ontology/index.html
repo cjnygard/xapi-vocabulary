@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - Vocabulary Dataset Schema</title>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+
+<!-- Provide link to RDF/XML static file to improve discoverability -->
+<link rel="alternate" type="application/rdf+xml" href="ontology.rdf">
+<!-- Provide link to Turtle static file to improve discoverability -->
+<link rel="alternate" type="text/turtle" href="ontology.ttl">
+
+</head>
+<body>
+<div prefix="
+      cc: http://creativecommons.org/ns#
+      dcterms: http://purl.org/dc/terms/
+      foaf: http://xmlns.com/foaf/0.1/
+      owl: http://www.w3.org/2002/07/owl#
+      rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+      rdfs: http://www.w3.org/2000/01/rdf-schema#
+      skos: http://www.w3.org/2004/02/skos/core#
+      xapi: https://w3id.org/xapi/ontology#
+      xsd: http://www.w3.org/2001/XMLSchema#">
+      
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand">xAPI Vocabulary Dataset Schema</a></div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">xAPI <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://xapi.adlnet.gov">xAPI Home</a></li>
+            <li><a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md">xAPI Specification</a></li>
+            <li><a href="https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/">Vocabulary Companion Spec</a></li>
+            <li><a href="https://adl.gitbooks.io/experience-xapi-vocabulary-primer/content/">Vocabulary Primer</a></li>
+            <li><a href="../" target="_blank">Published Vocabularies</a></li>
+          </ul>
+         </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+ 
+<div class="container"> 
+  <h2>Table of Contents</h2>
+  <p>1. <a href="#introduction">Introduction</a></p>
+  <p>2. <a href="#overview">Schema Overview</a></p>
+  <p>3. <a href="#namespaces">Namespaces</a></p>
+  <p>4. <a href="#classes">Classes</a></p>
+  <p>5. <a href="#properties">Properties</a></p>
+  <p>6. <a href="#acknowledgements">Acknowledgements</a></p>
+  <p>7. <a href="#resources">Additional Resources</a></p>
+
+
+  <h2 id="introduction">Introduction</h2>
+    <p>XAPI vocabularies are created and shared by Communities of Practice (CoPs) to help facilitate the reuse of Verbs and Activity Types. This schema was designed to enhance the semantic interoperability of xAPI by encouraging the adoption of RDF principles and publishing practices. This document defines a schema and provides descriptions of each of the classes and properties that are recommended for use when classifying and publishing datasets as <a href="http://www.w3.org/RDF/" target="_blank">RDF</a>. By using RDF to describe xAPI vocabulary datasets, CoPs can increase discoverability and enable applications to easily consume metadata from multiple sources. Representing xAPI vocabulary datasets as RDF also further enables decentralized publishing of Verbs and Activity Types and can facilitate an open federated dataset search capability across applications, platforms, and CoPs.
+  </p>
+  
+  <h2 id="overview">Overview</h2>
+  <p>The schema and <a href="https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/">Vocabulary Companion Specification</a> were produced by the xAPI Vocabulary Working Group and are intended to compliment the core xAPI specification. The schema contains classes and properties expressed as an OWL ontology. The schema initially addresses Verbs and Activity Types, but may be further expanded in the future to represent a more complete ontological data model of xAPI. A Internationalized Resource Identifier (IRI) is provided for each of these classes and properties so that they may be applied and validated by developers and consumers of xAPI vocabulary datasets. This ontology incorporates classes and properties from pre-existing ontologies, where stable and apropriate ones could be found.</p>
+
+  <div typeof="owl:Ontology" about="https://w3id.org/xapi/ontology#">
+    <div property="rdfs:label" content="xAPI Vocabulary Dataset Schema"><strong>Title:</strong> xAPI Vocabulary Dataset Schema</div>
+    <div property="rdfs:comment"  content="This ontology contains a list of the classes and properties that can be used when for creating and publishing a vocabulary dataset for xAPI."><strong>Description:</strong> This ontology contains a list of the classes and properties that can be used when for creating and publishing a vocabulary dataset for xAPI.</div>
+    <div>Namespace Prefix: xapi</div>
+    <div>Namespace URI: https://w3id.org/xapi/ontology#</div>
+    <div property="dcterms:created" datatype="xsd:date" content="2015-04-27">Date Created: 2015-04-27</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-06-08">Last Modified: 2016-06-08</div>
+  </div>
+  
+  <br />
+    <h2 id="classes">Classes</h2>
+    <table class="table">
+      <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>IRI</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Sub Class Of</strong></td>
+        <td></td>
+        
+      </tr>
+      <tr typeof="owl:Class" about="https://w3id.org/xapi/ontology#ActivityType" id="ActivityType">
+        <td property="rdfs:label" content="ActivityType">ActivityType</td>
+        <td property="rdfs:comment"  content="The Class for a Activity Type in an xAPI vocabulary or profile.">The Class for a Activity Type in an xAPI vocabulary or profile.</td>
+        <td><a href="https://w3id.org/xapi/ontology#ActivityType" target="_blank">https://w3id.org/xapi/ontology#ActivityType</a></td>
+        <td><a href="http://www.w3.org/2002/07/owl#Class" target="_blank">owl:Class</a></td>
+        <td rel="rdfs:subClassOf" resource="skos:Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank">skos:Concept</a></td>
+      </tr>
+      <tr typeof="owl:Class" about="https://w3id.org/xapi/ontology#Verb" id="Verb">
+        <td property="rdfs:label" content="Verb">Verb</td>
+        <td property="rdfs:comment"  content="The Class for a Verb in an xAPI vocabulary or profile.">The Class for a Verb in an xAPI vocabulary or profile.</td>
+        <td><a href="https://w3id.org/xapi/ontology#Verb" target="_blank">https://w3id.org/xapi/ontology#Verb</a></td>
+        <td><a href="http://www.w3.org/2002/07/owl#Class" target="_blank">owl:Class</a></td>
+        <td rel="rdfs:subClassOf" resource="skos:Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank">skos:Concept</a></td>
+      </tr>
+      <tr typeof="owl:Class" about="https://w3id.org/xapi/ontology#Extension" id="Extension">
+        <td property="rdfs:label" content="Extension">Extension</td>
+        <td property="rdfs:comment"  content="The Class for an extension in an xAPI vocabulary or profile.">The Class for an extension in an xAPI vocabulary or profile.</td>
+        <td><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">https://w3id.org/xapi/ontology#Extension</a></td>
+        <td><a href="http://www.w3.org/2002/07/owl#Class" target="_blank">owl:Class</a></td>
+        <td rel="rdfs:subClassOf" resource="skos:Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank">skos:Concept</a></td>
+      </tr>      
+    </table>
+ 
+   <div typeof="owl:AllDisjointClasses" about="https://w3id.org/xapi/ontology#AllDisjointClasses">
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/ontology#ActivityType"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/ontology#Verb"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/ontology#Extension"></div>
+  </div>    
+      
+    <h2 id="properties">Properties</h2>
+    <table class="table">
+      <tr>
+        <td ><strong>Name</strong></td>
+        <td><strong>Description</strong></td>
+        <td><strong>IRI</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Sub Property Of</strong></td>
+        <td><strong>Domain</strong></td>
+        <td><strong>Range</strong></td>
+      </tr>
+      <tr typeof="owl:ObjectProperty" about="https://w3id.org/xapi/ontology#closelyRelatedNaturalLanguageTerm" id="closelyRelatedNaturalLanguageTerm">
+        <td property="rdfs:label" content="closelyRelatedNaturalLanguageTerm">closelyRelatedNaturalLanguageTerm</td>
+        <td property="rdfs:comment"  content="A property used to connect the xAPI term to a specific sense, or meaning, in natural language that is very closely related. The sense will be identified with Wordnet, a carefully constructed ontology that aids in word sense disambiguation, which has been used with many different languages.">A property used to connect the xAPI term to a specific sense, or meaning, in natural language that is very closely related. The sense will be identified with Wordnet, a carefully constructed ontology that aids in word sense disambiguation, which has been used with many different languages.</td>
+        <td><a href="https://w3id.org/xapi/ontology#closelyRelatedNaturalLanguageTerm" target="_blank">https://w3id.org/xapi/ontology#closelyRelatedNaturalLanguageTerm</a></td>
+        <td><a href="http://www.w3.org/2002/07/owl#ObjectProperty" target="_blank">owl:ObjectProperty</a></td>
+        <td rel="rdfs:subPropertyOf" resource="skos:relatedMatch"><a href="http://www.w3.org/2004/02/skos/core#relatedMatch" target="_blank">skos:relatedMatch</a></td>
+        <td rel="rdfs:domain" resource="skos:Concept"><a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank">skos:Concept</a></td>
+        <td rel="rdfs:range" resource="http://wordnet-rdf.princeton.edu/ontology#Synset"><a href="http://wordnet-rdf.princeton.edu/ontology#Synset" target="_blank">wordnet:Synset</a></td>
+      </tr>
+      <tr typeof="owl:ObjectProperty" about="https://w3id.org/xapi/ontology#referencedBy" id="referencedBy">
+        <td property="rdfs:label" content="referencedBy">referencedBy</td>
+        <td property="rdfs:comment"  content="A property used to connects an xapi:Verb  not directly maintained by the vocabulary author to a vocabulary that is reusing and referencing the term.">A property used to connects an xapi:Verb  not directly maintained by the vocabulary author to a vocabulary that is reusing and referencing the term.</td>
+        <td><a href="https://w3id.org/xapi/ontology#referencedBy" target="_blank">https://w3id.org/xapi/ontology#referencedBy</a></td>
+        <td><a href="http://www.w3.org/2002/07/owl#ObjectProperty" target="_blank">owl:ObjectProperty</a></td>
+        <td rel="rdfs:subPropertyOf" resource="skos:inScheme"><a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank">skos:inScheme</a></td>
+        <td>None: Inherited from skos:inScheme</td>
+        <td rel="rdfs:range" resource="skos:ConceptScheme"><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme" target="_blank">skos:ConceptScheme</a></td>
+      </tr>
+      <tr typeof="owl:AnnotationProperty" about="https://w3id.org/xapi/ontology#thirdPartyLabel" id="thirdPartyLabel">
+        <td property="rdfs:label" content="thirdPartyLabel">thirdPartyLabel</td>
+        <td property="rdfs:comment"  content="A property used by people who did not create the original verb, but would like to offer an alternative label for it.">A property used by people who did not create the original verb, but would like to offer an alternative label for it.</td>
+        <td><a href="https://w3id.org/xapi/ontology#thirdPartyLabel" target="_blank">https://w3id.org/xapi/ontology#thirdPartyLabel</a></td>
+        <td><a href="http://www.w3.org/2002/07/owl#AnnotationProperty" target="_blank">owl:AnnotationProperty</a></td>
+        <td rel="rdfs:subPropertyOf" resource="skos:altLabel"><a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank">skos:altLabel</a></td>
+        <td>Inherited from skos:altLabel</td>
+        <td>Inherited from skos:altLabel</td>
+      </tr>
+    </table>
+
+  <h2 id="serializations">Serializations</h2>
+  <p>RDF data is interchangeable and can be serialized into several different formats such as RDF/XML, Turtle, RDFa, and JSON-LD. This HTML document serves as formal documentation for the xAPI Vocabulary Specification, but it is also is currently using RDFa to declare the classes and properties used as part of the official schema. The schema is also seperately maintained and versioned on github at the Turtle link below, and is available as RDF/XML and Turtle through <a href="https://en.wikipedia.org/wiki/Content_negotiation" target="_blank">content negotation</a>. Below are links to the available RDF serializations of the xAPI Vocabulary Schema: </p>
+  <ul>
+    <li><a href="http://xapi.vocab.pub/ontology.rdf" target="_blank">RDF/XML</a></li>
+    <li><a href="https://github.com/adlnet/xapi-vocabulary/blob/master/ontology.ttl" target="_blank">Turtle</a></li>
+  </ul>
+
+  <h2 id="acknowledgements">Acknolwedgements</h2>
+    <p>This ontology was facilitated by the <a href="http://adlnet.gov" target="_blank">Advanced Distributed Learning (ADL) Initiative</a> and developed by the <a href="https://www.w3.org/community/xapivocabulary/" target="_blank">xAPI Vocabulary Working Group</a>. ADL would like to recognize the following experts for their participation in developing use cases and contributions to the group: Pankaj Agrawal, Kirby Bell, Jessie Chuang, Adam Cooper, Ingo Dahn, Tom De Nies, Russell Duhon, Diane Hillmann, Jonathan Kevan, Jason Lewis, Elf Pavlik, Jon Phipps, Mark Spivey, and Bruno Winck.</p>
+  <h2 id="resources">Additional Resources</h2>
+    <ul>
+    <li><a href="https://adl.gitbooks.io/companion-specification-for-xapi-vocabularies/content/" target="_blank">Companion Specification for Vocabularies</a> </li>    
+    <li><a href="https://adl.gitbooks.io/experience-xapi-vocabulary-primer/content/" target="_blank">Vocabulary Primer</a></li>
+  </ul>
+
+  
+</div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== --> <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+</body>
+</html>

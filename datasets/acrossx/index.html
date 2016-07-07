@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - AcrossX Vocabulary</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+  </head>
+  <body>
+
+<div class="navbar navbar-default navbar-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://w3id.org/xapi/acrossx">AcrossX Vocabulary</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Translations <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://xapi.vocab.pub/datasets/acrossx/zh-tw">Traditional Chinese</a></li>
+            <li><a href="http://xapi.vocab.pub/datasets/acrossx/zh-cn">Simplified Chinese</a></li>
+          </ul>
+        </li>      
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#answered">answered</a></li>
+            <li><a href="#asked">asked</a></li>
+            <li><a href="#attempted">attempted</a></li>
+            <li><a href="#bookmarked">bookmarked</a></li>
+            <li><a href="#commented">commented</a></li>
+            <li><a href="#completed">completed</a></li>
+            <li><a href="#designed">designed</a></li>
+            <li><a href="#disliked">disliked</a></li>
+            <li><a href="#edited">edited</a></li>
+            <li><a href="#evaluated">evaluated</a></li>
+            <li><a href="#highlighted">highlighted</a></li>
+            <li><a href="#interacted">interacted</a></li>
+            <li><a href="#liked">liked</a></li>
+            <li><a href="#logged-in">logged-in</a></li>
+            <li><a href="#noted">noted</a></li>
+            <li><a href="#posted">posted</a></li>
+            <li><a href="#read">read</a></li>
+            <li><a href="#referenced">referenced</a></li>
+            <li><a href="#reported">reported</a></li>            
+            <li><a href="#requested">requested</a></li>
+            <li><a href="#revealed">revealed</a></li>            
+            <li><a href="#searched">searched</a></li>
+            <li><a href="#shared">shared</a></li>
+            <li><a href="#skipped">skipped</a></li>
+            <li><a href="#was-assigned">was-assigned</a></li>
+            <li><a href="#watched">watched</a></li>
+          </ul>
+        </li>
+      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity Types<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#assessment">assessment</a></li>
+            <li><a href="#collaboration">collaboration</a></li>            
+            <li><a href="#e-book">e-book</a></li>
+            <li><a href="#face-to-face-discussion">face-to-face-discussion</a></li>
+            <li><a href="#interaction">interaction</a></li>
+            <li><a href="#instant-response-sytem">instant-response-system</a></li>
+            <li><a href="#learning-plan">learning-plan</a></li>
+			<li><a href="#online-discussion">online-discussion</a></li>
+            <li><a href="#printed-book">printed-book</a></li>
+            <li><a href="#message">message</a></li>
+            <li><a href="#note">note</a></li>
+            <li><a href="#online-discussion">online-discussion</a></li>   
+            <li><a href="#page">page</a></li>
+            <li><a href="#printed-book">printed-book</a></li>   
+            <li><a href="#printed-assessment">printed-assessment</a></li>            
+            <li><a href="#printed-worksheet">printed-worksheet</a></li>            
+            <li><a href="#question">question</a></li>
+            <li><a href="#video">video</a></li>
+            <li><a href="#webpage">webpage</a></li>  
+          </ul>
+        </li>          
+      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Extensions<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">alignment</a></li>
+            <li><a href="#">anchor-text</a></li>
+            <li><a href="#">blooms-level</a></li>
+            <li><a href="#">browser-info</a></li>
+            <li><a href="#">chapter</a></li>
+            <li><a href="#">column</a></li>
+            <li><a href="#">duration</a></li>
+            <li><a href="#">ending-point</a></li>
+            <li><a href="#">feedback</a></li>
+            <li><a href="#">highlighted-text</a></li>
+            <li><a href="#">page-index</a></li>
+            <li><a href="#">pass-score</a></li>
+            <li><a href="#">row</a></li>
+            <li><a href="#">rubics</a></li>
+            <li><a href="#">section</a></li>
+            <li><a href="#">starting-point</a></li>
+            <li><a href="#">supplemental-info</a></li>
+            <li><a href="#">team-work</a></li>
+            <li><a href="#">time</a></li>
+            <li><a href="#">time-limit</a></li>
+            <li><a href="#">total-items</a></li>
+            <li><a href="#">total-pages</a></li>
+            <li><a href="#">total-score</a></li>
+          </ul>
+        </li>           
+      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profiles<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">assessment</a></li>
+            <li><a href="#">discussion</a></li>
+            <li><a href="#">ebook</a></li>
+            <li><a href="#">IRS</a></li>
+            <li><a href="#">plan</a></li>
+            <li><a href="#">practice</a></li>
+            <li><a href="#">spreadsheet</a></li>
+            <li><a href="#">video</a></li>
+          </ul>
+        </li>           
+        
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#"> 
+
+<!-- Vocabulary / Concept Scheme --> 
+  <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/acrossx">
+    <div property="skos:prefLabel" lang="en" xml:lang="en" content="AcrossX Vocabulary">
+    <h2 class="page-header">AcrossX Vocabulary</h2></div>
+    <div property="skos:editorialNote" lang="en" xml:lang="en" content="Innovative and diversified technologies are increasingly available for teaching and learning. But the biggest pain for teachers using several pieces of technology and resources is putting together the workflow and data locked within different applications. The AcrossX solution solves this problem. The teacher can manage the learning plan as one activity, but leverage affordances and advantages from different tools and resources. The xAPI data from different sources are integrated and visualized on her dashboard. The data are also leveraged to add a social layer and a gamification layer to the learning experience. A feedback widget gives real-time feedback to learners to aid, nudge and encourage them. This project is being implemented in Taipei city, Taiwan. All teachers and students, about 350,000 in number, in Taipei city will be using this solution (later other areas might join); the public department is working towards building an ecosystem (from collaboration of public departments, schools, vendors, scholars, and developers) based on xAPI standard and open learning data as Open Data.">Innovative and diversified technologies are increasingly available for teaching and learning. But the biggest pain for teachers using several pieces of technology and resources is putting together the workflow and data locked within different applications. The AcrossX solution solves this problem. The teacher can manage the learning plan as one activity, but leverage affordances and advantages from different tools and resources. The xAPI data from different sources are integrated and visualized on her dashboard. The data are also leveraged to add a social layer and a gamification layer to the learning experience. A feedback widget gives real-time feedback to learners to aid, nudge and encourage them. This project is being implemented in Taipei city, Taiwan. All teachers and students, about 350,000 in number, in Taipei city will be using this solution (later other areas might join); the public department is working towards building an ecosystem (from collaboration of public departments, schools, vendors, scholars, and developers) based on xAPI standard and open learning data as Open Data.<strong>Note: </strong>This list of verbs is part of the AcrossX vocabulary in English. Verbs that are not managed by the AcrossX project and referenced from other controlled vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>    
+  <div property="dcterms:created" datatype="xsd:date" content="2015-12-13">Date Created: 2015-12-13</div>
+  <div property="dcterms:modified" datatype="xsd:date" content="2016-01-16">Last Modified: 2016-01-16</div>
+</div>
+  
+<!-- Begin Verbs --> 
+<h2 class="page-header">Verbs</h2>  
+  <div class="panel panel-default table-responsive" id="verbs"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="info">
+          <th>Enlish Label</th>
+          <th>Description</th>          
+          <th>Scope Note</th>
+          <th>ID (IRI)</th>
+          <th>Related Match</th>
+          <th>Closely Related Term</th>
+          <th>Vocabulary</th>
+        </tr>
+      </thead>
+            
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/answered" id="answered">
+        <tr class="warning">
+          <td>answered</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to show the actor's answer in a quiz or practice test.">Used to show the actor's answer in a quiz or practice test.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/asked" id="asked">
+        <tr class="warning">
+          <td>asked</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to ask a question in a forum or other web application.">Used to ask a question in a forum or other web application.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/asked">http://adlnet.gov/expapi/verbs/asked</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+          
+            
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/attempted" id="attempted">
+        <tr class="warning">
+          <td>attempted</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used for an attempt on an assessment in AcrossX.">Used for an attempt on an assessment in AcrossX.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/attempted">http://adlnet.gov/expapi/verbs/attempted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+   
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/bookmarked" id="bookmarked">
+        <tr class="warning">
+          <td>bookmarked</td>
+          <td></td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/bookmarked">https://w3id.org/xapi/adb/verbs/bookmarked</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>      
+   
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/commented" id="commented">
+        <tr class="warning">
+          <td>commented</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to add a comment in a forum or other web application.">Used to add a comment in a forum or other web application.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/commented">http://adlnet.gov/expapi/verbs/commented</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+          
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/completed" id="completed">
+        <tr class="warning">
+          <td>completed</td>
+          <td></td>
+          <td> </td>
+          <td><a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/designed" id="designed">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="designed">designed</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor carefully planned or created the object for a specific purpose.">Indicates the actor carefully planned or created the object for a specific purpose.</td>
+          <td> </td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/designed">https://w3id.org/xapi/acrossx/verbs/designed</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201757273-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201757273-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201757273-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/disliked" id="disliked">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="disliked">disliked</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor does not approve of the object or activity.">Indicates that the actor does not approve of the object or activity.</td>
+          <td> </td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/disliked">https://w3id.org/xapi/acrossx/verbs/disliked</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201780648-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201780648-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201757273-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/edited" id="edited">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="edited">edited</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor added or modified the content in a document or object.">Indicates the actor added or modified the content in a document or object.</td>
+          <td> </td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/edited">https://w3id.org/xapi/acrossx/verbs/edited</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200629787-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200629787-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200629787-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody id="evaluated" typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/evaluated">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="evaluated">evaluated</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor formed an opinion or prepared to assess another actor or object.">Indicates the actor formed an opinion or prepared to assess another actor or object.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to describe the act of a teacher or coach evaluating a learner's performance or product.">Used to describe the act of a teacher or coach evaluating a learner's performance or product.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/evaluated">https://w3id.org/xapi/acrossx/verbs/evaluated</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200672179-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200672179-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200672179-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+                                                  
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/highlighted" id="highlighted">
+        <tr class="warning">
+          <td>highlighted</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate a learner highlighting important areas in the content for the purpose of later review or note taking.">Used to indicate a learner highlighting important areas in the content for the purpose of later review or note taking.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/highlighted">https://w3id.org/xapi/adb/verbs/highlighted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>      
+                                                  
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/interacted" id="interacted">
+        <tr class="warning">
+          <td>interacted</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate a learner's action of interacting with elements in a quiz.">Used to indicate a learner's action of interacting with elements in a quiz.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/interacted">http://adlnet.gov/expapi/verbs/interacted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+
+       <!-- Verb based on activity streams that adds meaning and uses skos:closeMatch -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/liked" id="liked">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="liked">liked</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor approves of, recommends, or endorses the object or activity."></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate the actor approving a post or a response on a forum or social media application.">Used to indicate the actor approving a post or a response on a forum or social media application.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/liked">https://w3id.org/xapi/acrossx/verbs/liked</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/like"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/like" target="_blank">http://activitystrea.ms/schema/1.0/like</a></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>
+      
+                                                  
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adl/verbs/logged-in" id="logged-in">
+        <tr class="warning">
+          <td>logged-in</td>
+          <td></td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/verbs/adl/logged-in">https://w3id.org/xapi/adl/verbs/logged-in</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx/verbs"><a href="https://w3id.org/xapi/adl/verbs" target="_blank">https://w3id.org/xapi/adl/verbs</a></td>
+        </tr>
+      </tbody>
+      
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/noted" id="noted">
+        <tr class="warning">
+          <td>noted</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate the actor making a written note inside the ebook or about the video content."></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/noted">https://w3id.org/xapi/adb/verbs/noted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>      
+                         
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/posted" id="posted">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="posted">posted</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to describe the action of posting a discussion topic or message on a forum.">Used to describe the action of posting a discussion topic or message on a forum.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/posted">https://w3id.org/xapi/acrossx/verbs/posted</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200993715-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200993715-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200993715-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/read" id="read">
+        <tr class="warning">
+          <td>read</td>
+          <td></td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/read">https://w3id.org/xapi/adb/verbs/read</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx/verbs"><a href="https://w3id.org/xapi/adb/verbs" target="_blank">https://w3id.org/xapi/adb/verbs/read</a></td>
+        </tr>
+      </tbody>
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/referenced" id="referenced">
+        <tr class="warning">
+          <td>referenced</td>
+          <td></td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/referenced">https://w3id.org/xapi/adb/verbs/referenced</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>
+      
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/reported" id="reported">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="reported">reported</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor announced the result of an experience or activity.">Indicates the actor announced the result of an experience or activity.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to describe the action of self-reporting a learning experience by the actor.">Used to describe the action of self-reporting a learning experience by the actor.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/reported">https://w3id.org/xapi/acrossx/verbs/reported</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200968841-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200968841-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200968841-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+
+
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/requested" id="requested">
+        <tr class="warning">
+          <td>requested</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor requested assistance or help from peers or coaches/teachers.">Indicates the actor requested assistance or help from peers or coaches/teachers.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/requested">https://w3id.org/xapi/adb/verbs/requested</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx/verbs"><a href="https://w3id.org/xapi/adb/verbs" target="_blank">https://w3id.org/xapi/adb/verbs</a></td>
+        </tr>
+      </tbody>
+
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/revealed" id="revealed">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="revealed">revealed</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor exposed an object or content that's previously hidden.">Indicates the actor exposed an object or content that's previously hidden.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used in AcrossX when the actor opened an information or quiz box to read or answer it.">Used in AcrossX when the actor opened an information or quiz box to read or answer it.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/revealed">https://w3id.org/xapi/acrossx/verbs/revealed</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202147756-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202147756-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202147756-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/shared" id="shared">
+        <tr class="warning">
+          <td>shared</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates the actor's intent to openly provide access to an object of common interest to other actors or groups.">Indicates the actor's intent to openly provide access to an object of common interest to other actors or groups.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/shared">http://adlnet.gov/expapi/verbs/shared</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+
+       <!-- Verb based on activity streams that adds meaning and uses skos:closeMatch -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/searched" id="searched">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="searched">searched</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor looked for information in an object.">Indicates the actor looked for information in an object.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to convey a text string search of information within an application or interface in Across X.">Used to convey a text string search of information within an application or interface in Across X</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/searched">https://w3id.org/xapi/acrossx/verbs/searched</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/search"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/search" target="_blank">http://activitystrea.ms/schema/1.0/search</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201318273-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201318273-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201318273-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>
+      
+      
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://id.tincanapi.com/verb/skipped" id="skipped">
+        <tr class="warning">
+          <td>skipped</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate the actor skipped forward or backward while watching a video.">Used to indicate the actor skipped forward or backward while watching a video.</td>
+          <td><a href="http://id.tincanapi.com/verb/skipped">http://id.tincanapi.com/verb/skipped</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://registry.experiencapi.com" target="_blank">https://registry.experienceapi.com</a></td>
+        </tr>
+      </tbody>
+
+                         
+
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/acrossx/verbs/was-assigned" id="was-assigned">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="was-assigned">was-assigned</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor was given or required to access an object.">Indicates the actor was given or required to access an object.</td>          
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to describe the action of learning material being assigned to a learner.">Used to describe the action of learning material being assigned to a learner.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/verbs/was-assigned">https://w3id.org/xapi/acrossx/verbs/was-assigned</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202396945-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202396945-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202396945-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                                                     
+                               
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/watched" id="watched">
+        <tr class="warning">
+          <td>watched</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate that an actor absorbed a video visually.">Used to indicate that an actor absorbed a video visually.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/watched">https://w3id.org/xapi/adb/verbs/watched</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx" target="_blank">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>                 
+    </table>
+    </div>
+<!-- End Verbs -->   
+
+<!-- Begin Activity Types -->   
+<h2 class="page-header">Activity Types</h2>
+<div class="panel panel-default table-responsive">
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="danger">
+        <th>Acitivity Type</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Related Match</th>
+        <th>Closely Related Term</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    
+    <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/assessment" id="assessment">
+        <tr class="warning">
+          <td>assessment</td>
+          <td></td>
+          <td></td>
+          <td><a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>        
+
+ 
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/collaboration" id="collaboration">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="collaboration">collaboration</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="The activity involving multiple actors working together on an assignment, a project, a problem-solving challenge or a cause.">The activity involving multiple actors working together on an assignment, a project, a problem-solving challenge or a cause.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used in Across X to identify the activity of cooperative problem-solving.">Used in Across X to identify the activity of cooperative problem-solving.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/collaboration">https://w3id.org/xapi/acrossx/activities/collaboration</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/101207646-n"><a href="http://wordnet-rdf.princeton.edu/wn31/101207646-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/101207646-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+                   
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/e-book" id="e-book">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="book">book</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A book in electronic form as a document, file, or interactive application with optional formatting and control features.">A book in electronic form as a document, file, or interactive application with optional formatting and control features.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/e-book">https://w3id.org/xapi/acrossx/activities/e-book</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106522968-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106522968-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106522968-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+
+
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/face-to-face-discussion" id="face-to-face-discussion">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="face-to-face-discussion">face-to-face-discussion</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An exchange or communication on a topic by two or more actors in-person taking place in a physical location.">An exchange or communication on a topic by two or more actors in-person taking place in a physical location.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/face-to-face-discussion">https://w3id.org/xapi/acrossx/activities/face-to-face-discussion</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/107155367-n"><a href="http://wordnet-rdf.princeton.edu/wn31/107155367-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/107155367-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+
+
+    
+    <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/interaction" id="interaction">
+        <tr class="warning">
+          <td>interaction</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used in Across X for tracking quiz items.">Used in Across X for tracking quiz items.</td>
+          <td><a href="http://adlnet.gov/expapi/activities/interaction">http://adlnet.gov/expapi/activities/interaction</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>        
+ 
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/instant-response-system" id="instant-response-system">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="instant-response-system">instant-response-system</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An activity that allows instructors to create slides with embedded quizzes/polling questions to collect responses and get reporting instantly during class.">An activity that allows instructors to create slides with embedded quizzes/polling questions to collect responses and get reporting instantly during class.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/instant-response-system">https://w3id.org/xapi/acrossx/activities/instant-response-system</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+              
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/learning-plan" id="learning-plan">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="learning-plan">learning-plan</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to plan and organize learning activities from different activity providers. It could be built by instructors, learning designers or learners.">Used to plan and organize learning activities from different activity providers. It could be built by instructors, learning designers or learners.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/lesson-plan">https://w3id.org/xapi/acrossx/activities/learning-plan</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/105736623-n"><a href="http://wordnet-rdf.princeton.edu/wn31/105736623-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/105736623-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+ 
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/message" id="message">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="message">message</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Information that is communicated by or to or between individual actors or groups of actors.">Information that is communicated by or to or between individual actors or groups of actors.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="In Across X this is a personal message between actors, usually transmitted privately.">In Across X this is a personal message between actors, usually transmitted privately.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/message">https://w3id.org/xapi/acrossx/activities/message</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/100033319-n"><a href="http://wordnet-rdf.princeton.edu/wn31/100033319-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/100033319-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/note" id="note">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="note">note</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Refers to an object that was annotated as part of the activity.">Refers to an object that was annotated as part of the activity.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/note">https://w3id.org/xapi/acrossx/activities/note</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106775984-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106775984-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106775984-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+      
+
+
+ 
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/online-discussion" id="online-discussion">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="online-discussion">online-discussion</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An exchange or communication on a topic by two or more actors in-person taking place online or virtually.">An exchange or communication on a topic by two or more actors in-person taking place online or virtually.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/online-discussion">https://w3id.org/xapi/acrossx/activities/online-discussion</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/107155367-n"><a href="http://wordnet-rdf.princeton.edu/wn31/107155367-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/107155367-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>       
+       
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/page" id="page">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="page">page</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="The single representation of a specific page number and the content on that page in any digitally or physically written material.">The single representation of a specific page number and the content on that page in any digitally or physically written material.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="In Across X this refers to a page in an e-book.">In Across X this refers to a page in an e-book.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/page" target="_blank">https://w3id.org/xapi/acrossx/activities/page</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106269333-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106269333-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106269333-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/printed-book" id="printed-book">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="printed-book">printed-book</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A written work or composition that has been physically printed on paper pages bound together.">A written work or composition that has been physically printed on paper pages bound together.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/printed-book" target="_blank">https://w3id.org/xapi/acrossx/activities/printed-book</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106422547-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106422547-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106422547-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/printed-worksheet" id="printed-worksheet">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="printed-worksheet">printed-worksheet</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A page or group of pages containing problems, exercises, or instructions for learning activities.">A page or group of pages containing problems, exercises, or instructions for learning activities.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/printed-worksheet" target="_blank">https://w3id.org/xapi/acrossx/activities/printed-worksheet</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106427434-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106427434-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106427434-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/printed-assessment" id="printed-assessment">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="printed-assessment">printed-assessment</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A written examination or test provided in paper form, and intended to be completed using a pencil or pen.">A written examination or test provided in paper form, and intended to be completed using a pencil or pen.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/printed-assessment" target="_blank">https://w3id.org/xapi/acrossx/activities/printed-assessment</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/107213988-n"><a href="http://wordnet-rdf.princeton.edu/wn31/107213988-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/107213988-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>      
+
+
+    
+    <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/question" id="question">
+        <tr class="warning">
+          <td>question</td>
+          <td></td>
+          <td></td>
+          <td><a href="http://adlnet.gov/expapi/activities/question">http://adlnet.gov/expapi/activities/question</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>       
+                  
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/video" id="video">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="video">video</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A recording of audible and visual content intended to be shown on a video display.">A recording of audible and visual content intended to be shown on a video display.</td> 
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="In AcrossX, a video has audio and visual components of content, and could be delivered online or offline.">In AcrossX, a video has audio and visual components of content, and could be delivered online or offline.</td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/video">https://w3id.org/xapi/acrossx/activities/video</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/video"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/video" target="_blank">http://activitystrea.ms/schema/1.0/video</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/104541422-n"><a href="http://wordnet-rdf.princeton.edu/wn31/104541422-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/104541422-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody> 
+
+
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/acrossx/activities/webpage" id="webpage">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="webpage">webpage</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A web document (usually HTML-based) accessible by anyone connected to the internet and by using a web browser.">A web document (usually HTML-based) accessible by anyone connected to the internet and by using a web browser.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/acrossx/activities/video">https://w3id.org/xapi/acrossx/activities/video</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/page"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/page" target="_blank">http://activitystrea.ms/schema/1.0/page</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106370307-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106370307-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106370307-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/acrossx</a></td>
+        </tr>
+      </tbody>    
+  </table> 
+<!-- End Activity Types -->      
+  </div>
+</div>  
+
+
+<!-- Bootstrap core JavaScript ================================================== -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <owl:Ontology rdf:about="https://w3id.org/xapi/ontology#">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-27</dcterms:created>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-08</dcterms:modified>
+    <rdfs:comment xml:lang="en">This ontology contains a list of the classes and properties that can be used when for creating and publishing a vocabulary dataset for xAPI.</rdfs:comment>
+    <rdfs:label xml:lang="en">xAPI Vocabulary Dataset Schema</rdfs:label>
+  </owl:Ontology>
+  <owl:AnnotationProperty rdf:about="https://w3id.org/xapi/ontology#thirdPartyLabel">
+    <rdfs:comment xml:lang="en">A property used by people who did not create the original verb, but would like to offer an alternative label for it.</rdfs:comment>
+    <rdfs:label xml:lang="en">thirdPartyLabel</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+  </owl:AnnotationProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/xapi/ontology#closelyRelatedNaturalLanguageTerm">
+    <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:range rdf:resource="http://wordnet-rdf.princeton.edu/ontology#Synset"/>
+    <rdfs:label xml:lang="en">closelyRelatedNaturalLanguageTerm</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    <rdfs:comment xml:lang="en">A property used to connect the xAPI term to a specific sense, or meaning, in natural language that is very closely related. The sense will be identified with Wordnet, a carefully constructed ontology that aids in word sense disambiguation, which has been used with many different languages.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/xapi/ontology#referencedBy">
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    <rdfs:label xml:lang="en">referencedBy</rdfs:label>
+    <rdfs:comment xml:lang="en">A property used to connects an xapi:Verb  not directly maintained by the vocabulary author to a vocabulary that is reusing and referencing the term.</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:AllDisjointClasses rdf:about="https://w3id.org/xapi/ontology#AllDisjointClasses">
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="https://w3id.org/xapi/ontology#ActivityType"/>
+      <rdf:Description rdf:about="https://w3id.org/xapi/ontology#Verb"/>
+      <rdf:Description rdf:about="https://w3id.org/xapi/ontology#Extension"/>
+    </owl:members>
+  </owl:AllDisjointClasses>
+  <owl:Class rdf:about="https://w3id.org/xapi/ontology#Extension">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">Extension</rdfs:label>
+    <rdfs:comment xml:lang="en">The Class for an extension in an xAPI vocabulary or profile.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/xapi/ontology#ActivityType">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">ActivityType</rdfs:label>
+    <rdfs:comment xml:lang="en">The Class for a Activity Type in an xAPI vocabulary or profile.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/xapi/ontology#Verb">
+    <rdfs:comment xml:lang="en">The Class for a Verb in an xAPI vocabulary or profile.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:label xml:lang="en">Verb</rdfs:label>
+  </owl:Class>
+</rdf:RDF>
+

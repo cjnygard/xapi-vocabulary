@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - cmi5 Vocabulary</title>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+</head>
+<body>
+<div class="navbar navbar-default navbar-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://w3id.org/xapi/cmi5">cmi5 Vocabulary</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#abandoned">abandoned</a></li>
+            <li><a href="#completed">completed</a></li>
+            <li><a href="#failed">failed</a></li>
+            <li><a href="#initialized">initialized</a></li>
+            <li><a href="#launched">launched</a></li>
+            <li><a href="#passed">passed</a></li>
+            <li><a href="#satisfied">satisfied</a></li>
+            <li><a href="#terminated">terminated</a></li>
+            <li><a href="#voided">voided</a></li>
+            <li><a href="#waived">waived</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity Types<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#block">block</a></li>
+            <li><a href="#course">course</a></li>
+            <li><a href="#objective">objective</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Result Extensions<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#progress">progress</a></li>
+            <li><a href="#reason">reason</a></li>
+            <li><a href="#session">session</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Context Extensions<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#launchmode">launchmode</a></li>
+            <li><a href="#launchparameters">launchparameters</a></li>
+            <li><a href="#launchurl">launchurl</a></li>
+            <li><a href="#masteryscore">masteryscore</a></li>
+            <li><a href="#moveon">moveon</a></li>
+            <li><a href="#publisherid">publisherid</a></li>
+            <li><a href="#sessionid">sessionid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<br />
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#">
+
+<!-- Vocabulary / Concept Scheme -->
+<div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/cmi5">
+  <div property="skos:prefLabel" lang="en" xml:lang="en" content="cmi5 Vocabulary">
+    <h2 class="page-header">cmi5 Vocabulary</h2>
+  </div>
+  <div property="skos:editorialNote" lang="en" xml:lang="en" content="The cmi5 profile is a specification that expands xAPI into the LMS-centric, single-learner distributed learning model.  It can be used in other ways, but the primary use case is to behave in a traditional LMS model.">The cmi5 profile is a specification that expands xAPI into the LMS-centric, single-learner distributed learning model.  It can be used in other ways, but the primary use case is to behave in a traditional LMS model.<strong> Note: </strong>Vocabulary terms that are not managed by the cmi5 project and referenced from other controlled vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
+  <div property="foaf:name" lang="en" xml:lang="en" content="cmi5 Working Group"><strong>Published by:</strong> <a href="https://github.com/AICC/cmi-5_Spec_Current">cmi5 Working Group</a></div>
+  <div property="dcterms:created" datatype="xsd:date" content="2016-6-09">Date Created: 2016-6-09</div>
+  <div property="dcterms:modified" datatype="xsd:date" content="2016-6-10">Last Modified: 2016-6-10</div>
+</div>
+
+<!-- Begin Verbs -->
+<h2 class="page-header">Verbs</h2>
+<div class="panel panel-default table-responsive" id="verbs"> 
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="info">
+        <th>Label</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="https://w3id.org/xapi/adl/verbs/abandoned" id="abandoned">
+      <tr class="warning">
+        <td>abandoned</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adl/verbs/abandoned">https://w3id.org/xapi/adl/verbs/abandoned</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/completed" id="completed">
+      <tr class="warning">
+        <td>completed</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adl/verbs/completed">https://w3id.org/xapi/adl/verbs/completed</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/failed" id="failed">
+      <tr class="warning">
+        <td>failed</td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/failed">http://adlnet.gov/expapi/verbs/failed</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/initialized" id="initialized">
+      <tr class="warning">
+        <td>initialized</td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/initialized">http://adlnet.gov/expapi/verbs/initialized</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/launched" id="launched">
+      <tr class="warning">
+        <td>launched</td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/launched">http://adlnet.gov/expapi/verbs/launched</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/passed" id="passed">
+      <tr class="warning">
+        <td>passed</td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/passed">http://adlnet.gov/expapi/verbs/passed</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="https://w3id.org/xapi/adl/verbs/satisfied" id="satisfied">
+      <tr class="warning">
+        <td>satisfied</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adl/verbs/satisfied">https://w3id.org/xapi/adl/verbs/satisfied</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/terminated" id="terminated">
+      <tr class="warning">
+        <td>terminated</td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/terminated">http://adlnet.gov/expapi/verbs/terminated</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="http://adlnet.gov/expapi/verbs/voided" id="voided">
+      <tr class="warning">
+        <td>voided</td>
+        <td></td>
+        <td><a href="http://adlnet.gov/expapi/verbs/voided">http://adlnet.gov/expapi/verbs/voided</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+    <tbody resource="https://w3id.org/xapi/adl/verbs/waived" id="waived">
+      <tr class="warning">
+        <td>waived</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/adl/verbs/waived">https://w3id.org/xapi/adl/verbs/waived</a></td>
+        <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5">https://w3id.org/xapi/adl</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- End Verbs --> 
+
+<!-- Begin Activity Types -->
+<h2 class="page-header">Activity Types</h2>
+<div class="panel panel-default table-responsive"> 
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="danger">
+        <th>Label</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Closely Related Term</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    <!-- A new Activity Type -->
+    <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/cmi5/activities/block" id="block">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="block">block</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="A block represents a number of Assignable Units of which progress (completion/success) is rolled up to.  In cmi5 it is every level above the AU and below the Course.">A block represents a number of Assignable Units of which progress (completion/success) is rolled up to.  In cmi5 it is every level above the AU and below the Course.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/activitytype/block" target="_blank">https://w3id.org/xapi/cmi5/activitytype/block</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A new Activity Type -->
+    <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/cmi5/activities/course">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="course" id="course">course</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="A course represents an amount of content that is published and registered for with the purpose of gaining completion.  It is represented with a Course Structure Format in cmi5 as the highest level of content (above Block and AU).">A course represents an amount of content that is published and registered for with the purpose of gaining completion.  It is represented with a Course Structure Format in cmi5 as the highest level of content (above Block and AU).</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/activities/course">https://w3id.org/xapi/cmi5/activitytype/course</a></td>
+        <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/100886144-n"><a href="http://wordnet-rdf.princeton.edu/wn31/100886144-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/100886144-n</a></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+  </table>
+</div>
+<!-- End Activity Types --> 
+
+<!-- Begin contextActivities-->
+<h2 class="page-header">Context Activities</h2>
+<div class="panel panel-default table-responsive"> 
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="danger">
+        <th>Activity</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    <!-- Context Categories Activity -->
+    <tbody>
+      <tr>
+        <td>cmi5</td>
+        <td>Indicates a cmi5 defined Statement.  Intended to be referenced by a context category.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/context/categories/cmi5" target="_blank">https://w3id.org/xapi/cmi5/context/categories/cmi5</a></td>
+        <td><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- Context Categories Activity -->
+    <tbody>
+      <tr>
+        <td>moveon</td>
+        <td>Indicates a Statement with a "success" or "completion" result property. Intended to be referenced by a context category.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/context/categories/moveon" target="_blank">https://w3id.org/xapi/cmi5/context/categories/moveon</a></td>
+        <td><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- End contextActivities --> 
+
+<!-- Begin Result Extensions -->
+<h2 class="page-header">Result Extensions</h2>
+<div class="panel panel-default table-responsive"> 
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="success">
+        <th>Label</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Closely Related Term</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    <!-- A newly minted "Native" Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/result/extensions/progress" id="progress">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="progress">progress</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="An integer value bewteen 0 and 100 (inclusive) indicating the completion of the Activity/AU as a percentage.  Used as a result extension.">An integer value bewteen 0 and 100 (inclusive) indicating the completion of the Activity/AU as a percentage. Used as a result extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/result/extensions/progress" target="_blank">https://w3id.org/xapi/cmi5/result/extensions/progress</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/result/extensions/reason" id="reason">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="reason">reason</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Indicates why the Activity/AU was waived. Used as a result extension.">Indicates why the Activity/AU was waived. Used as a result extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/result/extensions/reason" target="_blank">https://w3id.org/xapi/cmi5/result/extensions/reason</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/result/extensions/session" id="session">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="session">session</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Used in contexttemplate.  Value is used to populate/update session_id.">Used in contexttemplate.  Value is used to populate/update session_id.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/extensions/session" target="_blank">https://w3id.org/xapi/cmi5/extensions/session</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- End Result Extensions --> 
+
+<!-- Begin Context Extensions -->
+<h2 class="page-header">Context Extensions</h2>
+<div class="panel panel-default table-responsive"> 
+  <!-- Table Header -->
+  <table class="table table-hover">
+    <thead>
+      <tr class="success">
+        <th>Extension</th>
+        <th>Description</th>
+        <th>Scope Note</th>
+        <th>ID (IRI)</th>
+        <th>Closely Related Term</th>
+        <th>Vocabulary</th>
+      </tr>
+    </thead>
+    
+    <!-- A newly minted "Native" Context Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/sessionid" id="sessionid">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="sessionid">sessionid</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="A unique String identifier for a single AU launch session based on actor and course registration. Generated by LRS and must be in all cmi5 defined and cmi5 allowed Statements.  Used as a context extension.">A unique String identifier for a single AU launch session based on actor and course registration. Generated by LRS and must be in all cmi5 defined and cmi5 allowed Statements.  Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/context/extensions/sessionid" target="_blank">https://w3id.org/xapi/cmi5/context/extensions/sessionid</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Context Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/masteryscore" id="masteryscore">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="masteryscore">masteryscore</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Decimal value between 0 and 1 indicating the score needed to provide a passed Statement.  Determined on an AU plus registration basis. Used as a context extension.">Decimal value between 0 and 1 indicating the score needed to provide a passed Statement.  Determined on an AU plus registration basis. Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/context/extensions/masteryscore" target="_blank">https://w3id.org/xapi/cmi5/context/extensions/masteryscore</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Context Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/launchmode" id="launchmode">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="launchmode">launchmode</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="String indicating which mode the AU was launched with by the LMS.  Used as a context extension.">String indicating which mode the AU was launched with by the LMS.  Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/extensions/launchmode" target="_blank">https://w3id.org/xapi/cmi5/extensions/launchmode</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Context Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/launchurl" id="launchurl">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="launchurl">launchurl</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Fully qualified URL equivalent to the one the LMS used to launch the AU and without name/value pairs.  Used as a context extension.">Fully qualified URL equivalent to the one the LMS used to launch the AU and without name/value pairs.  Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/context/extensions/launchurl" target="_blank">https://w3id.org/xapi/cmi5/context/extensions/launchurl</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Context Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/publisherid" id="publisherid">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="publisherid">publisherid</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="A unique IRI for a single AU that is used to identify it as belonging to the publisher. Provided in Course Structure and must be in all cmi5 defined and cmi5 allowed Statements. Used as a context extension.">A unique IRI for a single AU that is used to identify it as belonging to the publisher. Provided in Course Structure and must be in all cmi5 defined and cmi5 allowed Statements. Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/context/extensions/publisherid" target="_blank">https://w3id.org/xapi/cmi5/context/extensions/publisherid</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    
+    <!-- A newly minted "Native" Context Extension -->
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/moveon" id="moveon">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="moveon">moveon</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="Controlled vocabulary which tells the conditions under which the AU is considered satisfied for the purposes of determining overall completion or prerequisites for other activities.  Used as a context extension.  ">Controlled vocabulary which tells the conditions under which the AU is considered satisfied for the purposes of determining overall completion or prerequisites for other activities.  Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/extensions/moveon" target="_blank">https://w3id.org/xapi/cmi5/extensions/moveon</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+    <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/launchParameters" id="launchParameters">
+      <tr>
+        <td property="skos:prefLabel" lang="en" xml:lang="en" content="launchParameters">launchParameters</td>
+        <td property="skos:definition" lang="en" xml:lang="en" content="The launch parameters used to launch this AU.  Parameters are endpoint, fetch, actor, registration, and activityId.  Used as a context extension.">The launch parameters used to launch this AU.  Parameters are endpoint, fetch, actor, registration, and activityId.  Used as a context extension.</td>
+        <td></td>
+        <td><a href="https://w3id.org/xapi/cmi5/extensions/launchParameters" target="_blank">https://w3id.org/xapi/cmi5/extensions/launchParameters</a></td>
+        <td></td>
+        <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- End Context Extensions --> 
+</div>
+
+<!-- Bootstrap core JavaScript ================================================== --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

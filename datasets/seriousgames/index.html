@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - Serious Games Vocabulary</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://w3id.org/xapi/adb">Serious Games Vocabulary</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#accessed">accessed</a></li>
+            <li><a href="#completed">completed</a></li>
+            <li><a href="#decreased">decreased</a></li>
+            <li><a href="#increased">increased</a></li>
+            <li><a href="#interacted">interacted</a></li>
+            <li><a href="#pressed">pressed</a></li>
+            <li><a href="#progressed">progressed</a></li>
+            <li><a href="#released">released</a></li>
+            <li><a href="#selected">selected</a></li>
+            <li><a href="#set">set</a></li>
+            <li><a href="#skipped">skipped</a></li>
+            <li><a href="#started">started</a></li>
+            <li><a href="#unlocked">unlocked</a></li>
+            <li><a href="#used">used</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity Types<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#alternative">alternative</a></li>
+            <li><a href="#area">area</a></li>
+            <li><a href="#completeable">completeable</a></li>
+            <li><a href="#controller">controller</a></li>
+            <li><a href="#cutscene">cutscene</a></li>
+            <li><a href="#device">device</a></li>
+            <li><a href="#enemy">enemy</a></li>
+            <li><a href="#dialog-tree">dialog-tree</a></li>
+            <li><a href="#game-object">game-object</a></li>
+            <li><a href="#health">health</a></li>
+            <li><a href="#item">item</a></li>
+            <li><a href="#keyboard">keyboard</a></li>
+            <li><a href="#level">level</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#mouse">mouse</a></li>
+            <li><a href="#non-player-character">non-player-character</a></li>
+            <li><a href="#position">position</a></li>
+            <li><a href="#preference">preference</a></li>
+            <li><a href="#quest">quest</a></li>
+            <li><a href="#question">question</a></li>
+            <li><a href="#reachable">reachable</a></li>
+            <li><a href="#resource">resource</a></li>
+            <li><a href="#score">score</a></li>
+            <li><a href="#screen">screen</a></li>
+            <li><a href="#serious-game">serious-game</a></li>
+            <li><a href="#touchscreen">touchscreen</a></li>
+            <li><a href="#variable">variable</a></li>
+            <li><a href="#zone">zone</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Extensions<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#progress-ext">progress</a></li>
+            <li><a href="#value-ext">value</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<br />
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#">
+  <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/seriousgames">
+    <div property="skos:prefLabel" lang="en" xml:lang="en" content="Serious Games Vocabulary">
+      <h2 class="page-header">Serious Games Vocabulary</h2>
+    </div>
+    <div property="skos:editorialNote" lang="en" xml:lang="en" content="This vocabulary was designed for the Serious Games xAPI profile as part of the RAGE project."><strong>Note: </strong>This vocabulary was designed for the Serious Games xAPI profile as part of the RAGE project. Recipes associated with this profile have been <a href="https://docs.google.com/spreadsheets/d/1o1qukRVI_eWpgnarh3n506HbzT1QTxerJ9eIfOfybZk/edit#gid=0" target="_blank">published here</a>. Terms that were not created by the Serious Games community, but are referenced from other vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
+    <div property="dcterms:created" datatype="xsd:date" content="2016-05-09">Date Created: 2016-05-09</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-05-09">Last Modified: 2016-05-09</div>
+  </div>
+  <br />
+  <h2 class="page-header">Verbs</h2>
+  <div class="panel panel-default table-responsive"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="info">
+          <th>Label</th>
+          <th>Description</th>
+          <th>Scope Note</th>
+          <th>ID (IRI)</th>
+          <th>Relationships</th>
+          <th>Closely Related Term</th>
+          <th>Vocabulary</th>
+        </tr>
+      </thead>
+      
+      <!-- Verb based on old IRI with no metadata or meaning and links it using skos:closeMatch -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/accessed" id="accessed">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="accessed">accessed</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor has gained access to the object.">Indicates that the actor has gained access to the object.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Associated to the virtual places a player visits during a gameplay.">Associated to the virtual places a player visits during a gameplay.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/accessed">https://w3id.org/xapi/seriousgames/verbs/accessed</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/access"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/access" target="_blank">http://activitystrea.ms/schema/1.0/access</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202011431-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202011431-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202011431-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody typeof="xapi:Verb" resource="http://adlnet.gov/expapi/verbs/completed" id="completed">
+        <tr class="warning">
+          <td>completed</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Always associated to completable activities.">Always associated to completable activities.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/decreased" id="decreased">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="decreased">decreased</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor decreased the value for an object or variable.">Indicates the actor decreased the value for an object or variable.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/decreased">https://w3id.org/xapi/seriousgames/verbs/decreased</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200151509-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200151509-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200151509-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/increased" id="increased">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="increased">increased</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor increased the value for an object or variable.">Indicates the actor increased the value for an object or variable.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/increased">https://w3id.org/xapi/seriousgames/verbs/increased</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200156409-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200156409-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200156409-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody typeof="xapi:Verb" resource="http://adlnet.gov/expapi/verbs/interacted" id="interacted">
+        <tr class="warning">
+          <td>interacted</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when the player interacts with a game object in the game. Interact can be to speak, use, kill, etc.">Used when the player interacts with a game object in the game. Interact can be to speak, use, kill, etc.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/interacted">http://adlnet.gov/expapi/verbs/interacted</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- Verb based on old IRI with no metadata or meaning and links it using skos:closeMatch -->
+      <tbody typeof="xapi:Verb" resource="https://w3id.org/xapi/seriousgames/verbs/pressed" id="pressed">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="pressed">pressed</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor made physical contact with the object.">Indicates that the actor made physical contact with the object. </td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when the player presses some button in an input device. Press the left button in a mouse, press the X button in a XBox controller, etc. ">Used when the player presses some button in an input device. Press the left button in a mouse, press the X button in a XBox controller, etc.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/pressed">https://w3id.org/xapi/seriousgames/verbs/pressed</a></td>
+          <td rel="skos:closeMatch" resource="http://future-learning.info/xAPI/verb/pressed"><strong>closeMatch:</strong> <a href="http://future-learning.info/xAPI/verb/pressed" target="_blank">http://future-learning.info/xAPI/verb/pressed</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201449876-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201449876-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201449876-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody typeof="xapi:Verb" resource="http://adlnet.gov/expapi/verbs/progressed" id="progressed">
+        <tr class="warning">
+          <td>progressed</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Always associated to completable activities, and contains as result a progress value.">Always associated to completable activities, and contains as result a progress value.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/progressed">http://adlnet.gov/expapi/verbs/progressed</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- Verb based on old IRI with no metadata or meaning and links it using skos:closeMatch -->
+      <tbody typeof="xapi:Verb" resource="https://w3id.org/xapi/seriousgames/verbs/released" id="released">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="released">released</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor released the object from one's grip from or a specific state.">Indicates that the actor released the object from one's grip from or a specific state.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when the player releases a previously pressed button.">Used when the player releases a previously pressed button.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/pressed">https://w3id.org/xapi/seriousgames/verbs/pressed</a></td>
+          <td rel="skos:closeMatch" resource="http://future-learning.info/xAPI/verb/released"><strong>closeMatch:</strong> <a href="http://future-learning.info/xAPI/verb/released" target="_blank">http://future-learning.info/xAPI/verb/released</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201477180-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201477180-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201477180-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody typeof="xapi:Verb" resource="https://w3id.org/xapi/adb/verbs/selected" id="selected">
+        <tr class="warning">
+          <td>selected</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when the player selects an option in an alternative (e.g., a weapon, an arena, a circuit, a world, a quest, an answer in a dialog).">Used when the player selects an option in an alternative (e.g., a weapon, an arena, a circuit, a world, a quest, an answer in a dialog).</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/selected">https://w3id.org/xapi/adb/verbs/selected</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/set" id="set">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="set">set</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor set the value for a variable.">Indicates the actor set the value for a variable.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when some game variable changes its value.">Used when some game variable changes its value.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/increased">https://w3id.org/xapi/seriousgames/verbs/increased</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200299677-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200299677-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200299677-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://id.tincanapi.com/verb/skipped" id="skipped">
+        <tr class="warning">
+          <td>skipped</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to indicate the actor skipped forward or backward while watching a video.">Used to indicate the actor skipped forward or backward while watching a video.</td>
+          <td><a href="http://id.tincanapi.com/verb/skipped">http://id.tincanapi.com/verb/skipped</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/seriousgames"></td>
+        </tr>
+      </tbody>
+      
+      <!-- Verb based on old IRI with no metadata or meaning and links it using skos:closeMatch -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/started" id="started">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="started">started</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates that the actor has started the object (usually an activity).">Indicates that the actor has started the object (usually an activity).</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Always associated to completable activities (e.g., Serious game, level, quest).">Always associated to completable activities (e.g., Serious game, level, quest).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/started">https://w3id.org/xapi/seriousgames/verbs/started</a></td>
+          <td rel="skos:closeMatch" resource="http://activitystrea.ms/schema/1.0/start"><strong>closeMatch:</strong> <a href="http://activitystrea.ms/schema/1.0/start" target="_blank">http://activitystrea.ms/schema/1.0/start</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202606945-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202606945-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202606945-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/unlocked" id="unlocked">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="unlocked">unlocked</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor unlocked an option that was previously unavailable.">Indicates the actor unlocked an option that was previously unavailable.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when the player unlocks an option in an alternative.">Used when the player unlocks an option in an alternative.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/unlocked">https://w3id.org/xapi/seriousgames/verbs/unlocked</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200220389-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200220389-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200220389-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/seriousgames/verbs/used" id="used">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="used">used</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor used a virtual object.">Indicates the actor used a virtual object.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used when player uses items they find during the gameplay, to obtain different benefits.">Used when player uses items they find during the gameplay, to obtain different benefits.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/verbs/used">https://w3id.org/xapi/seriousgames/verbs/used</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/201161188-v"><a href="http://wordnet-rdf.princeton.edu/wn31/201161188-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/201161188-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End Verbs --> 
+  
+  <!-- Begin Activity Types -->
+  <h2 class="page-header">Activity Types</h2>
+  <div class="panel panel-default table-responsive"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="danger">
+          <th>Acitivity Type</th>
+          <th>Description</th>
+          <th>Scope Note</th>
+          <th>ID (IRI)</th>
+          <th>Related Match</th>
+          <th>Closely Related Term</th>
+          <th>Vocabulary</th>
+        </tr>
+      </thead>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/alternative" id="alternative">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="alternative">alternative</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A generic alternative with several options that can be selected or unlocked.">A generic alternative with several options that can be selected or unlocked.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This is the generic representation for the alternatives presented to the player during a gameplay. When possible, use a more concrete activity (e.g., question, menu).">This is the generic representation for the alternatives presented to the player during a gameplay. When possible, use a more concrete activity (e.g., question, menu).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/alternative">https://w3id.org/xapi/seriousgames/activity-types/alternative</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/105798949-n"><a href="http://wordnet-rdf.princeton.edu/wn31/105798949-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/105798949-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/area" id="area">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="area">area</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An identified area inside the game world.">An identified area inside the game world.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="In some games they can also be worlds. Represents an aggregation of zones.">In some games they can also be worlds. Represents an aggregation of zones.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/area">https://w3id.org/xapi/seriousgames/activity-types/area</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/102738693-n"><a href="http://wordnet-rdf.princeton.edu/wn31/102738693-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/102738693-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/completeable" id="completeable">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="completeable">completeable</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An object or activity that can be started and completed.">An object or activity that can be started and completed.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This is the generic representation for something that can be accomplished in a serious game, and it is not contemplated as any other activity.">This is the generic representation for something that can be accomplished in a serious game, and it is not contemplated as any other activity.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/completeable">https://w3id.org/xapi/seriousgames/activity-types/completeable</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/controller" id="controller">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="controller">controller</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A game controller whose input affects the action in an activity.">A game controller whose input affects the action in an activity.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Game controllers are common in non-pc games. This activity represents this device.">Game controllers are common in non-pc games. This activity represents this device.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/controller">https://w3id.org/xapi/seriousgames/activity-types/controller</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103101611-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103101611-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103101611-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/cutscene" id="cutscene">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="cutscene">cutscene</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A non-interactive scene that can be skipped.">A non-interactive scene that can be skipped.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="A cutscene is a non-interactive scene within the game (e.g., a video, a conversation, an automated sequence). The player can usually skip them pressing some button.">A cutscene is a non-interactive scene within the game (e.g., a video, a conversation, an automated sequence). The player can usually skip them pressing some button.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/cutscene">https://w3id.org/xapi/seriousgames/activity-types/cutscene</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/device" id="device">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="device">device</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A generic interactive device whose input affects the action in an activity.">A generic interactive device whose input affects the action in an activity.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Players interact with devices to control the outcomes in the serious game. When possible, use a more concrete activity (mouse, keyboard, controller).">Players interact with devices to control the outcomes in the serious game. When possible, use a more concrete activity (mouse, keyboard, controller).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/device">https://w3id.org/xapi/seriousgames/activity-types/device</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103187746-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103187746-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103187746-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/enemy" id="enemy">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="enemy">enemy</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A game object that poses a threat inside the game world.">A game object that poses a threat inside the game world.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Enemies are common elements in video games. Defeating them indicates a player accomplishment.">Enemies are common elements in video games. Defeating them indicates a player accomplishment.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/enemy">https://w3id.org/xapi/seriousgames/activity-types/enemy</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/dialog-tree" id="dialog-tree">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="dialog-tree">dialog-tree</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An alternative presented during a conversation with an non-playable character.">An alternative presented during a conversation with an non-playable character.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Dialog trees are a common mechanic in video games, where players can answer questions to NPC. This activity represents that type of alternative.">Dialog trees are a common mechanic in video games, where players can answer questions to NPC. This activity represents that type of alternative.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/dialog-tree">https://w3id.org/xapi/seriousgames/activity-types/dialog-tree</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/game-object" id="game-object">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="game-object">game-object</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A generic game object inside a game world that can react to interactions.">A generic game object inside a game world that can react to interactions.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This is the generic representation of game object the player can encounter inside the virtual world presented by the game. When possible, use a more concrete activity (e.g., NPC, enemy, item).">This is the generic representation of game object the player can encounter inside the virtual world presented by the game. When possible, use a more concrete activity (e.g., NPC, enemy, item).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/game-object">https://w3id.org/xapi/seriousgames/activity-types/game-object</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/health" id="health">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="health">health</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A variable indicating remaining health, stamina or attempts within a game.">A variable indicating remaining health, stamina or attempts within a game.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to represent the remaining health of the player (e.g., number of hearts, energy bar).">Used to represent the remaining health of the player (e.g., number of hearts, energy bar).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/health">https://w3id.org/xapi/seriousgames/activity-types/health</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/114471374-n"><a href="http://wordnet-rdf.princeton.edu/wn31/114471374-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/114471374-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/item" id="item">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="item">item</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A collectable game object whose use or interaction results in an effect in a game.">A collectable game object whose use or interaction results in an effect in a game.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Items are common elements in video games. Players can collect/use/combine them.">Items are common elements in video games. Players can collect/use/combine them.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/item">https://w3id.org/xapi/seriousgames/activity-types/item</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103593583-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103593583-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103593583-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/keyboard" id="keyboard">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="keyboard">keyboard</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A keyboard whose keystrokes affects the action in an activity.">A keyboard whose keystrokes affects the action in an activity.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Somes games can receive inputs from keyboards: physical keyboards in a PC, or virtual keyboards in a smartphone screen. This activity represent both.">Somes games can receive inputs from keyboards: physical keyboards in a PC, or virtual keyboards in a smartphone screen. This activity represent both.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/keyboard">https://w3id.org/xapi/seriousgames/activity-types/keyboard</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103619216-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103619216-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103619216-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- Activity based on old IRI with no metadata or meaning and links it using skos:closeMatch  -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/level" id="level">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="level">level</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A level of a game or of a gamified learning platform.">A level of a game or of a gamified learning platform.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="A level is logic partition of progression in any video game. Completing a level means advancing in the progression of the game.">A level is logic partition of progression in any video game. Completing a level means advancing in the progression of the game.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/level">https://w3id.org/xapi/seriousgames/activity-types/level</a></td>
+          <td rel="skos:closeMatch" resource="http://curatr3.com/define/type/level"><strong>closeMatch:</strong> <a href="http://curatr3.com/define/type/level" target="_blank">http://curatr3.com/define/type/level</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/113962925-n"><a href="http://wordnet-rdf.princeton.edu/wn31/113962925-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/113962925-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/menu" id="menu">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="menu">menu</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A menu with several buttons/options whose selection produces different effects.">A menu with several buttons/options whose selection produces different effects.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Represents a menu, integrated in the user interface (UI), with several a options.">Represents a menu, integrated in the user interface (UI), with several a options.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/menu">https://w3id.org/xapi/seriousgames/activity-types/menu</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106505383-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106505383-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106505383-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/mouse" id="mouse">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="mouse">mouse</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A mouse device whose clicks and movement affects the action in an activity.">A mouse device whose clicks and movement affects the action in an activity.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="PC games are usually controlled by mouse interaction. This activity represents this device.">PC games are usually controlled by mouse interaction. This activity represents this device.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/mouse">https://w3id.org/xapi/seriousgames/activity-types/mouse</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103799022-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103799022-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103799022-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/non-player-character" id="non-player-character">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="non-player-character">non-player-character</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A character that can offer a conversation or other type of interaction inside a game.">A character that can offer a conversation or other type of interaction inside a game.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Players usually have conversations with non-player characters.">Players usually have conversations with non-player characters.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/non-player-character">https://w3id.org/xapi/seriousgames/activity-types/non-player-character</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/position" id="position">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="position">position</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A variable indicating the position of the player.">A variable indicating the position of the player.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to represent the current position of the player inside the game world. This position should be expressed in a coordinate system known by the data analysts.">Used to represent the current position of the player inside the game world. This position should be expressed in a coordinate system known by the data analysts.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/position">https://w3id.org/xapi/seriousgames/activity-types/position</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/108639173-n"><a href="http://wordnet-rdf.princeton.edu/wn31/108639173-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/108639173-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/preference" id="preference">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="preference">preference</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A variable indicating a specific user choice or setting within an activity.">A variable indicating a specific user choice or setting within an activity.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to represent preferences of the player inside the game (e.g., screen resolution, full screen, music, language).">Used to represent preferences of the player inside the game (e.g., screen resolution, full screen, music, language).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/preference">https://w3id.org/xapi/seriousgames/activity-types/preference</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/105799460-n"><a href="http://wordnet-rdf.princeton.edu/wn31/105799460-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/105799460-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/quest" id="quest">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="quest">quest</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A accomplishable challenge or mission presented inside a game.">A accomplishable challenge or mission presented inside a game.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Completing quests marks the players' progress.">Completing quests marks the players' progress.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/quest">https://w3id.org/xapi/seriousgames/activity-types/quest</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202006623-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202006623-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202006623-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- Activity type borrowed/referenced from an existing vocabulary -->
+      <tbody resource="http://adlnet.gov/expapi/activities/question" id="question">
+        <tr class="warning">
+          <td>question</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Many serious games use the Q&amp;A mechanic to assess players. This activity covers that.">Many serious games use the Q&amp;A mechanic to assess players. This activity covers that.</td>
+          <td><a href="http://adlnet.gov/expapi/activities/question">http://adlnet.gov/expapi/activities/question</a></td>
+          <td></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/reachable" id="reachable">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="reachable">reachable</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An identified generic space accessible inside the game virtual world.">An identified generic space accessible inside the game virtual world.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This is the generic representation for something the player can access inside the serious game. Accessing a reachable not always means to advance in the game. For example, in a RPG, a player can access an area, a world, a store.">This is the generic representation for something the player can access inside the serious game. Accessing a reachable not always means to advance in the game. For example, in a RPG, a player can access an area, a world, a store.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/reachable">https://w3id.org/xapi/seriousgames/activity-types/reachable</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/resource" id="resource">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="resource">resource</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A variable indicating a countable and spendable resource within a game.">A variable indicating a countable and spendable resource within a game.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to represent the amount of resources the player possesses (e.g., coins, wood, diamonds, gas, etc.).">Used to represent the amount of resources the player possesses (e.g., coins, wood, diamonds, gas, etc.).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/resource">https://w3id.org/xapi/seriousgames/activity-types/resource</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/113352793-n"><a href="http://wordnet-rdf.princeton.edu/wn31/113352793-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/113352793-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/score" id="score">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="score">score</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A variable indicating a significant score within the game.">A variable indicating a significant score within the game.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to represent a meaningful score within the game. This could represent the total score of the game as well as the score obtained in different levels.">Used to represent a meaningful score within the game. This could represent the total score of the game as well as the score obtained in different levels.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/score">https://w3id.org/xapi/seriousgames/activity-types/score</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/113615828-n"><a href="http://wordnet-rdf.princeton.edu/wn31/113615828-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/113615828-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/screen" id="screen">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="screen">screen</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A game screen where a concrete game task is developed.">A game screen where a concrete game task is developed.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Games are usually composed by a set of screens the player navigates. A screen has a concrete function within the game. A screen contains a menu, or the gameplay. To define virtual zones inside the game world, it is recommended to use area or zone.">Games are usually composed by a set of screens the player navigates. A screen has a concrete function within the game. A screen contains a menu, or the gameplay. To define virtual zones inside the game world, it is recommended to use area or zone.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/screen">https://w3id.org/xapi/seriousgames/activity-types/screen</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103089644-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103089644-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103089644-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/serious-game" id="serious-game">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="serious-game">serious-game</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A game designed for a primary purpose other than pure entertainment. For instance, an educational game or a game-like simulation">A game designed for a primary purpose other than pure entertainment. For instance, an educational game or a game-like simulation</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="A serious game is the root container for the rest of game elements.">A serious game is the root container for the rest of game elements.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/serious-game">https://w3id.org/xapi/seriousgames/activity-types/serious-game</a></td>
+          <td></td>
+          <td></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/touchscreen" id="touchscreen">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="touchscreen">touchscreen</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A touchscreen the player can press.">A touchscreen the player can press.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content=""></td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/touchscreen">https://w3id.org/xapi/seriousgames/activity-types/touchscreen</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/104466078-n"><a href="http://wordnet-rdf.princeton.edu/wn31/104466078-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/104466078-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/variable" id="variable">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="variable">variable</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A generic variable indicating some meaningful value.">A generic variable indicating some meaningful value.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This is the generic representation for the meaningful variables of a game. When possible, use a more concrete activity (e.g., score, health)."></td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/variable">https://w3id.org/xapi/seriousgames/activity-types/variable</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/105866043-n"><a href="http://wordnet-rdf.princeton.edu/wn31/105866043-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/105866043-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Activity Type -->
+      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/seriousgames/activity-types/zone" id="zone">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="zone">zone</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="An identified zone inside an area of the game world.">An identified zone inside an area of the game world.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="A zone is inside an area, and defines a logic self-contained place.">A zone is inside an area, and defines a logic self-contained place.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/activity-types/zone">https://w3id.org/xapi/seriousgames/activity-types/zone</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/108526463-n"><a href="http://wordnet-rdf.princeton.edu/wn31/108526463-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/108526463-n</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End Activity Types --> 
+  
+  <!-- Begin Extensions -->
+  <h2 class="page-header">Extensions</h2>
+  <div class="panel panel-default table-responsive"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="danger">
+          <th>Extension</th>
+          <th>Description</th>
+          <th>ID (IRI)</th>
+          <th>Vocabulary</th>
+        </tr>
+      </thead>
+      
+      <!-- A new Extension -->
+      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/seriousgames/extensions/progress" id="progress-ext">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="progress">progress</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A decimal number (3 significant figures with 2 figures following the decimal point) between 0 and 1 (inclusive) to indicate the value of progress in a completable.">A decimal number (3 significant figures with 2 figures following the decimal point) between 0 and 1 (inclusive) to indicate the value of progress in a completable.</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/extensions/progress">https://w3id.org/xapi/seriousgames/extensions/progress</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+      
+      <!-- A new Extension -->
+      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/seriousgames/extensions/value" id="value-ext">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="value">value</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="A boolean, number, string or object to indicate the value of a variable. Used to indicate values in those verbs that requires a value in its result (e.g., variable's values in set, variable's increases/decreases in increase/decrease, the button pressed in a mouse click).">A boolean, number, string or object to indicate the value of a variable. Used to indicate values in those verbs that requires a value in its result (e.g., variable's values in set, variable's increases/decreases in increase/decrease, the button pressed in a mouse click).</td>
+          <td><a href="https://w3id.org/xapi/seriousgames/extensions/value">https://w3id.org/xapi/seriousgames/extensions/value</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/seriousgames"><a href="https://w3id.org/xapi/seriousgames">https://w3id.org/xapi/seriousgames</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== --> <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+</body>
+</html>
