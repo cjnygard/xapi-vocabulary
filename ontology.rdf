@@ -6,8 +6,8 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <owl:Ontology rdf:about="https://w3id.org/xapi/ontology#">
-    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-27</dcterms:created>
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-08</dcterms:modified>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-19</dcterms:created>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-07-28</dcterms:modified>
     <rdfs:comment xml:lang="en">This ontology contains a list of the classes and properties that can be used when for creating and publishing a vocabulary dataset for xAPI.</rdfs:comment>
     <rdfs:label xml:lang="en">xAPI Vocabulary Dataset Schema</rdfs:label>
   </owl:Ontology>

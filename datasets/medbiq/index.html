@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - MedBiquitous Vocabulary</title>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+</head>
+<body>
+<div class="navbar navbar-default navbar-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://w3id.org/xapi/cmi5">MedBiquitous Vocabulary</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#ignored">ignored</a></li>
+            <li><a href="#updated">updated</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<br />
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#"> 
+  
+  <!-- Vocabulary / Concept Scheme -->
+  <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/medbiq">
+    <div property="skos:prefLabel" lang="en" xml:lang="en" content="MedBiquitous Vocabulary">
+      <h2 class="page-header">MedBiquitous Vocabulary</h2>
+    </div>
+    <div property="skos:editorialNote" lang="en" xml:lang="en" content="The MedBiquitous Vocabulary describes health professions education verbs, activities and learner performance with the goal of understanding the needs of health profession educators.">The MedBiquitous Vocabulary describes health professions education verbs, activities and learner performance with the goal of understanding the needs of health profession educators.<strong> Note: </strong>Vocabulary terms that are not managed by the MedBiquitous community and referenced from other controlled vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
+    <div property="foaf:name" lang="en" xml:lang="en" content="MedBiquitous Learning Experience Working Group"><strong>Published by:</strong> <a href="http://groups.medbiq.org:8090/display/XIG/Learning+Experience+Group+Home">MedBiquitous Learning Experience Working Group</a></div>
+    <div property="dcterms:created" datatype="xsd:date" content="2016-5-09">Date Created: 2016-5-09</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-7-21">Last Modified: 2016-7-21</div>
+  </div>
+  
+  <!-- Begin Verbs -->
+  <h2 class="page-header">Verbs</h2>
+  <div class="panel panel-default table-responsive" id="verbs"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="info">
+          <th>Label</th>
+          <th>Description</th>
+          <th>Scope Note</th>
+          <th>ID (IRI)</th>
+          <th>Relationships</th>
+          <th>Closely Related Term</th>
+          <th>Vocabulary</th>
+        </tr>
+      </thead>
+       
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/medbiq/verbs/ignored" id="ignored">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="ignored">ignored</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor did not acknowledge an object or activity."></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has ignored a flag or other simulation data. This is a flag or action sent by either an instructor or the simulation software to indicate that an action was expected by this point in time and had not occurred. Sometimes this is a good thing, and while absent, is not necessarily a negative aspect - for example, if there is a distractor in place that the actor is supposed to ignore as irrelevant.">User has ignored a flag or other simulation data. This is a flag or action sent by either an instructor or the simulation software to indicate that an action was expected by this point in time and had not occurred. Sometimes this is a good thing, and while absent, is not necessarily a negative aspect - for example, if there is a distractor in place that the actor is supposed to ignore as irrelevant.</td>
+          <td><a href="https://w3id.org/xapi/medbiq/verbs/ignored">https://w3id.org/xapi/medbiq/verbs/ignored</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202123706-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202123706-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202123706-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/medbiq"><a href="https://w3id.org/xapi/medbiq">https://w3id.org/xapi/medbiq</a></td>
+        </tr>
+      </tbody>
+       
+      <!-- A newly minted "Native" Verb -->
+      <tbody typeof="xapi:Verb" about="https://w3id.org/xapi/medbiq/verbs/updated" id="updated">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="udpated">updated</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor prompted a change in a data value or information associated with the object.">Indicates the actor prompted a change in a data value or information associated with the object.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="The Virtual Patient player engine has changed a counter value. This may be triggered by arrival at a particular node, or by a rule within the case design created by the virtual patient author, or by a timer expiration point. Although the counter value may be regarded as a score, note that the ADL verb ‘scored’ is overall score for the case or exam (http://adlnet.gov/expapi/verbs/scored), which is not the same thing.">The Virtual Patient player engine has changed a counter value. This may be triggered by arrival at a particular node, or by a rule within the case design created by the virtual patient author, or by a timer expiration point. Although the counter value may be regarded as a score, note that the ADL verb ‘scored’ is overall score for the case or exam (http://adlnet.gov/expapi/verbs/scored), which is not the same thing.</td>
+          <td><a href="https://w3id.org/xapi/medbiq/verbs/updated">https://w3id.org/xapi/medbiq/verbs/updated</a></td>
+          <td></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/200170701-v"><a href="http://wordnet-rdf.princeton.edu/wn31/200170701-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/200170701-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/medbiq"><a href="https://w3id.org/xapi/medbiq">https://w3id.org/xapi/medbiq</a></td>
+        </tr>
+      </tbody>
+  
+           
+    </table>
+  </div>
+  <!-- End Verbs --> 
+  
+
+</div>
+
+<!-- Bootstrap core JavaScript ================================================== --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

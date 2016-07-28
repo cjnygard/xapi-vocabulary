@@ -1,0 +1,57 @@
+{
+	"@context": "http://xapi.vocab.pub/vocabulary/context.jsonld",
+	"@id": "https://w3id.org/xapi/medbiq",
+	"@type": "ConceptScheme",
+	"prefLabel": {
+		"en": "MedBiquitous Vocabulary"
+	},
+	"created": {
+		"en": "2016-05-09"
+	},
+	"modified": {
+		"en": "2016-07-21"
+	},
+	"editorialNote": {
+		"en": "The MedBiquitous vocabulary describes health professions education verbs, activities and learner performance with the goal of understanding the needs of health profession educators."
+	},
+	"wasGeneratedBy": {
+		"name": {
+			"en": "MedBiquitous Learning Experience Working Group"
+		}
+	},
+  "verbs": [
+     {
+      "@id": "https://w3id.org/xapi/medbiq/verbs/ignored",
+      "@type": "Verb",
+      "definition": {
+        "en": "Indicates the actor did not acknowledge an object or activity."
+      },
+      "prefLabel": {
+        "en": "ignored"
+      },
+      "scopeNote": {
+        "en": "User has ignored a flag or other simulation data. This is a flag or action sent by either an instructor or the simulation software to indicate that an action was expected by this point in time and had not occurred. Sometimes this is a good thing, and while absent, is not necessarily a negative aspect - for example, if there is a distractor in place that the actor is supposed to ignore as irrelevant."
+      },
+      "closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/202123706-v"
+      }
+    },
+    {
+      "@id": "https://w3id.org/xapi/medbiq/verbs/updated",
+      "@type": "Verb",
+      "definition": {
+        "en": "Indicates the actor prompted a change in a data value or information associated with the object."
+      },
+      "prefLabel": {
+        "en": "udpated"
+      },
+      "scopeNote": {
+        "en": "The Virtual Patient player engine has changed a counter value. This may be triggered by arrival at a particular node, or by a rule within the case design created by the virtual patient author, or by a timer expiration point. Although the counter value may be regarded as a score, note that the ADL verb ‘scored’ is overall score for the case or exam (http://adlnet.gov/expapi/verbs/scored), which is not the same thing."
+      },
+      "closelyRelatedNaturalLanguageTerm": {
+        "@id": "http://wordnet-rdf.princeton.edu/wn31/200170701-v"
+      }
+    }
+  ]
+}
+

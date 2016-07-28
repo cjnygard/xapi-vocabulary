@@ -12,118 +12,33 @@
   },
   "verbs": [
     {
-      "@id": "http://adlnet.gov/expapi/verbs/answered",
-      "@type": "Verb",
-      "definition": {
-        "en": "Indicates the actor replied to a question, where the object is generally an activity representing the question. The text of the answer will often be included in the response inside result."
-      },
-
-      "prefLabel": {
-        "en": "answered"
-      },
-      "closelyRelatedNaturalLanguageTerm":"http://wordnet-rdf.princeton.edu/wn31/200637941-v"
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/answered",
-      "skos:scopeNote": {
-        "@value": "Answer an interactive question within the eBook or an assessment. More desciptive level of interaction.",
-      },
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/commented",
-      "skos:scopeNote": {
-        "@value": "Used to add comments or reviews on internal or external resources.These are personal notes, comments shared with colleagues, comments on the content, and requests for edit. This might include comments of the Coach , Supervisor or others to all of the staff members that may be acted upon by a member.",
-      },
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb/verbs"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/completed",
-      "skos:scopeNote": {
-        "@value": "Completion of a page, chapter, section, or an entire book experience.",
-      },
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/initialized",
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/interacted",
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/registered",
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/responded",
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/resumed",
-      "skos:scopeNote": {
-        "@value": "Used to resume reading location from previous state.",
-      },
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/scored",
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
-      "@id": "http://adlnet.gov/expapi/verbs/shared",
-      "skos:scopeNote": {
-        "@value": "Sharing content with another application or user or additional reference material. If sharing comments with peers or a mentor/trainer, then it may become a request for feedback or a request for coaching.",
-      },
-      "xapi:referencedBy": {
-        "@id": "https://w3id.org/xapi/adb"
-      }
-    },
-    {
       "@id": "https://w3id.org/xapi/adb/verbs/annotated",
       "@type": "Verb",
       "definition": {
-        "en": "Provide notes or symbols for further explanation or thoughts while reading.",
+        "en": "Provide notes or symbols for further explanation or thoughts while reading."
       },
-
       "narrower": [
           "https://w3id.org/xapi/adb/verbs/highlighted"
       ],        
       	"prefLabel": {
-        "en": "annotated",
+        "en": "annotated"
       },
         "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200963361-v"
     },
     {
       "@id": "https://w3id.org/xapi/adb/verbs/arrived",
       "@type": "Verb",
-      "skos:broadMatch": {
+      "broadMatch": {
         "@id": "http://adlnet.gov/expapi/verbs/progressed"
       },
       "definition": {
-        "en": "To arrive a specific scene within a story or book experience.",
+        "en": "Indicates the actor arrived a specific location by movement or progress. "
       },
+      "scopeNote": {
+        "en": "To arrive a specific scene within a story or book experience."
+      },      
         "prefLabel": {
-        "en": "arrived",
+        "en": "arrived"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/202009962-v"
     },
@@ -131,12 +46,12 @@
       "@id": "https://w3id.org/xapi/adb/verbs/bookmarked",
       "@type": "Verb",
       "definition": {
-        "en": "Persisting the current location (page) where the reader stopped the ebook activity.",
+        "en": "Persisting the current location (page) where the reader stopped the ebook activity."
       },
         "prefLabel": {
-        "en": "bookmarked",
+        "en": "bookmarked"
       },
-      "skos:related": {
+      "related": {
         "@id": "https://w3id.org/xapi/adb/verbs/annotated"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200923709-v"
@@ -145,12 +60,12 @@
       "@id": "https://w3id.org/xapi/adb/verbs/coached",
       "@type": "Verb",
       "definition": {
-        "en": "To teach or lead another person through an activity. Coached is a direct response to the Requested verb. The receiver of a Requested statement will periodically respond by sending a Coached statement that clears out the coach's queue.",
+        "en": "To teach or lead another person through an activity. Coached is a direct response to the Requested verb. The receiver of a Requested statement will periodically respond by sending a Coached statement that clears out the coach's queue."
       },
         "prefLabel": {
-        "en": "coached",
+        "en": "coached"
       },
-      "skos:related": {
+      "related": {
         "@id": "https://w3id.org/xapi/adb/verbs/requested"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200835381-v"
@@ -159,10 +74,10 @@
       "@id": "https://w3id.org/xapi/adb/verbs/described",
       "@type": "Verb",
       "definition": {
-        "en": "Detailed answer as a result of an interaction in an ebook activity or assessment.",
+        "en": "Detailed answer as a result of an interaction in an ebook activity or assessment."
       },
         "prefLabel": {
-        "en": "described",
+        "en": "described"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200989103-v"
     },
@@ -173,14 +88,14 @@
       	"https://w3id.org/xapi/adb/verbs/annotated"
       ],
       "definition": {
-        "en": "Highlight important areas in an eBook for the purpose of later review or note taking.",
+        "en": "Highlight important areas in an eBook for the purpose of later review or note taking."
       },
 
       "narrower": [
           "https://w3id.org/xapi/adb/verbs/noted"
       ],        
       	"prefLabel": {
-        "en": "highlighted",
+        "en": "highlighted"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200515150-v"
     },
@@ -188,10 +103,10 @@
       "@id": "https://w3id.org/xapi/adb/verbs/initiated",
       "@type": "Verb",
       "definition": {
-        "en": "Used to initiate text code, user preferences or accessibility preferences to a teacher.",
+        "en": "Used to initiate text code, user preferences or accessibility preferences to a teacher."
       },
         "prefLabel": {
-        "en": "initiated",
+        "en": "initiated"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/201631641-v"
     },
@@ -202,10 +117,10 @@
       	"https://w3id.org/xapi/adb/verbs/annotated"
       ],
       "definition": {
-        "en": "Add annotation or notes to selected text within an ebook or highlight.",
+        "en": "Add annotation or notes to selected text within an ebook or highlight."
       },
         "prefLabel": {
-        "en": "noted",
+        "en": "noted"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/201022943-v"
     },
@@ -216,10 +131,10 @@
          "http://activitystrea.ms/schema/1.0/read"
       ],
       "definition": {
-        "en": "Indicates that the actor read the object. This is typically only applicable for objects representing printed or written content, such as a book, a message or a comment.",
+        "en": "Indicates that the actor read the object. This is typically only applicable for objects representing printed or written content, such as a book, a message or a comment."
       },
         "prefLabel": {
-        "en": "read",
+        "en": "read"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200626756-v"
     },
@@ -227,10 +142,10 @@
       "@id": "https://w3id.org/xapi/adb/verbs/referenced",
       "@type": "Verb",
       "definition": {
-        "en": "Use dictionary or other resource to look up a selected word. A learner might reference outside information in support of the topic and could reference additional reading for his/her colleagues or mentor.",
+        "en": "Use dictionary or other resource to look up a selected word. A learner might reference outside information in support of the topic and could reference additional reading for his/her colleagues or mentor."
       },
         "prefLabel": {
-        "en": "referenced",
+        "en": "referenced"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/201709116-v"
     },
@@ -241,13 +156,13 @@
          "http://activitystrea.ms/schema/1.0/request"
       ],
       "definition": {
-        "en": "Indicates the actor needed or demanded an object or another actor.",
+        "en": "Indicates the actor needed or demanded an object or another actor."
       },
         "prefLabel": {
-        "en": "requested",
+        "en": "requested"
       },
-      "skos:scopeNote": {
-        "@value": "Requested indicates a comment that is shared with peers as a group or Coach as a trainer. The request for coaching or help prompts users to respond giving them coaching credit.",
+      "scopeNote": {
+        "en": "Requested indicates a comment that is shared with peers as a group or Coach as a trainer. The request for coaching or help prompts users to respond giving them coaching credit."
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200754770-v"
     },
@@ -258,10 +173,10 @@
          "http://activitystrea.ms/schema/1.0/search"
       ],
       "definition": {
-        "en": "A digital content search within a document or application.",
+        "en": "A digital content search within a document or application."
       },
         "prefLabel": {
-        "en": "searched",
+        "en": "searched"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200649877-v"
     },
@@ -269,10 +184,10 @@
       "@id": "https://w3id.org/xapi/adb/verbs/selected",
       "@type": "Verb",
       "definition": {
-        "en": "Choose section of text to copy to clipboard.",
+        "en": "Choose section of text to copy to clipboard."
       },
         "prefLabel": {
-        "en": "selected",
+        "en": "selected"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/200676526-v"
     },
@@ -283,12 +198,62 @@
          "http://activitystrea.ms/schema/1.0/watch"
       ],
       "definition": {
-        "en": "Indicates that the actor has watched the object. This verb is typically applicable only when the object represents dynamic, visible content such as a movie, a television show or a public performance.",
+        "en": "Indicates that the actor has watched the object. This verb is typically applicable only when the object represents dynamic, visible content such as a movie, a television show or a public performance."
       },
         "prefLabel": {
-        "en": "watched",
+        "en": "watched"
       },
       "closelyRelatedNaturalLanguageTerm": "http://wordnet-rdf.princeton.edu/wn31/202155378-v"
     } 
+  ],
+  "references" : [
+      {
+      "@id": "http://adlnet.gov/expapi/verbs/answered",
+      "scopeNote": {
+        "en": "Answer an interactive question within the eBook or an assessment. More desciptive level of interaction."
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/answered"
+	},
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/commented",
+      "scopeNote": {
+        "en": "Used to add comments or reviews on internal or external resources.These are personal notes, comments shared with colleagues, comments on the content, and requests for edit. This might include comments of the Coach , Supervisor or others to all of the staff members that may be acted upon by a member."
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/completed",
+      "scopeNote": {
+        "en": "Completion of a page, chapter, section, or an entire book experience."
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/initialized"
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/interacted"
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/registered"
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/responded"
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/resumed",
+      "scopeNote": {
+        "en": "Used to resume reading location from previous state."
+      }
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/scored"
+    },
+    {
+      "@id": "http://adlnet.gov/expapi/verbs/shared",
+      "scopeNote": {
+        "en": "Sharing content with another application or user or additional reference material. If sharing comments with peers or a mentor/trainer, then it may become a request for feedback or a request for coaching."
+      }
+    }  
   ]
-}
+  }

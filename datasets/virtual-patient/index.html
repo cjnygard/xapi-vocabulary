@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Experience API (xAPI) - MedBiquitous Vocabulary</title>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+</head>
+<body>
+<div class="navbar navbar-default navbar-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://w3id.org/xapi/cmi5">Virtual Patient Vocabulary</a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"> <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Verbs<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#arrived">arrived</a></li>  
+            <li><a href="#commented">commented</a></li>        
+            <li><a href="#completed">completed</a></li>
+            <li><a href="#experienced">experienced</a></li>
+            <li><a href="#ignored">ignored</a></li>
+            <li><a href="#initialized">initialized</a></li>
+            <li><a href="#interacted">interacted</a></li>
+            <li><a href="#launched">launched</a></li>
+            <li><a href="#responded">responded</a></li>
+            <li><a href="#resumed">resumed</a></li>
+            <li><a href="#suspended">suspended</a></li>
+            <li><a href="#terminated">terminated</a></li>
+            <li><a href="#updated">updated</a></li> 
+          </ul>
+        </li>
+       
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<br />
+<div xmlns="http://www.w3.org/1999/xhtml" class="container-fluid" prefix="
+    dcterms: http://purl.org/dc/terms/
+    foaf: http://xmlns.com/foaf/0.1/
+    owl: http://www.w3.org/2002/07/owl#
+    prov: http://www.w3.org/ns/prov#
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    rdfs: http://www.w3.org/2000/01/rdf-schema#
+    skos: http://www.w3.org/2004/02/skos/core#
+    xapi: https://w3id.org/xapi/ontology#
+    xsd: http://www.w3.org/2001/XMLSchema#"> 
+  
+  <!-- Vocabulary / Concept Scheme -->
+  <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/virtual-patient">
+    <div property="skos:prefLabel" lang="en" xml:lang="en" content="Virtual Patient Vocabulary">
+      <h2 class="page-header">Virtual Patient Vocabulary</h2>
+    </div>
+    <div property="skos:editorialNote" lang="en" xml:lang="en" content="The MedBiquitous Vocabulary describes health professions education verbs, activities and learner performance with the goal of understanding the needs of health profession educators.">The MedBiquitous Virtual Patient Profile [Need description here].<strong> Note: </strong>Vocabulary terms that are not managed by the MedBiquitous community and referenced from other controlled vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
+    <div property="foaf:name" lang="en" xml:lang="en" content="MedBiquitous Learning Experience Working Group"><strong>Published by:</strong> <a href="http://groups.medbiq.org:8090/display/XIG/Learning+Experience+Group+Home">MedBiquitous Learning Experience Working Group</a></div>
+    <div property="dcterms:created" datatype="xsd:date" content="2016-5-09">Date Created: 2016-5-09</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-7-21">Last Modified: 2016-7-21</div>
+  </div>
+  
+  <!-- Begin Verbs -->
+  <h2 class="page-header">Verbs</h2>
+  <div class="panel panel-default table-responsive" id="verbs"> 
+    <!-- Table Header -->
+    <table class="table table-hover">
+      <thead>
+        <tr class="info">
+          <th>Label</th>
+          <th>Scope Note</th>
+          <th>ID (IRI)</th>
+          <th>Vocabulary Reference</th>
+        </tr>
+      </thead>
+       
+
+
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/adb/verbs/arrived" id="arrived">
+        <tr class="warning">
+          <td>arrived</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has visited a node within the VP case. Not necessarily same as 'read' or ‘experienced’ because an internal rule or trigger might immediately bounce them on to another node or activity. (See ‘Launched’). So, while the user may have landed on that node, if they are immediately redirected, they may not even see that page/node. Can be used for a physical or virtual location.">User has visited a node within the VP case. Not necessarily same as 'read' or ‘experienced’ because an internal rule or trigger might immediately bounce them on to another node or activity. (See ‘Launched’). So, while the user may have landed on that node, if they are immediately redirected, they may not even see that page/node. Can be used for a physical or virtual location.</td>
+          <td><a href="https://w3id.org/xapi/adb/verbs/arrived">https://w3id.org/xapi/adb/verbs/arrived</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adb">https://w3id.org/xapi/adb</a></td>
+        </tr>
+      </tbody>
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/commented" id="commented">
+        <tr class="warning">
+          <td>commented</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has contributed to group activity. Used when an actor adds to a group activity for a compound effect. In some ways, this is not different from ‘responded’. But the net effect is different because you are not expecting that the single activity will necessarily produce some result by itself. The object might be a discussion thread. (Or in OpenLabyrinth, we have a question format called a Cumulative Question, where users contribute phrases to a single question/database field.)">User has contributed to group activity. Used when an actor adds to a group activity for a compound effect. In some ways, this is not different from ‘responded’. But the net effect is different because you are not expecting that the single activity will necessarily produce some result by itself. The object might be a discussion thread. (Or in OpenLabyrinth, we have a question format called a Cumulative Question, where users contribute phrases to a single question/database field.)</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/commented">http://adlnet.gov/expapi/verbs/commented</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/completed" id="completed">
+        <tr class="warning">
+          <td>completed</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has completed the case. Reached a node designated by the case author as an endpoint. Does not indicate success or failure.">User has completed the case. Reached a node designated by the case author as an endpoint. Does not indicate success or failure.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/experienced" id="experienced">
+        <tr class="warning">
+          <td>experienced</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has read a document, page or paragraph. Similar to ‘interacted’ but used when the media is static or non-interactive">User has read a document, page or paragraph. Similar to ‘interacted’ but used when the media is static or non-interactive</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/experienced">http://adlnet.gov/expapi/verbs/experienced</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/medbiq/verbs/ignored" id="ignored">
+        <tr>
+          <td>ignored</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/medbiq/verbs/ignored">https://w3id.org/xapi/medbiq/verbs/ignored</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/medbiq">https://w3id.org/xapi/medbiq</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/initialized" id="initialized">
+        <tr class="warning">
+          <td>initialized</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Includes a timestamp and identifier of the node in the VP when playing was started. Most VP cases will have a fixed starting node but this is not always true and is not a requirement for the statement to be true.">Includes a timestamp and identifier of the node in the VP when playing was started. Most VP cases will have a fixed starting node but this is not always true and is not a requirement for the statement to be true.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/initialized">http://adlnet.gov/expapi/verbs/initialized</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/interacted" id="interacted">
+        <tr class="warning">
+          <td>interacted</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has interacted with or manipulated an object or a video or similar multimedia that provides some sort of interactivity. Similar to 'experienced' for when the media is dynamic, like a video.">User has interacted with or manipulated an object or a video or similar multimedia that provides some sort of interactivity. Similar to 'experienced' for when the media is dynamic, like a video.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/interacted">http://adlnet.gov/expapi/verbs/interacted</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/launched" id="launched">
+        <tr class="warning">
+          <td>launched</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="VP player engine has initiated an action such as redirecting the user to a new node, or triggered some other activity. This is not an action made by the user.">VP player engine has initiated an action such as redirecting the user to a new node, or triggered some other activity. This is not an action made by the user.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/launched">http://adlnet.gov/expapi/verbs/launched</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/responded" id="responded">
+        <tr class="warning">
+          <td>responded</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has responded to a question. Response to an item or question within a node, without moving off that node. (This is not quite the same as ‘answered’ which implies that the answer is correct.)
+">User has responded to a question. Response to an item or question within a node, without moving off that node. (This is not quite the same as ‘answered’ which implies that the answer is correct.)
+</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/responded">http://adlnet.gov/expapi/verbs/responded</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/resumed" id="resumed">
+        <tr class="warning">
+          <td>resumed</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has restarted a case. Resumed a case that had been previously suspended.
+">User has restarted a case. Resumed a case that had been previously suspended.
+</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/resumed">http://adlnet.gov/expapi/verbs/resumed</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/supspended" id="supspended">
+        <tr class="warning">
+          <td>suspended</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has paused a case. Suspended a case with the possibility to resume later.">User has paused a case. Suspended a case with the possibility to resume later.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/supspended">http://adlnet.gov/expapi/verbs/supspended</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/verbs/terminated" id="terminated">
+        <tr class="warning">
+          <td>terminated</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="User has left a case and does not intend to resume. Consider how you will be able to differentiate this from ‘abandoned’, 'suspended' or 'completed' because the VP player engine may not be able to determine whether the user is coming back again.">User has left a case and does not intend to resume. Consider how you will be able to differentiate this from ‘abandoned’, 'suspended' or 'completed' because the VP player engine may not be able to determine whether the user is coming back again.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/terminated">http://adlnet.gov/expapi/verbs/terminated</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/virtual-patient"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
+      
+ 
+        <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="https://w3id.org/xapi/medbiq/verbs/updated" id="updated">
+        <tr>
+          <td>updated</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/medbiq/verbs/updated">https://w3id.org/xapi/medbiq/verbs/updated</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/medbiq"><a href="https://w3id.org/xapi/medbiq">https://w3id.org/xapi/medbiq</a></td>
+        </tr>
+      </tbody>
+     
+      
+           
+    </table>
+  </div>
+  <!-- End Verbs --> 
+  
+
+</div>
+
+<!-- Bootstrap core JavaScript ================================================== --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+<!-- Latest compiled and minified JavaScript --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

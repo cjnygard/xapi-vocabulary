@@ -11,8 +11,8 @@
 
 xapi: a owl:Ontology ;
     rdfs:label "xAPI Vocabulary Dataset Schema"@en ;
-    dcterms:created "2015-04-27"^^xsd:date ;
-    dcterms:modified "2016-06-08"^^xsd:date ;
+    dcterms:created "2015-11-19"^^xsd:date ;
+    dcterms:modified "2016-07-07"^^xsd:date ;
     rdfs:comment "This ontology contains a list of the classes and properties that can be used when for creating and publishing a vocabulary dataset for xAPI."@en .
 
 xapi:AllDisjointClasses a owl:AllDisjointClasses ;

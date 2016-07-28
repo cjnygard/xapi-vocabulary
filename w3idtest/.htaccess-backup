@@ -1,0 +1,29 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+
+
+# ADL Vocabulary
+# ---------------------------
+
+# ADL vocabulary rewrite rules to serve HTML content if requested
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^adl/?$ http://xapi.vocab.pub/datasets/adl/ [R=303]
+
+# ADL vocabulary rewrite rules to serve HTML content if requested
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^adl/(.*)/(.*)$ http://xapi.vocab.pub/datasets/adl/#$2 [NE]
+
+# ADL vocabualry rewrite rules to serve JSON-LD content if requested
+RewriteCond %{HTTP_ACCEPT} application/ld\+json
+RewriteRule ^adl/?$ http://xapi.vocab.pub/datasets/adl.jsonld [R=303]
+
+# ADL vocabualry rewrite rules to serve JSON-LD content if requested
+RewriteCond %{HTTP_ACCEPT} application/ld\+json
+RewriteRule ^adl/(.*)/(.*)$ http://xapi.vocab.pub/datasets/adl.jsonld [R=303]

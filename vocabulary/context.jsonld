@@ -55,7 +55,11 @@
         "scopeNote": {
             "@id": "skos:scopeNote",
             "@container": "@language"
-        },        
+        },  
+        "editorialNote": {
+            "@id": "skos:editorialNote",
+            "@container": "@language"
+        },               
         "altLabel": {
             "@id": "skos:altLabel",
             "@container": "@language"

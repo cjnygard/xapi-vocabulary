@@ -20,3 +20,12 @@ RewriteRule ^$ http://xapi.vocab.pub:8890/fct [L]
 # ---------------------------
 RewriteRule ^sparql$ http://xapi.vocab.pub:8890/sparql [R=302]
 
+
+# Serve JSON-LD at vocabulary IRI if requested
+RewriteCond %{HTTP_ACCEPT} application/ld\+json
+RewriteRule ^datasets/([0-9a-zA-Z\-]+)/?$ http://xapi.vocab.pub/datasets/$1.jsonld [R=303]
+
+
+# Serve Constrained JSON-LD at vocabulary IRI if JSON is requested
+RewriteCond %{HTTP_ACCEPT} application/json
+RewriteRule ^datasets/([0-9a-zA-Z\-]+)/?$ http://xapi.vocab.pub/datasets/$1.jsonld [R=303]
