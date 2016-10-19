@@ -63,7 +63,7 @@
     prov: http://www.w3.org/ns/prov#
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     rdfs: http://www.w3.org/2000/01/rdf-schema#
-    scorm: https://w3id.org/xapi/scorm/
+    scorm: https://w3id.org/xapi/scorm#
     skos: http://www.w3.org/2004/02/skos/core#
     xapi: https://w3id.org/xapi/ontology#
     xsd: http://www.w3.org/2001/XMLSchema#">
@@ -287,72 +287,80 @@
   <table class="table table-hover">
     <thead>
       <tr class="success">
-        <th width="15%">Label</th>
-        <th width="55%">Description</th>
-        <th width="30%">ID (IRI)</th>
+        <th>Label</th>
+        <th>Description</th>
+        <th>ID (IRI)</th>
+        <th></th>
       </tr>
     </thead>
     
     <!-- Classes -->
     
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/activity-profile" id="activity-profile">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#ActivityProfile" id="ActivityProfile">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="SCORM Activity Profile">SCORM Activity Profile</td>
-        <td property="rdfs:comment" xml:lang="en" content="Used to store document data associated with the activity and not intended to capture a learning experience data in the form of a statement. The SCORM Activity Profile object contains the profile data for the specified Activity.">The SCORM Activity Profile object contains the profile data for the specified Activity.</td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/activity-profile">https://w3id.org/xapi/scorm/activity-profile</a></td>
+        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity Profile object contains the profile data for the specified Activity.">The SCORM Activity Profile object contains the profile data for the specified Activity.</td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#ActivityProfile">https://w3id.org/xapi/scorm#ActivityProfile</a></td>
+        <td></td>
       </tr>
     </tbody>
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/activity-state" id="activity-state">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#ActivityState" id="ActivityState">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="SCORM Activity State">SCORM Activity State</td>
-        <td property="rdfs:comment" xml:lang="en" content="Used to store document data associated with the activity and not intended to capture a learning experience data in the form of a statement. The SCORM Activity State object contains a list of Attempt IRIs for the specified Activity.">Used to store document data associated with the activity and not intended to capture a learning experience data in the form of a statement. The SCORM Activity Profile object contains the profile data for the specified Activity.</td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/activity-state">https://w3id.org/xapi/scorm/activity-state</a></td>
+        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity State object contains a list of Attempt IRIs for the specified Activity.">The SCORM Activity State object contains a list of Attempt IRIs for the specified Activity.</td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#ActivityState">https://w3id.org/xapi/scorm#ActivityState</a></td>
+        <td></td>
       </tr>
     </tbody>
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/adl-data-params" id="adl-data-params">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#ADLDataParams" id="ADLDataParams">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="ADL Data Parameters Object">ADL Data Parameters Object</td>
         <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity Attempt State ADL Data Parameters Object contains the values needed to access the ADL Data stored at a specific xAPI Activity State document location.">The SCORM Activity Attempt State ADL Data Parameters Object contains the values needed to access the ADL Data stored at a specific xAPI Activity State document location.</td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/adl-data-params">https://w3id.org/xapi/scorm/adl-data-params</a></td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#ADLDataParams">https://w3id.org/xapi/scorm#ADLDataParams</a></td>
+        <td></td>
       </tr>
     </tbody>
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/agent-profile" id="agent-profile">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#AgentProfile" id="AgentProfile">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="SCORM Agent Profile">SCORM Agent Profile</td>
-        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity State object contains the profile data for the specified Agent. The agent profile has three properties: learner_id, learner_name, and preferences. ">The SCORM Activity State object contains the profile data for the specified Agent. The agent profile has three properties: learner_id, learner_name, and preferences. </td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/agent-profile">https://w3id.org/xapi/scorm/agent-profile</a></td>
+        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity State object contains the profile data for the specified Agent.">The SCORM Activity State object contains the profile data for the specified Agent.</td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#AgentProfile">https://w3id.org/xapi/scorm#AgentProfile</a></td>
+        <td></td>
       </tr>
     </tbody>
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/attempt-state" id="attempt-state">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#AttemptState" id="AttemptState">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="SCORM Activity Attempt State">SCORM Activity Attempt State</td>
-        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity Attempt State object contains the state data for the specified attempt on an Activity. State data includes credit, entry, location, mode, and preferences. ">The SCORM Activity Attempt State object contains the state data for the specified attempt on an Activity. State data includes credit, entry, location, mode, and preferences. </td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/attempt-state">https://w3id.org/xapi/scorm/attempt-state</a></td>
+        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity Attempt State object contains the state data for the specified attempt on an Activity.">The SCORM Activity Attempt State object contains the state data for the specified attempt on an Activity.</td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#AttemptState">https://w3id.org/xapi/scorm#AttemptState</a></td>
+        <td></td>
       </tr>
     </tbody>
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/comment" id="comment">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#Comment" id="Comment">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="SCORM Activity Profile Comment Object">SCORM Activity Profile Comment Object</td>
-        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity Profile Comment Object. The SCORM Activity Profile Comment Object has the following properties: comment, location, and timestamp.">The SCORM Activity Profile Comment Object has the following properties: comment, location, and timestamp. </td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/comment">https://w3id.org/xapi/scorm/comment</a></td>
+        <td property="rdfs:comment" xml:lang="en" content="The SCORM Activity Profile Comment Object.">The SCORM Activity Profile Comment Object.</td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#Comment">https://w3id.org/xapi/scorm#Comment</a></td>
+        <td></td>
       </tr>
     </tbody>
-    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm/preferences" id="preferences">
+    <tbody typeof="owl:Class" about="https://w3id.org/xapi/scorm#Preferences" id="Preferences">
       <tr>
         <td property="rdfs:label" xml:lang="en" content="SCORM Profile Preferences Object">SCORM Profile Preferences Object</td>
-        <td property="rdfs:comment" xml:lang="en" content="The SCORM Preferences Object contains content-specific values such as audio, language, delivery, and captioning preferences.">The SCORM Preferences Object contains content-specific values such as audio, language, delivery, and captioning preferences.</td>
-        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/preferences">https://w3id.org/xapi/scorm/preferences</a></td>
+        <td property="rdfs:comment" xml:lang="en" content="The SCORM Preferences Object.">The SCORM Preferences Object.</td>
+        <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#Preferences">https://w3id.org/xapi/scorm#Preferences</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <div typeof="owl:AllDisjointClasses">
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/activity-profile"></div>
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/activity-state"></div>
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/adl-data-params"></div>
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/agent-profile"></div>
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/attempt-state"></div>
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/comment"></div>
-    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm/preferences"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#ActivityProfile"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#ActivityState"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#ADLDataParams"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#AgentProfile"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#AttemptState"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#Comment"></div>
+    <div inlist="" rel="owl:members" resource="https://w3id.org/xapi/scorm#Preferences"></div>
   </div>
 </div>
 <!-- End SCORM Profile Classes --> 
@@ -371,23 +379,23 @@
     <th>Range</th>
   </tr>
 </thead>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/adlDataStateParams" id="adlDataStateParams">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#adlDataStateParams" id="adlDataStateParams">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="ADL Data State Parameters">ADL Data State Parameters</td>
     <td property="rdfs:comment" xml:lang="en" content="Reference to the ADL Data State Parameters object.">Reference to the ADL Data State Parameters object.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/adlDataStateParams">https://w3id.org/xapi/scorm/adlDataStateParams</a></td>
-    <td rel="rdfs:domain" resource="scorm:adl-data-params"><a href="https://w3id.org/xapi/scorm/adl-data-params">scorm:adl-data-params</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#adlDataStateParams">https://w3id.org/xapi/scorm#adlDataStateParams</a></td>
+    <td rel="rdfs:domain" resource="scorm:ADLDataParams"><a href="https://w3id.org/xapi/scorm#ADLDataParams">scorm:ADLDataParams</a></td>
     <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/time_limit_action" id="time_limit_action">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#time_limit_action" id="time_limit_action">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="time_limit_action">time_limit_action</td>
     <td property="rdfs:comment" xml:lang="en" content="The action the LMS should perform when the time limit has been reached.">The action the LMS should perform when the time limit has been reached.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/time_limit_action">https://w3id.org/xapi/scorm/time_limit_action</a></td>
-    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm/time_limit_action_range"></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#time_limit_action">https://w3id.org/xapi/scorm#time_limit_action</a></td>
+    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm#time_limit_action_range"></td>
     <td>
-      <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm/time_limit_action_range">
+      <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm#time_limit_action_range">
         <li inlist="" property="owl:oneOf" xml:lang="en" content="exit,message">exit,message</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="continue,message">continue,message</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="exit,no message">exit,no message</li>
@@ -396,82 +404,82 @@
     </td>  
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/timestamp" id="timestamp">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#timestamp" id="timestamp">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="timestamp">timestamp</td>
     <td property="rdfs:comment" xml:lang="en" content="This is uniquely intended to represent the property associated with SCORM Activity Profile Comment Object.">This is uniquely intended to represent the property associated with SCORM Activity Profile Comment Object. </td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/timestamp">https://w3id.org/xapi/scorm/timestamp</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#timestamp">https://w3id.org/xapi/scorm#timestamp</a></td>
     <td></td>
     <td rel="rdfs:range" resource="xsd:dateTime"><a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank">xsd:dateTime</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/deliverySpeed" id="deliverySpeed">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#deliverySpeed" id="deliverySpeed">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="delivery_speed">deliverySpeed</td>
     <td property="rdfs:comment" xml:lang="en" content="Learner's delivery speed preference.">Learner's delivery speed preference.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/deliverySpeed">https://w3id.org/xapi/scorm/deliverySpeed</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#deliverySpeed">https://w3id.org/xapi/scorm#deliverySpeed</a></td>
     <td></td>
     <td rel="rdfs:range" resource="xsd:nonNegativeInteger"><a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger" target="_blank">xsd:nonNegativeInteger</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:ObjectProperty" about="https://w3id.org/xapi/scorm/preferences" id="preferences">
+<tbody typeof="owl:ObjectProperty" about="https://w3id.org/xapi/scorm#preferences" id="preferences">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="preferences">preferences</td>
     <td property="rdfs:comment" xml:lang="en" content="Learner Preferences for this current Activity attempt.">Learner Preferences for this current Activity attempt.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/preference">https://w3id.org/xapi/scorm/preference</a></td>
-    <td rel="rdfs:domain" resource="scorm:preferences"><a href="https://w3id.org/xapi/scorm/preferences">scorm:preferences</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#preference">https://w3id.org/xapi/scorm#preference</a></td>
+    <td rel="rdfs:domain" resource="scorm:Preferences"><a href="https://w3id.org/xapi/scorm#Preferences">scorm:Preferences</a></td>
     <td></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/credit" id="credit">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#credit" id="credit">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="credit">credit</td>
     <td property="rdfs:comment" xml:lang="en" content="Indicator for credit or no-credit.">Indicator for credit or no-credit.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/credit">https://w3id.org/xapi/scorm/credit</a></td>
-    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm/creditRange"></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#credit">https://w3id.org/xapi/scorm#credit</a></td>
+    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm#creditRange"></td>
     <td>
-      <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm/creditRange">
+      <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm#creditRange">
         <li inlist="" property="owl:oneOf" xml:lang="en" content="credit">credit</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="no-credit">no-credit</li>
       </ul>
    </td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/commentsFromLMS" id="commentsFromLMS">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#commentsFromLMS" id="commentsFromLMS">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="Comments from LMS">commentsFromLMS</td>
     <td property="rdfs:comment" xml:lang="en" content="Contains the comments from the LMS.">Contains the comments from the LMS.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/commentsFromLMS">https://w3id.org/xapi/scorm/commentsFromLMS</a></td>
-    <td rel="rdfs:domain" resource="https://w3id.org/xapi/scorm/comment"><a href="https://w3id.org/xapi/scorm/comment">scorm:comment</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#commentsFromLMS">https://w3id.org/xapi/scorm#commentsFromLMS</a></td>
+    <td rel="rdfs:domain" resource="https://w3id.org/xapi/scorm#Comment"><a href="https://w3id.org/xapi/scorm#Comment">scorm:Comment</a></td>
     <td></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/language" id="language">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#language" id="language">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="language">language</td>
     <td property="rdfs:comment" xml:lang="en" content="Learner's language preference.">Learner's language preference.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/language">https://w3id.org/xapi/scorm/language</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#language">https://w3id.org/xapi/scorm#language</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#language"><a href="http://www.w3.org/2001/XMLSchema#language">xsd:language</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/stateId" id="stateId">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#stateId" id="stateId">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="State ID">stateId</td>
     <td property="rdfs:comment" xml:lang="en" content="The State ID value.">The State ID value.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/stateId">https://w3id.org/xapi/scorm/stateId</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#stateId">https://w3id.org/xapi/scorm#stateId</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/mode" id="mode">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#mode" id="mode">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="mode">mode</td>
     <td property="rdfs:comment" xml:lang="en" content="Indicator for the mode in which the activity was experienced.">Indicator for the mode in which the activity was experienced.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/mode">https://w3id.org/xapi/scorm/mode</a></td>
-    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm/modeRange"><a href="https://w3id.org/xapi/scorm/modeRange">scorm:modeRange</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#mode">https://w3id.org/xapi/scorm#mode</a></td>
+    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm#modeRange"><a href="https://w3id.org/xapi/scorm#modeRange">scorm:modeRange</a></td>
     <td>
-    <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm/modeRange">
+    <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm#modeRange">
         <li inlist="" property="owl:oneOf" xml:lang="en" content="browse">browse</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="normal">normal</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="review">review</li>
@@ -479,68 +487,68 @@
    </td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/agent" id="agent">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#agent" id="agent">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="Agent object">agent</td>
     <td property="rdfs:comment" xml:lang="en" content="The Agent value.">The Agent value.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/agent">https://w3id.org/xapi/scorm/agent</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#agent">https://w3id.org/xapi/scorm#agent</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/registration" id="registration">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#registration" id="registration">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="registration">registration</td>
     <td property="rdfs:comment" xml:lang="en" content="The registration UUID value.">The registration UUID value.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/registration">https://w3id.org/xapi/scorm/registration</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#registration">https://w3id.org/xapi/scorm#registration</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/maxTimeAllowed" id="maxTimeAllowed">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#maxTimeAllowed" id="maxTimeAllowed">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="max_time_allowed">maxTimeAllowed</td>
     <td property="rdfs:comment" xml:lang="en" content="Non negative number representing the maximum time a learner can spend on the current activity.">Non negative number representing the maximum time a learner can spend on the current activity.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/maxTimeAllowed">https://w3id.org/xapi/scorm/maxTimeAllowed</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#maxTimeAllowed">https://w3id.org/xapi/scorm#maxTimeAllowed</a></td>
     <td></td>
-    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm/nonNegativeNumberDatatype">???Need more info</td>
+    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm#nonNegativeNumberDatatype">???Need more info</td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/comment" id="comment">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#comment" id="comment">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="comment">comment</td>
     <td property="rdfs:comment" xml:lang="en" content="The comment value.">The comment value.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/comment">https://w3id.org/xapi/scorm/comment</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#comment">https://w3id.org/xapi/scorm#comment</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/learnerID" id="learnerID">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#learnerID" id="learnerID">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="learner_id">learnerID</td>
     <td property="rdfs:comment" xml:lang="en" content="String representing the learner ID.">String representing the learner ID.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/learnerID">https://w3id.org/xapi/scorm/learnerID</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#learnerID">https://w3id.org/xapi/scorm#learnerID</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/completionThreshold" id="completionThreshold">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#completionThreshold" id="completionThreshold">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="completion_threshold">completionThreshold</td>
     <td property="rdfs:comment" xml:lang="en" content="The scaled value required to consider an activity complete. This should be a decimal between 0 and 1.">The scaled value required to consider an activity complete. This should be a decimal between 0 and 1.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/completionThreshold">https://w3id.org/xapi/scorm/completionThreshold</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#completionThreshold">https://w3id.org/xapi/scorm#completionThreshold</a></td>
     <td></td>
     <td rel="rdfs:range" resource="xsd:decimal"><a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank">xsd:decimal</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/audioCaption" id="audioCaption">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#audioCaption" id="audioCaption">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="audio_captioning">audioCaption</td>
     <td property="rdfs:comment" xml:lang="en" content="Learner's audio caption preference.">Learner's audio caption preference.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/audioCaption">https://w3id.org/xapi/scorm/audioCaption</a></td>
-    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm/audioCaptionRange"></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#audioCaption">https://w3id.org/xapi/scorm#audioCaption</a></td>
+    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm#audioCaptionRange"></td>
     <td>
-    <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm/audioCaptionRange">
+    <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm#audioCaptionRange">
         <li inlist="" property="owl:oneOf" xml:lang="en" content="-1">-1</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="0">0</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="1">1</li>
@@ -548,14 +556,14 @@
    </td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/audioLevel" id="audioLevel">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#audioLevel" id="audioLevel">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="audio_level">audioLevel</td>
     <td property="rdfs:comment" xml:lang="en" content="Learner's audio level preference.">Learner's audio level preference.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/audioLevel">https://w3id.org/xapi/scorm/audioLevel</a></td>
-    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm/audioLevelRange"></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#audioLevel">https://w3id.org/xapi/scorm#audioLevel</a></td>
+    <td rel="rdfs:range" resource="https://w3id.org/xapi/scorm#audioLevelRange"></td>
     <td>
-    <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm/audioLevelRange">
+    <ul typeof="owl:DataRange" about="https://w3id.org/xapi/scorm#audioLevelRange">
         <li inlist="" property="owl:oneOf" xml:lang="en" content="-1">-1</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="0">0</li>
         <li inlist="" property="owl:oneOf" xml:lang="en" content="1">1</li>
@@ -563,7 +571,7 @@
    </td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/location" id="location">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#location" id="location">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="location">location</td>
     <td property="rdfs:comment" xml:lang="en" content="Holder for information on where the learner is within the content.">Holder for information on where the learner is within the content.</td>
@@ -572,16 +580,16 @@
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/activityId" id="activityId">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#activityId" id="activityId">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="Activity ID">activityId</td>
     <td property="rdfs:comment" xml:lang="en" content="The Activity ID value.">The Activity ID value.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/activityId">https://w3id.org/xapi/scorm/activityId</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#activityId">https://w3id.org/xapi/scorm#activityId</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#anyURI"><a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank">xsd:anyURI</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/totalTime" id="totalTime">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#totalTime" id="totalTime">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="total_time">totalTime</td>
     <td property="rdfs:comment" xml:lang="en" content="Holder for the total time spent in the activity."></td>
@@ -590,25 +598,25 @@
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#duration"></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/launchData" id="launchData">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#launchData" id="launchData">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="launch_data">launchData</td>
     <td property="rdfs:comment" xml:lang="en" content="String to include data required for launch of content.">String to include data required for launch of content.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/launchData">https://w3id.org/xapi/scorm/launchData</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#launchData">https://w3id.org/xapi/scorm#launchData</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/attempts" id="attempts">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#attempts" id="attempts">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="attempts">attempts</td>
     <td property="rdfs:comment" xml:lang="en" content="The list of Activity attempt IRIs.">The list of Activity attempt IRIs.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/attempts">https://w3id.org/xapi/scorm/attempts</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#attempts">https://w3id.org/xapi/scorm#attempts</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">????</td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/scaledPassingScore" id="scaledPassingScore">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#scaledPassingScore" id="scaledPassingScore">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="scaled_passing_score">scaledPassingScore</td>
     <td property="rdfs:comment" xml:lang="en" content="The scaled value required to consider an activity passed. (note: i think there is a way to set range restrictions here or on the class instead of using one-off datatypes.. i'm just not sure how).">???</td>
@@ -617,11 +625,11 @@
     <td rel="rdfs:range" resource="xsd:decimal"><a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank">xsd:decimal</a></td>
   </tr>
 </tbody>
-<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm/learnerName" id="learnerName">
+<tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/scorm#learnerName" id="learnerName">
   <tr>
     <td property="rdfs:label" xml:lang="en" content="learner_name">learnerName</td>
     <td property="rdfs:comment" xml:lang="en" content="String representing the learner name.">String representing the learner name.</td>
-    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm/learnerName">https://w3id.org/xapi/scorm/learnerName</a></td>
+    <td rel="rdfs:isDefinedBy" resource="https://w3id.org/xapi/scorm"><a href="https://w3id.org/xapi/scorm#learnerName">https://w3id.org/xapi/scorm#learnerName</a></td>
     <td></td>
     <td rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
   </tr>

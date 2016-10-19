@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: 'https://w3id.org/xapi/adl',
+          type: 'GET',
+          dataType: 'jsonp',
+          beforeSend: setHeader		  
+        });
+      });
+
+      function setHeader(xhr) {
+		xhr.addEventListener('load', function (ev) {console.log(ev);console.log(xhr.response);console.log(xhr.responseText);});
+        xhr.setRequestHeader('Accept', 'application/ld+json');
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Load this page with the browser developer console open and view the network / xhr requests.</h1>
+  </body>
+</html>

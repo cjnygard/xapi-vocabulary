@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: 'https://lrs.adlnet.gov/xAPI/statements?statementId=37a5b9d2-30e9-4b31-b7dd-80f7d29b01f2',
+          type: 'GET',
+          beforeSend: setHeader		  
+        });
+      });
+
+      function setHeader(xhr) {
+		xhr.addEventListener('load', function (ev) {console.log(ev);console.log(xhr.response);});
+        xhr.setRequestHeader('Accept', 'application/json');
+		xhr.setRequestHeader('Authorization', 'Basic ' + btoa('video-profile:getout'));
+		xhr.setRequestHeader('X-Experience-API-Version', '1.0.2');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Load this page with the browser's developer console open and view the network / xhr requests. JSON will be returned. To see the JS code view the source of this HTML page.</p>
+
+  </body>
+</html>

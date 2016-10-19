@@ -87,13 +87,13 @@
   
   <!-- Vocabulary / Concept Scheme -->
   <div typeof="skos:ConceptScheme" about="https://w3id.org/xapi/video">
-    <div property="skos:prefLabel" lang="en" xml:lang="en" content="Video Vocabulary">
+    <div property="skos:prefLabel" lang="en" xml:lang="en" content="Video Profile Vocabulary">
       <h2 class="page-header">Video Vocabulary</h2>
     </div>
     <div property="skos:editorialNote" lang="en" xml:lang="en" content="The video vocabulary of the xAPI was created to identify and standardize common video interactions that can be tracked.">The video vocabulary of the xAPI was created to identify and standardize common video interactions that can be tracked.<strong> Note: </strong>Vocabulary terms that are not managed by the Video Community of Practice (CoP) and referenced from other vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
-    <div property="foaf:name" lang="en" xml:lang="en" content="xAPI Video CoP"><strong>Published by:</strong> <a href="https://www.adlnet.gov/videos-cops/">xAPI Video CoP</a></div>
+    <div property="foaf:name" lang="en" xml:lang="en" content="xAPI Video Community of Practice"><strong>Published by:</strong> <a href="https://www.adlnet.gov/videos-cops/">xAPI Video CoP</a></div>
     <div property="dcterms:created" datatype="xsd:date" content="2016-6-09">Date Created: 2016-6-01</div>
-    <div property="dcterms:modified" datatype="xsd:date" content="2016-6-10">Last Modified: 2016-6-15</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-9-23">Last Modified: 2016-9-23</div>
   </div>
   
   <!-- Begin Verbs -->
@@ -140,28 +140,28 @@
       </tbody>
       
       <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
-      <tbody resource="http://adlnet.gov/expapi/verbs/attempted" id="initialized">
+      <tbody resource="http://adlnet.gov/expapi/verbs/initialized" id="initialized">
         <tr class="warning">
-          <td>attempted</td>
+          <td>initialized</td>
           <td></td>
-          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used for an attempt on an assessment in AcrossX.">Used for an attempt on an assessment in AcrossX.</td>
-          <td><a href="http://adlnet.gov/expapi/verbs/attempted">http://adlnet.gov/expapi/verbs/attempted</a></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This is usually the first statement in the video session.">This is usually the first statement in the video session. </td>
+          <td><a href="http://adlnet.gov/expapi/verbs/initialized">http://adlnet.gov/expapi/verbs/initialized</a></td>
           <td></td>
           <td></td>
-          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
         </tr>
       </tbody>
       
       <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
-      <tbody resource="https://w3id.org/xapi/adb/verbs/bookmarked" id="interacted">
+      <tbody resource="http://adlnet.gov/expapi/verbs/interacted" id="interacted">
         <tr class="warning">
-          <td>bookmarked</td>
+          <td>interacted</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used to express that the actor interacted with the player (except play, pause, seek). e.g. mute, unmute, change resolution, change player size, etc.">Used to express that the actor interacted with the player (except play, pause, seek). e.g. mute, unmute, change resolution, change player size, etc.</td>
+          <td><a href="http://adlnet.gov/expapi/verbs/interacted">http://adlnet.gov/expapi/verbs/interacted</a></td>
           <td></td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/adb/verbs/bookmarked">https://w3id.org/xapi/adb/verbs/bookmarked</a></td>
-          <td></td>
-          <td></td>
-          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/acrossx"><a href="https://w3id.org/xapi/adb" target="_blank">https://w3id.org/xapi/adb</a></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/adl" target="_blank">https://w3id.org/xapi/adl</a></td>
         </tr>
       </tbody>
       
@@ -179,15 +179,15 @@
       </tbody>
       
       <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
-      <tbody resource="http://id.tincanapi.com/verb/paused" id="paused">
-        <tr class="warning">
-          <td>paused</td>
-          <td></td>
+      <tbody typeof="xapi:Verb" resource="https://w3id.org/xapi/video/verbs/paused" id="paused">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="paused">paused</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Indicates the actor paused the video being played at a specific point."></td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Indicates that the actor temporary or permanently stop experiencing the recorded media object. A paused statement must be sent before a terminated or abandoned statement if not already sent.">Indicates that the actor temporary or permanently stop experiencing the recorded media object. A paused statement must be sent before a terminated or abandoned statement if not already sent.</td>
-          <td><a href="http://id.tincanapi.com/verb/paused">http://id.tincanapi.com/verb/paused</a></td>
-          <td></td>
-          <td></td>
-          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/video"><a href="https://registry.experiencapi.com" target="_blank">https://registry.experienceapi.com</a></td>
+          <td><a href="https://w3id.org/xapi/video/verbs/paused">https://w3id.org/xapi/video/verbs/paused</a></td>
+          <td rel="skos:closeMatch" resource="http://id.tincanapi.com/verb/paused"><strong>closeMatch:</strong> <a href="http://id.tincanapi.com/verb/paused" target="_blank">http://id.tincanapi.com/verb/paused</a></td>
+          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/202647119-v"><a href="http://wordnet-rdf.princeton.edu/wn31/202647119-v" target="_blank">http://wordnet-rdf.princeton.edu/wn31/202647119-v</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/acrossx">https://w3id.org/xapi/video</a></td>
         </tr>
       </tbody>
       
@@ -235,18 +235,7 @@
           <th>Vocabulary</th>
         </tr>
       </thead>
-      
-      <!-- A new Activity Type -->
-      <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/video/activity-type/scene" id="scene">
-        <tr>
-          <td property="skos:prefLabel" lang="en" xml:lang="en" content="scene">scene</td>
-          <td property="skos:definition" lang="en" xml:lang="en" content="A consecutive series of pictures or frames that constitutes a unit of action in a video.">A consecutive series of pictures or frames that constitutes a unit of action in a video.</td>
-          <td></td>
-          <td><a href="https://w3id.org/xapi/video/activity-type/scene" target="_blank">https://w3id.org/xapi/video/activity-type/scene</a></td>
-          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/106627082-n"><a href="http://wordnet-rdf.princeton.edu/wn31/106627082-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/106627082-n</a></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
-        </tr>
-      </tbody>
+     
       
       <!-- A new Activity Type -->
       <tbody typeof="xapi:ActivityType" about="https://w3id.org/xapi/video/activity-type/video" id="video">
@@ -254,7 +243,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="video">video</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="A recording of both the visual and audible components made available on a display screen.">A recording of both the visual and audible components made available on a display screen.</td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/video/activity-type/video" target="_blank">https://w3id.org/xapi/video/activity-type/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/activity-type/video">https://w3id.org/xapi/video/activity-type/video</a></td>
           <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/104541422-n"><a href="http://wordnet-rdf.princeton.edu/wn31/104541422-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/104541422-n</a></td>
           <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
         </tr>
@@ -274,44 +263,91 @@
           <th>Description</th>
           <th>Scope Note</th>
           <th>ID (IRI)</th>
-          <th>Closely Related Term</th>
-          <th>Vocabulary</th>
+          <th>Domain</th>
+          <th>Range</th>
+          <th>Example Values</th>
         </tr>
       </thead>
       
-      <!-- A newly minted "Native" Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/progress" id="progress">
+      <!-- A newly minted "Native" Result Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/progress" id="progress">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="progress">progress</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to expresses the percentage of media consumed by the actor.">Used to expresses the percentage of media consumed by the actor.</td>
-          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is between 0 and 1.">Value is between 0 and 1.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/progress" target="_blank">https://w3id.org/xapi/video/extensions/progress</a></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is a decmial between 0.0 and 1.0.">Value is a decmial between 0.0 and 1.0.</td>
+          <td><a href="https://w3id.org/xapi/video/extensions/progress">https://w3id.org/xapi/video/extensions/progress</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="https://w3id.org/xapi/video/extensions/progressRange"></td>
+          <td>
+          	<div typeof="owl:Restriction" about="https://w3id.org/xapi/video/extensions/progressRange">
+          		<div rel="owl:onProperty" resource="https://w3id.org/xapi/video/extensions/progress"></div>
+    	  		<div typeof="rdfs:Datatype" about="https://w3id.org/xapi/video/extensions/progressRange">
+              		<div inlist="" rel="owl:withRestrictions" resource="https://w3id.org/xapi/video/extensions/minInclusive"></div>
+              		<div inlist="" rel="owl:withRestrictions" resource="https://w3id.org/xapi/video/extensions/maxInclusive"></div>
+                    <div rel="owl:onDatatype" resource="http://www.w3.org/2001/XMLSchema#integer"></div>
+            	</div>
+                <div typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/minInclusive">
+                	<div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#integer"></div>
+                    <div property="xsd:minInclusive" datatype="xsd:integer" content="0.0">0.0</div>
+                </div>
+                <div typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/maxInclusive">
+                    <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#integer"></div>
+                    <div property="xsd:maxInclusive" datatype="xsd:integer" content="1.0">1.0</div>
+                </div>
+            </div>
+         </td>        
+        </tr>
+      </tbody>
+
+      <!-- A newly minted "Native" Result Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/heat-map" id="heat-map">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="heat-map">heat-map</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Heat map data showing parts of the video the actor watched during current registration in chronological order (e.g., 0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000).">Heat map data showing parts of the video the actor watched during current registration in chronological order (e.g., 0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000).</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="String Value. Each part of the video watched is separated with [,]. The 'Time From' and 'Time To' values are separated with [.]. The time values must match the values recorded as time, time-to and time-from in played, paused, seeked statements.">String Value. Each part of the video watched is separated with [,]. The 'Time From' and 'Time To' values are separated with [.]. The time values must match the values recorded as time, time-to and time-from in played, paused, seeked statements.</td>
+          <td><a href="https://w3id.org/xapi/video/extensions/heat-map">https://w3id.org/xapi/video/extensions/heat-map</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
         </tr>
       </tbody>
       
-      <!-- A newly minted "Native" Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/time-from" id="time-from">
+      <!-- A newly minted "Native" Result Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/time" id="time">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="time">time</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the time into the video. (e.g., “00000.000” in seconds and milliseconds).">Used to express the time into the video. (e.g., “00000.000” in seconds and milliseconds).</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Sent along with these verbs: Played, Paused, Terminated, Interacted, Completed (Required).">Float Value with maximim 3 decimals. Sent along with these verbs: Played, Paused, Terminated, Interacted, Completed (Required).</td>
+          <td><a href="https://w3id.org/xapi/video/extensions/time">https://w3id.org/xapi/video/extensions/time</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:float"><a href="http://www.w3.org/2001/XMLSchema#float" target="_blank">xsd:float</a></td>
+          <td>00000.000</td>
+        </tr>
+      </tbody>
+            
+      <!-- A newly minted "Native" Result Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/time-from" id="time-from">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="time-from">time-from</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the point in time the actor changed from in a media object (eg: “200.000” in seconds and milliseconds).">Used to identify the point in time the actor changed from in a media object (eg: “200.000” in seconds and milliseconds).</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Required to be used exclusively with the verb seeked.">Float Value with maximim 3 decimals. Required to be used exclusively with the verb "seeked."</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/time-from" target="_blank">https://w3id.org/xapi/video/extensions/time-from</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/time-from">https://w3id.org/xapi/video/extensions/time-from</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:float"><a href="http://www.w3.org/2001/XMLSchema#float" target="_blank">xsd:float</a></td>
+          <td>200.000</td>
         </tr>
       </tbody>
       
-      <!-- A newly minted "Native" Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/time-to" id="time-to">
+      <!-- A newly minted "Native" Result Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/time-to" id="time-to">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="time-to">time-to</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the point in time the actor changed to in a media object (eg: “300.000” in seconds and milliseconds).">Used to identify the point in time the actor changed to in a media object (eg: “300.000” in seconds and milliseconds). </td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Required to be used exclusively with the verb seeked.">Float Value with maximim 3 decimals. Required to be used exclusively with the verb "seeked." </td>
-          <td><a href="https://w3id.org/xapi/video/extensions/time-to" target="_blank">https://w3id.org/xapi/video/extensions/time-to</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/time-to">https://w3id.org/xapi/video/extensions/time-to</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:float"><a href="http://www.w3.org/2001/XMLSchema#float" target="_blank">xsd:float</a></td>
+          <td>300.000</td>
         </tr>
       </tbody>
     </table>
@@ -329,116 +365,163 @@
           <th>Description</th>
           <th>Scope Note</th>
           <th>ID (IRI)</th>
-          <th>Closely Related Term</th>
-          <th>Vocabulary</th>
+          <th>Domain</th>
+          <th>Range</th>
+          <th>Example Values</th>
         </tr>
       </thead>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/cc-subtitle-enabled" id="cc-subtitle-enabled">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/cc-subtitle-enabled" id="cc-subtitle-enabled">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="cc-subtitle-enabled">cc-subtitle-enabled</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to expresses whether subtitle or closed captioning is enabled. ">Used to expresses whether subtitle or closed captioning is enabled. </td>
-          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is boolean in true or false.">Value is boolean in true or false.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-enabled" target="_blank">https://w3id.org/xapi/video/extensions/cc-subtitle-enabled</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is boolean as in true or false.">Value is boolean as in true or false.</td>
+          <td><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-enabled">https://w3id.org/xapi/video/extensions/cc-subtitle-enabled</a></td>
+		  <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:boolean"><a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank">xsd:boolean</a></td>
+          <td>true, false</td>
         </tr>
       </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/cc-subtitle-lang" id="cc-subtitle-lang">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/cc-subtitle-lang" id="cc-subtitle-lang">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="cc-subtitle-lang">cc-subtitle-lang</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the language of subtitle or closed captioning.">Used to express the language of subtitle or closed captioning.</td>
-          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used only when cc-subtitle-enabled is true.">Used only when cc-subtitle-enabled is true.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-lang" target="_blank">https://w3id.org/xapi/video/extensions/cc-subtitle-lang</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used only when cc-subtitle-enabled is true. The lexical and value spaces of xsd:language are the set of language codes defined by RFC 1766.">Used only when cc-subtitle-enabled is true. The lexical and value spaces of xsd:language are the set of language codes defined by RFC 1766.</td>
+          <td><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-lang">https://w3id.org/xapi/video/extensions/cc-subtitle-lang</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:language"><a href="http://www.w3.org/2001/XMLSchema#language" target="_blank">xsd:language</a></td>
+          <td>"en" for English or "en-US" for American English</td>
         </tr>
       </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/frame-rate" id="frame-rate">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/frame-rate" id="frame-rate">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="frame-rate">frame-rate</td>
-          <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the frame rate or frames per second of a video.">Used to express the frame rate or frames per second of a video.</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate). Represented as a ratio of time base over frame duration, such as 30000/1001 or as a decimal, such as 29.970.">Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate). Represented as a ratio of time base over frame duration, such as 30000/1001 or as a decimal, such as 29.970.</td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/video/extensions/frame-rate" target="_blank">https://w3id.org/xapi/video/extensions/frame-rate</a></td>
-          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/103396310-n"><a href="http://wordnet-rdf.princeton.edu/wn31/103396310-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/103396310-n</a></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/frame-rate">https://w3id.org/xapi/video/extensions/frame-rate</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:decimal"><a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank">xsd:decimal</a></td>
+          <td>29.970</td>
         </tr>
       </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/full-screen" id="full-screen">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/full-screen" id="full-screen">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="full-screen">full-screen</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to expresses that the video is played in full screen mode.">Used to expresses that the video is played in full screen mode.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is boolean true or false.">Value is boolean true or false.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/full-screen" target="_blank">https://w3id.org/xapi/video/extensions/full-screen</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/full-screen">https://w3id.org/xapi/video/extensions/full-screen</a></td>
+	      <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:boolean"><a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank">xsd:boolean</a></td>
+          <td>true, false</td>
         </tr>
       </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/resolution" id="resolution">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/resolution" id="resolution">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="resolution">resolution</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the video resolution or quality.">Used to express the video resolution or quality.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Integer Value (e.g., 360, 480, 720, 1080, etc.)">Integer Value (e.g., 360, 480, 720, 1080, etc.)</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/resolution" target="_blank">https://w3id.org/xapi/video/extensions/resolution</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/resolution">https://w3id.org/xapi/video/extensions/resolution</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:integer"><a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank">xsd:integer</a></td>
+          <td>1080</td>
+        </tr>
+      </tbody>
+
+      <!-- A newly minted "Native" Context Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/screen-size" id="screen-size">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="screen-size">screen-size</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the device playback screen size or the maximum available screensize for Video playback.">Used to express the device playback screen size or the maximum available screensize for Video playback.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value WxH in pixels (e.g., 1080x960, 640x480, 800x600).">Value WxH in pixels (e.g., 1080x960, 640x480, 800x600).</td>
+          <td><a href="https://w3id.org/xapi/video/extensions/screen-size">https://w3id.org/xapi/video/extensions/screen-size</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
         </tr>
       </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/speed" id="speed">
+      <tbody typeof="rdfs:Datatype" about="https://w3id.org/xapi/video/extensions/session-id" id="session-id">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="session-id">session-id</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated or abandoned statement.">Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated or abandoned statement.</td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value of session id has to be the UUID statement id of the initiated statement.">Value of session id has to be the UUID statement id of the initiated statement.</td>
+          <td inlist="" rel="owl:withRestrictions" resource="http://www.w3.org/2001/XMLSchema#pattern"><a href="https://w3id.org/xapi/video/extensions/session-id">https://w3id.org/xapi/video/extensions/session-id</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>         
+          <td rel="owl:onDatatype" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
+          <td inlist="" property="owl:withRestrictions" content="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[8-9a-bA-B][0-9a-fA-F]{3}-[0-9a-fA-F]{12}">a49727a4-842c-11e6-ae22-56b6b6499611</td> 
+          
+        </tr>
+      </tbody>
+            
+      <!-- A newly minted "Native" Context Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/speed" id="speed">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="speed">speed</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the play-back speed (e.g., 1x,2x,0,-1x,-2x).">Used to express the play-back speed (e.g., 1x,2x,0,-1x,-2x).</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with an ‘x’ Negative = Rewind Positive = Fast Forward">Float Value with an ‘x’ Negative = Rewind Positive = Fast Forward</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/speed" target="_blank">https://w3id.org/xapi/video/extensions/speed</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/speed">https://w3id.org/xapi/video/extensions/speed</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
+          <td>1x</td>
         </tr>
       </tbody>
       
-      <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/time" id="time">
-        <tr>
-          <td property="skos:prefLabel" lang="en" xml:lang="en" content="time">time</td>
-          <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the time into the video. (e.g., “00000.000” in seconds and milliseconds).">Used to express the time into the video. (e.g., “00000.000” in seconds and milliseconds).</td>
-          <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Sent along with these verbs: Played, Paused, Terminated, Interacted, Completed (Required).">Float Value with maximim 3 decimals. Sent along with these verbs: Played, Paused, Terminated, Interacted, Completed (Required).</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/time" target="_blank">https://w3id.org/xapi/video/extensions/time</a></td>
-          <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
-        </tr>
-      </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/track" id="track">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/track" id="track">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="track">track</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the name of the audio track in a media object.">Used to identify the name of the audio track in a media object.</td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/video/extensions/track" target="_blank">https://w3id.org/xapi/video/extensions/track</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/track">https://w3id.org/xapi/video/extensions/track</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
         </tr>
       </tbody>
-      
+
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/video/extensions/volume" id="volume">
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/user-agent" id="user-agent">
+        <tr>
+          <td property="skos:prefLabel" lang="en" xml:lang="en" content="user-agent">user-agent</td>
+          <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the User Agent string of the browser, if the video is launched in browser.">Used to identify the User Agent string of the browser, if the video is launched in browser.</td>
+          <td></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/track">https://w3id.org/xapi/video/extensions/track</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
+          <td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36</td>
+        </tr>
+      </tbody>
+            
+      <!-- A newly minted "Native" Context Extension -->
+      <tbody typeof="owl:DatatypeProperty" about="https://w3id.org/xapi/video/extensions/volume" id="volume">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="volume">volume</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the loudness of sound specified for a media object.">Used to identify the loudness of sound specified for a media object.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Volume Level (0 to 1). Float Value. Minimum 0 = Mute. Maximum 1 = 100% Volume">Volume Level (0 to 1). Float Value. Minimum 0 = Mute. Maximum 1 = 100% Volume</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/volume" target="_blank">https://w3id.org/xapi/video/extensions/volume</a></td>
-          <td rel="xapi:closelyRelatedNaturalLanguageTerm" resource="http://wordnet-rdf.princeton.edu/wn31/104997456-n"><a href="http://wordnet-rdf.princeton.edu/wn31/104997456-n" target="_blank">http://wordnet-rdf.princeton.edu/wn31/104997456-n</a></td>
-          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video" target="_blank">https://w3id.org/xapi/video</a></td>
+          <td><a href="https://w3id.org/xapi/video/extensions/volume">https://w3id.org/xapi/video/extensions/volume</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
+    	  <td rel="rdfs:range" resource="https://w3id.org/xapi/video/extensions/volumeRange"></td>
+          <td>
+          	<div typeof="owl:Restriction" about="https://w3id.org/xapi/video/extensions/volumeRange">
+          		<div rel="owl:onProperty" resource="https://w3id.org/xapi/video/extensions/volume"></div>
+    	  		<div typeof="rdfs:Datatype" about="https://w3id.org/xapi/video/extensions/volumeRange">
+              		<div inlist="" rel="owl:withRestrictions" resource="https://w3id.org/xapi/video/extensions/minInclusive"></div>
+              		<div inlist="" rel="owl:withRestrictions" resource="https://w3id.org/xapi/video/extensions/maxInclusive"></div>
+                    <div rel="owl:onDatatype" resource="http://www.w3.org/2001/XMLSchema#integer"></div>
+            	</div>
+            </div>
+         </td>       
         </tr>
       </tbody>
     </table>

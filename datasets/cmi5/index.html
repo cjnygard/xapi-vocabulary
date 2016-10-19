@@ -45,6 +45,12 @@
             <li><a href="#objective">objective</a></li>
           </ul>
         </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Context Activities<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#cmi5">cmi5</a></li>
+            <li><a href="#moveon">moveon</a></li>
+          </ul>
+        </li>        
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Result Extensions<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#progress">progress</a></li>
@@ -58,7 +64,7 @@
             <li><a href="#launchparameters">launchparameters</a></li>
             <li><a href="#launchurl">launchurl</a></li>
             <li><a href="#masteryscore">masteryscore</a></li>
-            <li><a href="#moveon">moveon</a></li>
+            <li><a href="#moveon2">moveon</a></li>
             <li><a href="#publisherid">publisherid</a></li>
             <li><a href="#sessionid">sessionid</a></li>
           </ul>
@@ -87,8 +93,8 @@
     </div>
     <div property="skos:editorialNote" lang="en" xml:lang="en" content="The cmi5 profile is a specification that expands xAPI into the LMS-centric, single-learner distributed learning model.  It can be used in other ways, but the primary use case is to behave in a traditional LMS model.">The cmi5 profile is a specification that expands xAPI into the LMS-centric, single-learner distributed learning model.  It can be used in other ways, but the primary use case is to behave in a traditional LMS model.<strong> Note: </strong>Vocabulary terms that are not managed by the cmi5 project and referenced from other controlled vocabularies are higlighted in <span class="bg-warning"> <strong> yellow </strong> </span>.</div>
     <div property="foaf:name" lang="en" xml:lang="en" content="cmi5 Working Group"><strong>Published by:</strong> <a href="https://github.com/AICC/cmi-5_Spec_Current">cmi5 Working Group</a></div>
-    <div property="dcterms:created" datatype="xsd:date" content="2016-6-09">Date Created: 2016-6-09</div>
-    <div property="dcterms:modified" datatype="xsd:date" content="2016-6-10">Last Modified: 2016-6-10</div>
+    <div property="dcterms:created" datatype="xsd:date" content="2016-6-09">Date Created: 2016-06-09</div>
+    <div property="dcterms:modified" datatype="xsd:date" content="2016-08-08">Last Modified: 2016-08-08</div>
   </div>
   
   <!-- Begin Verbs -->
@@ -247,8 +253,20 @@
           <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
         </tr>
       </tbody>
+      
+      <!-- An existing Verb borrowed/referenced from another controlled vocabulary-->
+      <tbody resource="http://adlnet.gov/expapi/activities/objective" id="objective">
+        <tr class="warning">
+          <td>objective</td>
+          <td></td>
+          <td property="skos:scopeNote" lang="en" xml:lang="en" content="This activity is only defined in the Course Structure Format (CSF). Objectives usage outside of course structure is not defined. The same Objective can be referenced by multiple AU or Blocks. There are 2 ways to interpret meeting an Objective. One or All elements referencing the objective need to be satisfied (or met moveOn criteria).">This activity is only defined in the Course Structure Format (CSF). Objectives usage outside of course structure is not defined. The same Objective can be referenced by multiple AU or Blocks. There are 2 ways to interpret meeting an Objective. One or All elements referencing the objective need to be satisfied (or met moveOn criteria).</td>
+          <td><a href="http://adlnet.gov/expapi/activities/objective">http://adlnet.gov/expapi/activities/objective</a></td>
+          <td></td>
+          <td rel="xapi:referencedBy" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/adl">https://w3id.org/xapi/adl</a></td>
+        </tr>
+      </tbody>
     </table>
-  </div>
+  </div>      
   <!-- End Activity Types --> 
   
   <!-- Begin contextActivities-->
@@ -330,7 +348,7 @@
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="session">session</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used in contexttemplate.  Value is used to populate/update session_id.">Used in contexttemplate.  Value is used to populate/update session_id.</td>
-          <td><a href="https://w3id.org/xapi/cmi5/extensions/session" target="_blank">https://w3id.org/xapi/cmi5/extensions/session</a></td>
+          <td><a href="https://w3id.org/xapi/cmi5/result/extensions/session" target="_blank">https://w3id.org/xapi/cmi5/result/extensions/session</a></td>
           <td rel="skos:inScheme" resource="https://w3id.org/xapi/cmi5"><a href="https://w3id.org/xapi/cmi5" target="_blank">https://w3id.org/xapi/cmi5</a></td>
         </tr>
       </tbody>
@@ -409,7 +427,7 @@
       </tbody>
       
       <!-- A newly minted "Native" Context Extension -->
-      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/moveon" id="moveon">
+      <tbody typeof="xapi:Extension" about="https://w3id.org/xapi/cmi5/context/extensions/moveon" id="moveon2">
         <tr>
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="moveon">moveon</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Controlled vocabulary which tells the conditions under which the AU is considered satisfied for the purposes of determining overall completion or prerequisites for other activities.  Used as a context extension.  ">Controlled vocabulary which tells the conditions under which the AU is considered satisfied for the purposes of determining overall completion or prerequisites for other activities.  Used as a context extension.</td>
