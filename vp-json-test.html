@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: 'https://w3id.org/xapi/virtual-patient',
+          type: 'GET',
+          dataType: 'json',
+          beforeSend: setHeader		  
+        });
+      });
+
+      function setHeader(xhr) {
+		xhr.addEventListener('load', function (ev) {console.log(ev);console.log(xhr.response);console.log(xhr.responseText);});
+        xhr.setRequestHeader('Accept', 'application/json');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Load this page with the browser's developer console open and view the network / xhr requests. JSON will be returned. To see the JS code view the source of this HTML page.</p>
+  </body>
+</html>
