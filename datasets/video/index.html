@@ -275,7 +275,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="progress">progress</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to expresses the percentage of media consumed by the actor.">Used to expresses the percentage of media consumed by the actor.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is a decmial between 0.0 and 1.0.">Value is a decmial between 0.0 and 1.0.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/progress">https://w3id.org/xapi/video/extensions/progress</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/progress">https://w3id.org/xapi/video/extensions/progress</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="https://w3id.org/xapi/video/extensions/progressRange"></td>
           <td>
@@ -305,7 +305,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="heat-map">heat-map</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Heat map data showing parts of the video the actor watched during current registration in chronological order (e.g., 0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000).">Heat map data showing parts of the video the actor watched during current registration in chronological order (e.g., 0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000).</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="String Value. Each part of the video watched is separated with [,]. The 'Time From' and 'Time To' values are separated with [.]. The time values must match the values recorded as time, time-to and time-from in played, paused, seeked statements.">String Value. Each part of the video watched is separated with [,]. The 'Time From' and 'Time To' values are separated with [.]. The time values must match the values recorded as time, time-to and time-from in played, paused, seeked statements.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/heat-map">https://w3id.org/xapi/video/extensions/heat-map</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/heat-map">https://w3id.org/xapi/video/extensions/heat-map</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td></td>
@@ -318,7 +318,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="time">time</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the time into the video. (e.g., “00000.000” in seconds and milliseconds).">Used to express the time into the video. (e.g., “00000.000” in seconds and milliseconds).</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Sent along with these verbs: Played, Paused, Terminated, Interacted, Completed (Required).">Float Value with maximim 3 decimals. Sent along with these verbs: Played, Paused, Terminated, Interacted, Completed (Required).</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/time">https://w3id.org/xapi/video/extensions/time</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/time">https://w3id.org/xapi/video/extensions/time</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:float"><a href="http://www.w3.org/2001/XMLSchema#float" target="_blank">xsd:float</a></td>
           <td>00000.000</td>
@@ -331,7 +331,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="time-from">time-from</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the point in time the actor changed from in a media object (eg: “200.000” in seconds and milliseconds).">Used to identify the point in time the actor changed from in a media object (eg: “200.000” in seconds and milliseconds).</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Required to be used exclusively with the verb seeked.">Float Value with maximim 3 decimals. Required to be used exclusively with the verb "seeked."</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/time-from">https://w3id.org/xapi/video/extensions/time-from</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/time-from">https://w3id.org/xapi/video/extensions/time-from</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:float"><a href="http://www.w3.org/2001/XMLSchema#float" target="_blank">xsd:float</a></td>
           <td>200.000</td>
@@ -344,7 +344,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="time-to">time-to</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the point in time the actor changed to in a media object (eg: “300.000” in seconds and milliseconds).">Used to identify the point in time the actor changed to in a media object (eg: “300.000” in seconds and milliseconds). </td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with maximim 3 decimals. Required to be used exclusively with the verb seeked.">Float Value with maximim 3 decimals. Required to be used exclusively with the verb "seeked." </td>
-          <td><a href="https://w3id.org/xapi/video/extensions/time-to">https://w3id.org/xapi/video/extensions/time-to</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/time-to">https://w3id.org/xapi/video/extensions/time-to</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:float"><a href="http://www.w3.org/2001/XMLSchema#float" target="_blank">xsd:float</a></td>
           <td>300.000</td>
@@ -377,7 +377,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="cc-subtitle-enabled">cc-subtitle-enabled</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to expresses whether subtitle or closed captioning is enabled. ">Used to expresses whether subtitle or closed captioning is enabled. </td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is boolean as in true or false.">Value is boolean as in true or false.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-enabled">https://w3id.org/xapi/video/extensions/cc-subtitle-enabled</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-enabled">https://w3id.org/xapi/video/extensions/cc-subtitle-enabled</a></td>
 		  <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:boolean"><a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank">xsd:boolean</a></td>
           <td>true, false</td>
@@ -390,7 +390,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="cc-subtitle-lang">cc-subtitle-lang</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the language of subtitle or closed captioning.">Used to express the language of subtitle or closed captioning.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Used only when cc-subtitle-enabled is true. The lexical and value spaces of xsd:language are the set of language codes defined by RFC 1766.">Used only when cc-subtitle-enabled is true. The lexical and value spaces of xsd:language are the set of language codes defined by RFC 1766.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-lang">https://w3id.org/xapi/video/extensions/cc-subtitle-lang</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/cc-subtitle-lang">https://w3id.org/xapi/video/extensions/cc-subtitle-lang</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:language"><a href="http://www.w3.org/2001/XMLSchema#language" target="_blank">xsd:language</a></td>
           <td>"en" for English or "en-US" for American English</td>
@@ -403,7 +403,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="frame-rate">frame-rate</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate). Represented as a ratio of time base over frame duration, such as 30000/1001 or as a decimal, such as 29.970.">Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate). Represented as a ratio of time base over frame duration, such as 30000/1001 or as a decimal, such as 29.970.</td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/video/extensions/frame-rate">https://w3id.org/xapi/video/extensions/frame-rate</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/frame-rate">https://w3id.org/xapi/video/extensions/frame-rate</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:decimal"><a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank">xsd:decimal</a></td>
           <td>29.970</td>
@@ -416,7 +416,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="full-screen">full-screen</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to expresses that the video is played in full screen mode.">Used to expresses that the video is played in full screen mode.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value is boolean true or false.">Value is boolean true or false.</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/full-screen">https://w3id.org/xapi/video/extensions/full-screen</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/full-screen">https://w3id.org/xapi/video/extensions/full-screen</a></td>
 	      <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:boolean"><a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank">xsd:boolean</a></td>
           <td>true, false</td>
@@ -429,7 +429,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="resolution">resolution</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the video resolution or quality.">Used to express the video resolution or quality.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Integer Value (e.g., 360, 480, 720, 1080, etc.)">Integer Value (e.g., 360, 480, 720, 1080, etc.)</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/resolution">https://w3id.org/xapi/video/extensions/resolution</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/resolution">https://w3id.org/xapi/video/extensions/resolution</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:integer"><a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank">xsd:integer</a></td>
           <td>1080</td>
@@ -442,7 +442,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="screen-size">screen-size</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the device playback screen size or the maximum available screensize for Video playback.">Used to express the device playback screen size or the maximum available screensize for Video playback.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value WxH in pixels (e.g., 1080x960, 640x480, 800x600).">Value WxH in pixels (e.g., 1080x960, 640x480, 800x600).</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/screen-size">https://w3id.org/xapi/video/extensions/screen-size</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/screen-size">https://w3id.org/xapi/video/extensions/screen-size</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td></td>
@@ -455,11 +455,13 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="session-id">session-id</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated or abandoned statement.">Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated or abandoned statement.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Value of session id has to be the UUID statement id of the initiated statement.">Value of session id has to be the UUID statement id of the initiated statement.</td>
-          <td inlist="" rel="owl:withRestrictions" resource="http://www.w3.org/2001/XMLSchema#pattern"><a href="https://w3id.org/xapi/video/extensions/session-id">https://w3id.org/xapi/video/extensions/session-id</a></td>
-          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>         
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/session-id">https://w3id.org/xapi/video/extensions/session-id</a></td>
+          <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
           <td rel="owl:onDatatype" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
-          <td inlist="" property="owl:withRestrictions" content="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[8-9a-bA-B][0-9a-fA-F]{3}-[0-9a-fA-F]{12}">a49727a4-842c-11e6-ae22-56b6b6499611</td> 
-          
+          <td>
+          	<div inlist="" rel="owl:withRestrictions" resource="http://www.w3.org/2001/XMLSchema#pattern"></div>
+            <div inlist="" property="owl:withRestrictions" content="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[8-9a-bA-B][0-9a-fA-F]{3}-[0-9a-fA-F]{12}">a49727a4-842c-11e6-ae22-56b6b6499611</div>
+          </td> 
         </tr>
       </tbody>
             
@@ -469,7 +471,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="speed">speed</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to express the play-back speed (e.g., 1x,2x,0,-1x,-2x).">Used to express the play-back speed (e.g., 1x,2x,0,-1x,-2x).</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Float Value with an ‘x’ Negative = Rewind Positive = Fast Forward">Float Value with an ‘x’ Negative = Rewind Positive = Fast Forward</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/speed">https://w3id.org/xapi/video/extensions/speed</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/speed">https://w3id.org/xapi/video/extensions/speed</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td>1x</td>
@@ -483,7 +485,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="track">track</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the name of the audio track in a media object.">Used to identify the name of the audio track in a media object.</td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/video/extensions/track">https://w3id.org/xapi/video/extensions/track</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/track">https://w3id.org/xapi/video/extensions/track</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td></td>
@@ -496,7 +498,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="user-agent">user-agent</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the User Agent string of the browser, if the video is launched in browser.">Used to identify the User Agent string of the browser, if the video is launched in browser.</td>
           <td></td>
-          <td><a href="https://w3id.org/xapi/video/extensions/track">https://w3id.org/xapi/video/extensions/track</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/track">https://w3id.org/xapi/video/extensions/track</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="xsd:string"><a href="http://www.w3.org/2001/XMLSchema#string" target="_blank">xsd:string</a></td>
           <td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.116 Safari/537.36</td>
@@ -509,7 +511,7 @@
           <td property="skos:prefLabel" lang="en" xml:lang="en" content="volume">volume</td>
           <td property="skos:definition" lang="en" xml:lang="en" content="Used to identify the loudness of sound specified for a media object.">Used to identify the loudness of sound specified for a media object.</td>
           <td property="skos:scopeNote" lang="en" xml:lang="en" content="Volume Level (0 to 1). Float Value. Minimum 0 = Mute. Maximum 1 = 100% Volume">Volume Level (0 to 1). Float Value. Minimum 0 = Mute. Maximum 1 = 100% Volume</td>
-          <td><a href="https://w3id.org/xapi/video/extensions/volume">https://w3id.org/xapi/video/extensions/volume</a></td>
+          <td rel="skos:inScheme" resource="https://w3id.org/xapi/video"><a href="https://w3id.org/xapi/video/extensions/volume">https://w3id.org/xapi/video/extensions/volume</a></td>
           <td rel="rdfs:domain" resource="xapi:Extension"><a href="https://w3id.org/xapi/ontology#Extension" target="_blank">xapi:Extension</a></td>
     	  <td rel="rdfs:range" resource="https://w3id.org/xapi/video/extensions/volumeRange"></td>
           <td>
